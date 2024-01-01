@@ -20,18 +20,10 @@ namespace WebQuanLyThuVien.Models
             this.ChiTietPTLs = new HashSet<ChiTietPTL>();
         }
     
-        public string TenSachtl { get; set; }
-        public string TheLoaitl { get; set; }
-        public string TacGiatl { get; set; }
-        public string NgonNgutl { get; set; }
-        public string NXBtl { get; set; }
-        public Nullable<int> NamXBtl { get; set; }
-        public Nullable<int> GiaSachtl { get; set; }
-        public Nullable<int> SoLuongthanhly { get; set; }
-        public int masach { get; set; }
+        public int masachkho { get; set; }
+        public Nullable<int> soluongkhotl { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietPTL> ChiTietPTLs { get; set; }
-        public virtual Sach Sach { get; set; }
     }
 }

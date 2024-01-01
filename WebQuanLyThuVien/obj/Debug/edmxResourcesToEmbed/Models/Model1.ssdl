@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="QuanLyThuVienModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ChiTietDk">
+    <Key>
+      <PropertyRef Name="MaDK" />
+      <PropertyRef Name="MaSach" />
+    </Key>
+    <Property Name="MaDK" Type="int" Nullable="false" />
+    <Property Name="MaSach" Type="int" Nullable="false" />
+    <Property Name="Soluongmuon" Type="int" />
+  </EntityType>
   <EntityType Name="ChiTietPM">
     <Key>
       <PropertyRef Name="MaPM" />
@@ -16,25 +25,40 @@
     </Key>
     <Property Name="MaPN" Type="int" Nullable="false" />
     <Property Name="MaSACH" Type="int" Nullable="false" />
+    <Property Name="GiaSach" Type="money" />
     <Property Name="SoLuongNHAP" Type="int" />
   </EntityType>
   <EntityType Name="ChiTietPT">
     <Key>
-      <PropertyRef Name="MaSach" />
       <PropertyRef Name="MaPT" />
+      <PropertyRef Name="MaSach" />
     </Key>
-    <Property Name="Soluongtra" Type="int" />
-    <Property Name="MaSach" Type="int" Nullable="false" />
     <Property Name="MaPT" Type="int" Nullable="false" />
+    <Property Name="MaSach" Type="int" Nullable="false" />
+    <Property Name="Soluongtra" Type="int" />
+    <Property Name="Soluongloi" Type="int" />
+    <Property Name="Soluongmat" Type="int" />
+    <Property Name="PhuThu" Type="money" />
   </EntityType>
   <EntityType Name="ChiTietPTL">
     <Key>
-      <PropertyRef Name="MaSach" />
       <PropertyRef Name="MaPTL" />
+      <PropertyRef Name="MaSachkho" />
     </Key>
-    <Property Name="MaSach" Type="int" Nullable="false" />
-    <Property Name="Soluongtl" Type="int" />
     <Property Name="MaPTL" Type="int" Nullable="false" />
+    <Property Name="MaSachkho" Type="int" Nullable="false" />
+    <Property Name="Soluongtl" Type="int" />
+    <Property Name="GiaTL" Type="money" />
+  </EntityType>
+  <EntityType Name="DkiMuonSach">
+    <Key>
+      <PropertyRef Name="MaDK" />
+    </Key>
+    <Property Name="MaDK" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayDKMuon" Type="date" />
+    <Property Name="NgayHen" Type="date" />
+    <Property Name="Tinhtrang" Type="int" />
   </EntityType>
   <EntityType Name="DocGia">
     <Key>
@@ -58,25 +82,26 @@
   </EntityType>
   <EntityType Name="KhoSachThanhLy">
     <Key>
-      <PropertyRef Name="masach" />
+      <PropertyRef Name="masachkho" />
     </Key>
-    <Property Name="TenSachtl" Type="nvarchar" MaxLength="150" />
-    <Property Name="TheLoaitl" Type="nvarchar" MaxLength="50" />
-    <Property Name="TacGiatl" Type="nvarchar" MaxLength="50" />
-    <Property Name="NgonNgutl" Type="nvarchar" MaxLength="50" />
-    <Property Name="NXBtl" Type="nvarchar" MaxLength="100" />
-    <Property Name="NamXBtl" Type="int" />
-    <Property Name="GiaSachtl" Type="int" />
-    <Property Name="SoLuongthanhly" Type="int" />
-    <Property Name="masach" Type="int" Nullable="false" />
+    <Property Name="masachkho" Type="int" Nullable="false" />
+    <Property Name="soluongkhotl" Type="int" />
+  </EntityType>
+  <EntityType Name="LOGIN_DG">
+    <Key>
+      <PropertyRef Name="SDT" />
+    </Key>
+    <Property Name="SDT" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PASSWORD_DG" Type="nvarchar" MaxLength="255" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
   </EntityType>
   <EntityType Name="LOGIN_NV">
     <Key>
       <PropertyRef Name="USERNAME_NV" />
     </Key>
     <Property Name="USERNAME_NV" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="PASSWORD_NV" Type="nvarchar" MaxLength="50" />
-    <Property Name="HoTen_NV" Type="nvarchar" MaxLength="50" />
+    <Property Name="PASSWORD_NV" Type="nvarchar(max)" />
     <Property Name="MANV" Type="int" />
   </EntityType>
   <EntityType Name="NhaCungCap">
@@ -109,6 +134,8 @@
     <Property Name="HanTra" Type="date" />
     <Property Name="MaThe" Type="int" />
     <Property Name="MaNV" Type="int" />
+    <Property Name="Tinhtrang" Type="bit" />
+    <Property Name="MaDK" Type="int" />
   </EntityType>
   <EntityType Name="PhieuNhapSach">
     <Key>
@@ -136,6 +163,7 @@
     <Property Name="NgayTra" Type="date" />
     <Property Name="MaNV" Type="int" />
     <Property Name="MaThe" Type="int" />
+    <Property Name="MaPM" Type="int" />
   </EntityType>
   <EntityType Name="Sach">
     <Key>
@@ -148,7 +176,6 @@
     <Property Name="NgonNgu" Type="nvarchar" MaxLength="50" />
     <Property Name="NXB" Type="nvarchar" MaxLength="100" />
     <Property Name="NamXB" Type="int" />
-    <Property Name="GiaSach" Type="int" />
     <Property Name="SoLuongHIENTAI" Type="int" />
   </EntityType>
   <EntityType Name="TheDocGia">
@@ -156,26 +183,46 @@
       <PropertyRef Name="MaThe" />
     </Key>
     <Property Name="MaThe" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="HanThe" Type="nvarchar" MaxLength="50" />
     <Property Name="NgayDK" Type="date" />
     <Property Name="NgayHH" Type="date" />
     <Property Name="TienThe" Type="int" />
     <Property Name="MaNV" Type="int" />
     <Property Name="MaDG" Type="int" />
   </EntityType>
-  <Association Name="FK__ChiTietPM__MaSac__6383C8BA">
+  <EntityType Name="TT_SACH">
+    <Key>
+      <PropertyRef Name="MA_TT_SACH" />
+    </Key>
+    <Property Name="MA_TT_SACH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="URL_IMAGE" Type="text" />
+    <Property Name="MOTA" Type="ntext" />
+    <Property Name="MASACH" Type="int" />
+  </EntityType>
+  <Association Name="FK__ChiTietDk__MaDK__70DDC3D8">
+    <End Role="DkiMuonSach" Type="Self.DkiMuonSach" Multiplicity="1" />
+    <End Role="ChiTietDk" Type="Self.ChiTietDk" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DkiMuonSach">
+        <PropertyRef Name="MaDK" />
+      </Principal>
+      <Dependent Role="ChiTietDk">
+        <PropertyRef Name="MaDK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ChiTietDk__MaSac__71D1E811">
     <End Role="Sach" Type="Self.Sach" Multiplicity="1" />
-    <End Role="ChiTietPM" Type="Self.ChiTietPM" Multiplicity="*" />
+    <End Role="ChiTietDk" Type="Self.ChiTietDk" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Sach">
         <PropertyRef Name="MaSach" />
       </Principal>
-      <Dependent Role="ChiTietPM">
+      <Dependent Role="ChiTietDk">
         <PropertyRef Name="MaSach" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__ChiTietPM__Soluo__628FA481">
+  <Association Name="FK__ChiTietPM__MaPM__5070F446">
     <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="1" />
     <End Role="ChiTietPM" Type="Self.ChiTietPM" Multiplicity="*" />
     <ReferentialConstraint>
@@ -187,7 +234,19 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__CHITIETPN__MaPN__59063A47">
+  <Association Name="FK__ChiTietPM__MaSac__5165187F">
+    <End Role="Sach" Type="Self.Sach" Multiplicity="1" />
+    <End Role="ChiTietPM" Type="Self.ChiTietPM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sach">
+        <PropertyRef Name="MaSach" />
+      </Principal>
+      <Dependent Role="ChiTietPM">
+        <PropertyRef Name="MaSach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CHITIETPN__MaPN__46E78A0C">
     <End Role="PhieuNhapSach" Type="Self.PhieuNhapSach" Multiplicity="1" />
     <End Role="CHITIETPN" Type="Self.CHITIETPN" Multiplicity="*" />
     <ReferentialConstraint>
@@ -199,7 +258,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__CHITIETPN__MaPN__59FA5E80">
+  <Association Name="FK__CHITIETPN__MaSAC__47DBAE45">
     <End Role="Sach" Type="Self.Sach" Multiplicity="1" />
     <End Role="CHITIETPN" Type="Self.CHITIETPN" Multiplicity="*" />
     <ReferentialConstraint>
@@ -207,23 +266,11 @@
         <PropertyRef Name="MaSach" />
       </Principal>
       <Dependent Role="CHITIETPN">
-        <PropertyRef Name="MaPN" />
+        <PropertyRef Name="MaSACH" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__ChiTietPT__MaPT__6A30C649">
-    <End Role="Sach" Type="Self.Sach" Multiplicity="1" />
-    <End Role="ChiTietPT" Type="Self.ChiTietPT" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Sach">
-        <PropertyRef Name="MaSach" />
-      </Principal>
-      <Dependent Role="ChiTietPT">
-        <PropertyRef Name="MaSach" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__ChiTietPT__MaPT__6B24EA82">
+  <Association Name="FK__ChiTietPT__MaPT__59063A47">
     <End Role="PhieuTra" Type="Self.PhieuTra" Multiplicity="1" />
     <End Role="ChiTietPT" Type="Self.ChiTietPT" Multiplicity="*" />
     <ReferentialConstraint>
@@ -235,7 +282,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__ChiTietPT__MaPTL__75A278F5">
+  <Association Name="FK__ChiTietPT__MaPTL__628FA481">
     <End Role="PhieuThanhLy" Type="Self.PhieuThanhLy" Multiplicity="1" />
     <End Role="ChiTietPTL" Type="Self.ChiTietPTL" Multiplicity="*" />
     <ReferentialConstraint>
@@ -247,31 +294,43 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__ChiTietPT__MaSac__74AE54BC">
-    <End Role="KhoSachThanhLy" Type="Self.KhoSachThanhLy" Multiplicity="1" />
-    <End Role="ChiTietPTL" Type="Self.ChiTietPTL" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="KhoSachThanhLy">
-        <PropertyRef Name="masach" />
-      </Principal>
-      <Dependent Role="ChiTietPTL">
-        <PropertyRef Name="MaSach" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__KhoSachTh__masac__6E01572D">
+  <Association Name="FK__ChiTietPT__MaSac__59FA5E80">
     <End Role="Sach" Type="Self.Sach" Multiplicity="1" />
-    <End Role="KhoSachThanhLy" Type="Self.KhoSachThanhLy" Multiplicity="0..1" />
+    <End Role="ChiTietPT" Type="Self.ChiTietPT" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Sach">
         <PropertyRef Name="MaSach" />
       </Principal>
-      <Dependent Role="KhoSachThanhLy">
-        <PropertyRef Name="masach" />
+      <Dependent Role="ChiTietPT">
+        <PropertyRef Name="MaSach" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__LOGIN_NV__MANV__787EE5A0">
+  <Association Name="FK__ChiTietPT__MaSac__6383C8BA">
+    <End Role="KhoSachThanhLy" Type="Self.KhoSachThanhLy" Multiplicity="1" />
+    <End Role="ChiTietPTL" Type="Self.ChiTietPTL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhoSachThanhLy">
+        <PropertyRef Name="masachkho" />
+      </Principal>
+      <Dependent Role="ChiTietPTL">
+        <PropertyRef Name="MaSachkho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DkiMuonSach__SDT__6E01572D">
+    <End Role="LOGIN_DG" Type="Self.LOGIN_DG" Multiplicity="0..1" />
+    <End Role="DkiMuonSach" Type="Self.DkiMuonSach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOGIN_DG">
+        <PropertyRef Name="SDT" />
+      </Principal>
+      <Dependent Role="DkiMuonSach">
+        <PropertyRef Name="SDT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LOGIN_NV__MANV__68487DD7">
     <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
     <End Role="LOGIN_NV" Type="Self.LOGIN_NV" Multiplicity="*" />
     <ReferentialConstraint>
@@ -283,7 +342,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PhieuMuon__MaNV__5EBF139D">
+  <Association Name="FK__PhieuMuon__MaNV__4CA06362">
     <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
     <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="*" />
     <ReferentialConstraint>
@@ -295,7 +354,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PhieuMuon__MaThe__5FB337D6">
+  <Association Name="FK__PhieuMuon__MaThe__4D94879B">
     <End Role="TheDocGia" Type="Self.TheDocGia" Multiplicity="0..1" />
     <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="*" />
     <ReferentialConstraint>
@@ -307,7 +366,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PhieuNhap__MaNCC__5441852A">
+  <Association Name="FK__PhieuNhap__MaNCC__4222D4EF">
     <End Role="NhaCungCap" Type="Self.NhaCungCap" Multiplicity="0..1" />
     <End Role="PhieuNhapSach" Type="Self.PhieuNhapSach" Multiplicity="*" />
     <ReferentialConstraint>
@@ -319,7 +378,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PhieuNhapS__MaNV__534D60F1">
+  <Association Name="FK__PhieuNhapS__MaNV__412EB0B6">
     <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
     <End Role="PhieuNhapSach" Type="Self.PhieuNhapSach" Multiplicity="*" />
     <ReferentialConstraint>
@@ -331,7 +390,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PhieuThanh__MaDV__71D1E811">
+  <Association Name="FK__PhieuThanh__MaDV__5FB337D6">
     <End Role="DonViTL" Type="Self.DonViTL" Multiplicity="0..1" />
     <End Role="PhieuThanhLy" Type="Self.PhieuThanhLy" Multiplicity="*" />
     <ReferentialConstraint>
@@ -343,7 +402,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PhieuThanh__MaNV__70DDC3D8">
+  <Association Name="FK__PhieuThanh__MaNV__5EBF139D">
     <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
     <End Role="PhieuThanhLy" Type="Self.PhieuThanhLy" Multiplicity="*" />
     <ReferentialConstraint>
@@ -355,7 +414,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PhieuTra__MaNV__66603565">
+  <Association Name="FK__PhieuTra__MaNV__5535A963">
     <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
     <End Role="PhieuTra" Type="Self.PhieuTra" Multiplicity="*" />
     <ReferentialConstraint>
@@ -367,7 +426,19 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PhieuTra__MaThe__6754599E">
+  <Association Name="FK__PhieuTra__MaPM__5441852A">
+    <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="0..1" />
+    <End Role="PhieuTra" Type="Self.PhieuTra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PhieuMuon">
+        <PropertyRef Name="MaPM" />
+      </Principal>
+      <Dependent Role="PhieuTra">
+        <PropertyRef Name="MaPM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PhieuTra__MaThe__5629CD9C">
     <End Role="TheDocGia" Type="Self.TheDocGia" Multiplicity="0..1" />
     <End Role="PhieuTra" Type="Self.PhieuTra" Multiplicity="*" />
     <ReferentialConstraint>
@@ -379,7 +450,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__TheDocGia__MaDG__4E88ABD4">
+  <Association Name="FK__TheDocGia__MaDG__3C69FB99">
     <End Role="DocGia" Type="Self.DocGia" Multiplicity="0..1" />
     <End Role="TheDocGia" Type="Self.TheDocGia" Multiplicity="*" />
     <ReferentialConstraint>
@@ -391,7 +462,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__TheDocGia__MaNV__4D94879B">
+  <Association Name="FK__TheDocGia__MaNV__3B75D760">
     <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
     <End Role="TheDocGia" Type="Self.TheDocGia" Multiplicity="*" />
     <ReferentialConstraint>
@@ -403,14 +474,29 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK__TT_SACH__MASACH__6B24EA82">
+    <End Role="Sach" Type="Self.Sach" Multiplicity="0..1" />
+    <End Role="TT_SACH" Type="Self.TT_SACH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sach">
+        <PropertyRef Name="MaSach" />
+      </Principal>
+      <Dependent Role="TT_SACH">
+        <PropertyRef Name="MASACH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="QuanLyThuVienModelStoreContainer">
+    <EntitySet Name="ChiTietDk" EntityType="Self.ChiTietDk" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ChiTietPM" EntityType="Self.ChiTietPM" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CHITIETPN" EntityType="Self.CHITIETPN" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ChiTietPT" EntityType="Self.ChiTietPT" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ChiTietPTL" EntityType="Self.ChiTietPTL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DkiMuonSach" EntityType="Self.DkiMuonSach" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DocGia" EntityType="Self.DocGia" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DonViTL" EntityType="Self.DonViTL" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="KhoSachThanhLy" EntityType="Self.KhoSachThanhLy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOGIN_DG" EntityType="Self.LOGIN_DG" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="LOGIN_NV" EntityType="Self.LOGIN_NV" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="NhaCungCap" EntityType="Self.NhaCungCap" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
@@ -420,85 +506,102 @@
     <EntitySet Name="PhieuTra" EntityType="Self.PhieuTra" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Sach" EntityType="Self.Sach" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TheDocGia" EntityType="Self.TheDocGia" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__ChiTietPM__MaSac__6383C8BA" Association="Self.FK__ChiTietPM__MaSac__6383C8BA">
-      <End Role="Sach" EntitySet="Sach" />
-      <End Role="ChiTietPM" EntitySet="ChiTietPM" />
+    <EntitySet Name="TT_SACH" EntityType="Self.TT_SACH" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__ChiTietDk__MaDK__70DDC3D8" Association="Self.FK__ChiTietDk__MaDK__70DDC3D8">
+      <End Role="DkiMuonSach" EntitySet="DkiMuonSach" />
+      <End Role="ChiTietDk" EntitySet="ChiTietDk" />
     </AssociationSet>
-    <AssociationSet Name="FK__ChiTietPM__Soluo__628FA481" Association="Self.FK__ChiTietPM__Soluo__628FA481">
+    <AssociationSet Name="FK__ChiTietDk__MaSac__71D1E811" Association="Self.FK__ChiTietDk__MaSac__71D1E811">
+      <End Role="Sach" EntitySet="Sach" />
+      <End Role="ChiTietDk" EntitySet="ChiTietDk" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ChiTietPM__MaPM__5070F446" Association="Self.FK__ChiTietPM__MaPM__5070F446">
       <End Role="PhieuMuon" EntitySet="PhieuMuon" />
       <End Role="ChiTietPM" EntitySet="ChiTietPM" />
     </AssociationSet>
-    <AssociationSet Name="FK__CHITIETPN__MaPN__59063A47" Association="Self.FK__CHITIETPN__MaPN__59063A47">
+    <AssociationSet Name="FK__ChiTietPM__MaSac__5165187F" Association="Self.FK__ChiTietPM__MaSac__5165187F">
+      <End Role="Sach" EntitySet="Sach" />
+      <End Role="ChiTietPM" EntitySet="ChiTietPM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CHITIETPN__MaPN__46E78A0C" Association="Self.FK__CHITIETPN__MaPN__46E78A0C">
       <End Role="PhieuNhapSach" EntitySet="PhieuNhapSach" />
       <End Role="CHITIETPN" EntitySet="CHITIETPN" />
     </AssociationSet>
-    <AssociationSet Name="FK__CHITIETPN__MaPN__59FA5E80" Association="Self.FK__CHITIETPN__MaPN__59FA5E80">
+    <AssociationSet Name="FK__CHITIETPN__MaSAC__47DBAE45" Association="Self.FK__CHITIETPN__MaSAC__47DBAE45">
       <End Role="Sach" EntitySet="Sach" />
       <End Role="CHITIETPN" EntitySet="CHITIETPN" />
     </AssociationSet>
-    <AssociationSet Name="FK__ChiTietPT__MaPT__6A30C649" Association="Self.FK__ChiTietPT__MaPT__6A30C649">
-      <End Role="Sach" EntitySet="Sach" />
-      <End Role="ChiTietPT" EntitySet="ChiTietPT" />
-    </AssociationSet>
-    <AssociationSet Name="FK__ChiTietPT__MaPT__6B24EA82" Association="Self.FK__ChiTietPT__MaPT__6B24EA82">
+    <AssociationSet Name="FK__ChiTietPT__MaPT__59063A47" Association="Self.FK__ChiTietPT__MaPT__59063A47">
       <End Role="PhieuTra" EntitySet="PhieuTra" />
       <End Role="ChiTietPT" EntitySet="ChiTietPT" />
     </AssociationSet>
-    <AssociationSet Name="FK__ChiTietPT__MaPTL__75A278F5" Association="Self.FK__ChiTietPT__MaPTL__75A278F5">
+    <AssociationSet Name="FK__ChiTietPT__MaPTL__628FA481" Association="Self.FK__ChiTietPT__MaPTL__628FA481">
       <End Role="PhieuThanhLy" EntitySet="PhieuThanhLy" />
       <End Role="ChiTietPTL" EntitySet="ChiTietPTL" />
     </AssociationSet>
-    <AssociationSet Name="FK__ChiTietPT__MaSac__74AE54BC" Association="Self.FK__ChiTietPT__MaSac__74AE54BC">
+    <AssociationSet Name="FK__ChiTietPT__MaSac__59FA5E80" Association="Self.FK__ChiTietPT__MaSac__59FA5E80">
+      <End Role="Sach" EntitySet="Sach" />
+      <End Role="ChiTietPT" EntitySet="ChiTietPT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ChiTietPT__MaSac__6383C8BA" Association="Self.FK__ChiTietPT__MaSac__6383C8BA">
       <End Role="KhoSachThanhLy" EntitySet="KhoSachThanhLy" />
       <End Role="ChiTietPTL" EntitySet="ChiTietPTL" />
     </AssociationSet>
-    <AssociationSet Name="FK__KhoSachTh__masac__6E01572D" Association="Self.FK__KhoSachTh__masac__6E01572D">
-      <End Role="Sach" EntitySet="Sach" />
-      <End Role="KhoSachThanhLy" EntitySet="KhoSachThanhLy" />
+    <AssociationSet Name="FK__DkiMuonSach__SDT__6E01572D" Association="Self.FK__DkiMuonSach__SDT__6E01572D">
+      <End Role="LOGIN_DG" EntitySet="LOGIN_DG" />
+      <End Role="DkiMuonSach" EntitySet="DkiMuonSach" />
     </AssociationSet>
-    <AssociationSet Name="FK__LOGIN_NV__MANV__787EE5A0" Association="Self.FK__LOGIN_NV__MANV__787EE5A0">
+    <AssociationSet Name="FK__LOGIN_NV__MANV__68487DD7" Association="Self.FK__LOGIN_NV__MANV__68487DD7">
       <End Role="NhanVien" EntitySet="NhanVien" />
       <End Role="LOGIN_NV" EntitySet="LOGIN_NV" />
     </AssociationSet>
-    <AssociationSet Name="FK__PhieuMuon__MaNV__5EBF139D" Association="Self.FK__PhieuMuon__MaNV__5EBF139D">
+    <AssociationSet Name="FK__PhieuMuon__MaNV__4CA06362" Association="Self.FK__PhieuMuon__MaNV__4CA06362">
       <End Role="NhanVien" EntitySet="NhanVien" />
       <End Role="PhieuMuon" EntitySet="PhieuMuon" />
     </AssociationSet>
-    <AssociationSet Name="FK__PhieuMuon__MaThe__5FB337D6" Association="Self.FK__PhieuMuon__MaThe__5FB337D6">
+    <AssociationSet Name="FK__PhieuMuon__MaThe__4D94879B" Association="Self.FK__PhieuMuon__MaThe__4D94879B">
       <End Role="TheDocGia" EntitySet="TheDocGia" />
       <End Role="PhieuMuon" EntitySet="PhieuMuon" />
     </AssociationSet>
-    <AssociationSet Name="FK__PhieuNhap__MaNCC__5441852A" Association="Self.FK__PhieuNhap__MaNCC__5441852A">
+    <AssociationSet Name="FK__PhieuNhap__MaNCC__4222D4EF" Association="Self.FK__PhieuNhap__MaNCC__4222D4EF">
       <End Role="NhaCungCap" EntitySet="NhaCungCap" />
       <End Role="PhieuNhapSach" EntitySet="PhieuNhapSach" />
     </AssociationSet>
-    <AssociationSet Name="FK__PhieuNhapS__MaNV__534D60F1" Association="Self.FK__PhieuNhapS__MaNV__534D60F1">
+    <AssociationSet Name="FK__PhieuNhapS__MaNV__412EB0B6" Association="Self.FK__PhieuNhapS__MaNV__412EB0B6">
       <End Role="NhanVien" EntitySet="NhanVien" />
       <End Role="PhieuNhapSach" EntitySet="PhieuNhapSach" />
     </AssociationSet>
-    <AssociationSet Name="FK__PhieuThanh__MaDV__71D1E811" Association="Self.FK__PhieuThanh__MaDV__71D1E811">
+    <AssociationSet Name="FK__PhieuThanh__MaDV__5FB337D6" Association="Self.FK__PhieuThanh__MaDV__5FB337D6">
       <End Role="DonViTL" EntitySet="DonViTL" />
       <End Role="PhieuThanhLy" EntitySet="PhieuThanhLy" />
     </AssociationSet>
-    <AssociationSet Name="FK__PhieuThanh__MaNV__70DDC3D8" Association="Self.FK__PhieuThanh__MaNV__70DDC3D8">
+    <AssociationSet Name="FK__PhieuThanh__MaNV__5EBF139D" Association="Self.FK__PhieuThanh__MaNV__5EBF139D">
       <End Role="NhanVien" EntitySet="NhanVien" />
       <End Role="PhieuThanhLy" EntitySet="PhieuThanhLy" />
     </AssociationSet>
-    <AssociationSet Name="FK__PhieuTra__MaNV__66603565" Association="Self.FK__PhieuTra__MaNV__66603565">
+    <AssociationSet Name="FK__PhieuTra__MaNV__5535A963" Association="Self.FK__PhieuTra__MaNV__5535A963">
       <End Role="NhanVien" EntitySet="NhanVien" />
       <End Role="PhieuTra" EntitySet="PhieuTra" />
     </AssociationSet>
-    <AssociationSet Name="FK__PhieuTra__MaThe__6754599E" Association="Self.FK__PhieuTra__MaThe__6754599E">
+    <AssociationSet Name="FK__PhieuTra__MaPM__5441852A" Association="Self.FK__PhieuTra__MaPM__5441852A">
+      <End Role="PhieuMuon" EntitySet="PhieuMuon" />
+      <End Role="PhieuTra" EntitySet="PhieuTra" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PhieuTra__MaThe__5629CD9C" Association="Self.FK__PhieuTra__MaThe__5629CD9C">
       <End Role="TheDocGia" EntitySet="TheDocGia" />
       <End Role="PhieuTra" EntitySet="PhieuTra" />
     </AssociationSet>
-    <AssociationSet Name="FK__TheDocGia__MaDG__4E88ABD4" Association="Self.FK__TheDocGia__MaDG__4E88ABD4">
+    <AssociationSet Name="FK__TheDocGia__MaDG__3C69FB99" Association="Self.FK__TheDocGia__MaDG__3C69FB99">
       <End Role="DocGia" EntitySet="DocGia" />
       <End Role="TheDocGia" EntitySet="TheDocGia" />
     </AssociationSet>
-    <AssociationSet Name="FK__TheDocGia__MaNV__4D94879B" Association="Self.FK__TheDocGia__MaNV__4D94879B">
+    <AssociationSet Name="FK__TheDocGia__MaNV__3B75D760" Association="Self.FK__TheDocGia__MaNV__3B75D760">
       <End Role="NhanVien" EntitySet="NhanVien" />
       <End Role="TheDocGia" EntitySet="TheDocGia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TT_SACH__MASACH__6B24EA82" Association="Self.FK__TT_SACH__MASACH__6B24EA82">
+      <End Role="Sach" EntitySet="Sach" />
+      <End Role="TT_SACH" EntitySet="TT_SACH" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

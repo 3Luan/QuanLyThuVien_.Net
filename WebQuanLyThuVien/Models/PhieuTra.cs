@@ -24,10 +24,12 @@ namespace WebQuanLyThuVien.Models
         public Nullable<System.DateTime> NgayTra { get; set; }
         public Nullable<int> MaNV { get; set; }
         public Nullable<int> MaThe { get; set; }
+        public Nullable<int> MaPM { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietPT> ChiTietPTs { get; set; }
         public virtual NhanVien NhanVien { get; set; }
+        public virtual PhieuMuon PhieuMuon { get; set; }
         public virtual TheDocGia TheDocGia { get; set; }
     }
 }

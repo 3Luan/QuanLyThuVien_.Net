@@ -1,0 +1,38 @@
+﻿@model WebQuanLyThuVien.Models.LOGIN_DG
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@*Form đăng nhập*@
+<div class="container bg-gradient mb-3 mt-3" style="border:groove; max-width:700px; background-color:azure ">
+    <h2 style="font-family:'Times New Roman', Times, serif; text-align:center; color:orangered">Đăng nhập</h2>
+
+    <form method="post">
+        <div class="mb-3 mt-3">
+            <label for="uname" class="form-label" style="font-family:'Times New Roman', Times, serif; font-size:large; color:orangered">Tên đăng nhập: </label>
+            <input type="text" class="form-control" style="font-family:'Times New Roman';" id="uname" placeholder="Nhập tên đăng nhập..." name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label" style="font-family:'Times New Roman', Times, serif; font-size:large; color:orangered">Mật khẩu:</label>
+            <input type="password" class="form-control" id="pwd" style="font-family:'Times New Roman'" placeholder="Nhập mật khẩu..." name="pswd" required>
+            <div class="valid-feedback">Valid.</div>
+        </div>
+
+        <p style="color:red">@ViewBag.error</p>
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="~/User/UpdatePassWord" style="text-decoration: underline">Quên mật khẩu</a>
+            <button type="submit" class="btn btn-primary" style="align-items: center; text-align: center; margin: auto; display: block;">Đăng nhập</button>
+            <a href="~/User/DangKy" style="text-decoration: underline">Tạo tài khoản</a>
+        </div>
+
+        <p></p>
+    </form>
+</div>
+@*Hết form đăng nhập*@
+
+

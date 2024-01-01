@@ -16,7 +16,6 @@ namespace WebQuanLyThuVien.Models
     {
         public string USERNAME_NV { get; set; }
         public string PASSWORD_NV { get; set; }
-        public string HoTen_NV { get; set; }
         public Nullable<int> MANV { get; set; }
     
         public virtual NhanVien NhanVien { get; set; }

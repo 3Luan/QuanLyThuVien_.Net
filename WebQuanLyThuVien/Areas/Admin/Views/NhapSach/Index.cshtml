@@ -1,0 +1,1288 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Hiển thị danh sách NhanViens -->
+<section class="content">
+    <div class="container-fluid pt-4">
+        <div class="row">
+
+            <!-- Tạo phiếu nhập sách -->
+            <div class="col-8" style="height: 80vh;">
+                <div class="card" style="height: 100%;">
+                    <div class="card-header">
+                        <div class="form-row">
+                            <div class="col-6">
+                                <h3 class="text-center text-blue text-bold"> Nhập Sách </h3>
+                            </div>
+                            <div class="">
+                                <button type="submit" class="btn btn-primary taoPhieuNhap" id="taoPhieuNhap" onclick="taoPhieuNhap()">Tạo phiếu nhập</button>
+                            </div>
+                            <div class="pl-2 pr-2">
+                                <button type="button" class="btn btn-warning lamMoiSach" id="lamMoiButton" onclick="lamMoi()">Làm mới</button>
+                            </div>
+                            <div class="">
+                                <button type="button" class="btn btn-primary themSachMoiButton" id="themSachMoiButton" onclick="showInputThemSachMoi()">Thêm sách mới</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body" style="overflow-y: auto;">
+                        <form>
+
+                            <div class="form-row">
+                                <!--Mã nhà cung cấp-->
+                                <div class="form-group col">
+                                    <label for="name">Mã NCC:</label>
+                                    <input type="text" class="form-control" id="MaNCC" name="MaNCC" readonly>
+                                </div>
+
+                                <!--Mã nhân viên-->
+                                <div class="form-group col">
+                                    <label for="MaNhanVien">Mã NV:</label>
+                                    <input type="text" class="form-control" id="MaNhanVien" name="MaNhanVien" readonly>
+                                </div>
+
+                                <!--Ngày nhập sách-->
+                                <div class="form-group col">
+                                    <label for="NgayNhap">Ngày nhập:</label>
+                                    <input type="date" class="form-control" id="NgayNhap" name="NgayNhap" readonly>
+                                </div>
+
+                                <!--SDT nhà cc-->
+                                <div class="form-group col">
+                                    <label for="SDT">Số điện thoại:</label>
+                                    <input type="text" class="form-control" id="SDT" name="SDT" readonly>
+                                </div>
+                            </div>
+
+                            <!--Tên nhà cung cấp-->
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="TenNCC">Tên nhà cung cấp:</label>
+                                    <input type="text" class="form-control" id="TenNCC" name="TenNCC" readonly>
+                                </div>
+
+                            </div>
+
+                            <!-- Địa chỉ-->
+                            <div class="form-row">
+                                <div class="form-group col-8">
+                                    <label for="DiaChi">Địa chỉ:</label>
+                                    <input type="text" class="form-control" id="DiaChi" name="DiaChi" readonly>
+                                </div>
+
+                                <div class="form-group col-4">
+                                    <label for="tongTienNhap">Tổng tiền nhập:</label>
+                                    <input type="text" class="form-control" id="tongTienNhap" name="tongTienNhap" readonly>
+                                </div>
+
+                            </div>
+
+                            <!--Danh sách sách nhập-->
+                            <div class="text-center">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã</th>
+                                            <th>Tên</th>
+                                            <th>T/loại</th>
+                                            <th>T/giả</th>
+                                            <th>N/ngữ</th>
+                                            <th>NhàXB</th>
+                                            <th>NămXB</th>
+                                            <th>S/Lượng</th>
+                                            <th>Giá/1</th>
+                                            <th>Thao tác</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="danhSachSachNhap">
+                                        @*@foreach (var item in ViewData["ListSachNhap"] as List<WebQuanLyThuVien.Areas.Admin.Data.DTO_Sach_Nhap> ?? new List<WebQuanLyThuVien.Areas.Admin.Data.DTO_Sach_Nhap>())
+                                            {
+                                                <tr class="sachNhap-row" data-ma-sach="@item.maSach">
+                                                    <td>@item.maSach</td>
+                                                    <td>@item.tenSach</td>
+                                                    <td>@item.theLoai</td>
+                                                    <td>@item.ngonNgu</td>
+                                                    <td>@item.tacGia</td>
+                                                    <td>@item.nhaXB</td>
+                                                    <td>@item.namXB</td>
+                                                    <td>@item.soLuong</td>
+                                                    <td>@item.giaSach</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-danger xoaSachNhap" id="xoaSachNhap">Xóa</button>
+                                                    </td>
+                                                </tr>
+                                            }*@
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sách và Thông tin nhà cung cấp -->
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+
+                        <!--btn thông tin nhà cung cấp-->
+                        <button id="thongTinNCCButton" class="btn btn-primary" onclick="changeTableShow(thongTinNCCTable, thongTinSachTable)">
+                            Thông Tin NCC
+                        </button>
+
+                        <!--btn thêm nhà cung cấp-->
+                        <button id="themNCCButton" class="btn btn-secondary" onclick="btnShowModalThemNCC()">
+                            Thêm NCC
+                        </button>
+
+                        <!--btn thông tin sách-->
+                        <button id="thongTinSachButton" class="btn btn-primary" onclick="changeTableShow(thongTinSachTable, thongTinNCCTable)">
+                            Sách có sẵn
+                        </button>
+                    </div>
+
+                    <!--Form search-->
+                    <div class="card-tools">
+                        <div class="input-group input-group-sm pt-2" style="width: 100%">
+                            <input type="text"
+                                   name="table_search"
+                                   class="form-control float-right"
+                                   placeholder="Search" id="inputSearch" onkeypress="handleKeyPress(event)" />
+
+                            <div class="input-group-append">
+                                <button type="submit" onclick="search()" class="btn btn-default">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!--Body table ncc-->
+                        <div class="card-body table-responsive p-0"
+                             style="height: 66vh" id="thongTinNCCTable">
+                            <table class="table table-head-fixed table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Mã</th>
+                                        <th>Tên NCC</th>
+                                        <th>SDT</th>
+                                        <th>Địa chỉ</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="danhSachNCC">
+                                    @*@foreach (var item in ViewData["Ncc"] as List<WebQuanLyThuVien.Models.NhaCungCap>)
+                                        {
+                                            <tr class="ncc-row" aria-expanded="false" data-widget="expandable-table" data-ma-sach="@item.MaNCC">
+                                                <td>@item.MaNCC</td>
+                                                <td>@item.TenNCC</td>
+                                                <td>@item.sdtNCC</td>
+                                                <td>@item.DiaChiNCC</td>
+                                            </tr>
+                                        }*@
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!--Body table sách-->
+                        <div class="card-body table-responsive p-0"
+                             style="height: 66vh" id="thongTinSachTable">
+                            <table class="table table-head-fixed table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Mã</th>
+                                        <th>Tên sách</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="danhSachSach">
+                                    @*@foreach (var item in ViewData["Sach"] as List<WebQuanLyThuVien.Models.Sach>)
+                                        {
+                                            <tr class="sach-row" aria-expanded="false" data-widget="expandable-table">
+                                                <td>@item.MaSach</td>
+                                                <td>@item.TenSach</td>
+                                            </tr>
+                                        }*@
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal hiển thị chi tiết sách -->
+<div class="modal fade bd-example-modal-lg" id="showChiTietSachModal" tabindex="-1" role="dialog" aria-labelledby="showChiTietSachModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+            <!-- Header -->
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 text-blue" style="font-weight: bold;" id="">Chi Tiết Sách</h4>
+            </div>
+
+            <!-- Body -->
+            <form class="modal-body p-4">
+                <div class="form-row">
+                    <!--Mã sách-->
+                    <div class="form-group col">
+                        <label>Mã sách:</label>
+                        <input class="form-control" id="maSachModal" readonly>
+                    </div>
+
+                    <!--Số lượng hiện tại-->
+                    <div class="form-group col">
+                        <label>S/Lượng hiện tại:</label>
+                        <input class="form-control" id="soLuongHienTaiModal" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--Tên sách-->
+                    <div class="form-group col">
+                        <label>Tên sách:</label>
+                        <input class="form-control" id="tenSachModal" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--Thể loại-->
+                    <div class="form-group col">
+                        <label>Thể loại:</label>
+                        <input class="form-control" id="theLoaiModal" readonly>
+                    </div>
+
+                    <!--ngôn ngữ-->
+                    <div class="form-group col">
+                        <label>Ngôn ngữ:</label>
+                        <input class="form-control" id="ngonNguModal" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--Tác giả-->
+                    <div class="form-group col">
+                        <label>Tác giả:</label>
+                        <input class="form-control" id="tacGiaModal" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--Nhà xuất bản-->
+                    <div class="form-group col">
+                        <label>Nhà xuất bản:</label>
+                        <input class="form-control" id="nhaXuatBanModal" readonly>
+                    </div>
+
+                    <!--Năm xuất bản-->
+                    <div class="form-group col">
+                        <label>Năm xuất bản:</label>
+                        <input class="form-control" id="namXuatBanModal" readonly>
+                    </div>
+                </div>
+
+            </form>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Đóng </button>
+                <button type="button" class="btn btn-primary" onclick="nhapThemSoLuongVaGiaSach()"> Thêm sách </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal nhập thông tin sách mới-->
+<div class="modal fade bd-example-modal-lg" id="inputSachModal" tabindex="-1" role="dialog" aria-labelledby="inputSachModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+            <!-- Header -->
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 text-blue" style="font-weight: bold;" id="">Nhập thông tin Sách</h4>
+            </div>
+
+            <!-- Body -->
+            <form class="modal-body p-4">
+
+                <div class="form-row">
+                    <!--Tên sách-->
+                    <div class="form-group col">
+                        <label>Tên sách:</label>
+                        <input class="form-control" id="inputTenSachModal">
+                    </div>
+
+                    <!--Tác giả-->
+                    <div class="form-group col">
+                        <label>Tác giả:</label>
+                        <input class="form-control" id="inputTacGiaModal">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--Thể loại-->
+                    <div class="form-group col">
+                        <label>Thể loại:</label>
+                        <select class="form-control" id="inputTheLoaiModal">
+                            <option>Chọn thể loại</option>
+                            <option value="Truyện ngắn">Truyện ngắn</option>
+                            <option value="Truyện thiếu nhi">Truyện thiếu nhi</option>
+                            <option value="Tiểu thuyết">Tiểu thuyết</option>
+                            <option value="Ngôn tình">Ngôn tình</option>
+                            <option value="Sách giáo khoa">Sách giáo khoa</option>
+                            <option value="Sách tham khảo">Sách tham khảo</option>
+                            <option value="Văn học">Văn học</option>
+                            <option value="Sách ngoại ngữ">Sách ngoại ngữ</option>
+                            <option value="Kỹ năng sống">Kỹ năng sống</option>
+                        </select>
+                    </div>
+
+                    <!--ngôn ngữ-->
+                    <div class="form-group col">
+                        <label>Ngôn ngữ:</label>
+                        <select class="form-control" id="inputNgonNguModal">
+                            <option>Chọn ngôn ngữ</option>
+                            <option value="Tiếng việt">Tiếng việt</option>
+                            <option value="Tiếng anh">Tiếng anh</option>
+                            <option value="Tiếng hàn">Tiếng hàn</option>
+                            <option value="Tiếng trung">Tiếng trung</option>
+                            <option value="Tiếng pháp">Tiếng pháp</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--Nhà xuất bản-->
+                    <div class="form-group col">
+                        <label>Nhà xuất bản:</label>
+                        <input class="form-control" id="inputNhaXuatBanModal">
+                    </div>
+
+                    <!--Năm xuất bản-->
+                    <div class="form-group col">
+                        <label for="inputNamXuatBanModal">Năm xuất bản:</label>
+                        <select class="form-control" id="inputNamXuatBanModal">
+                            <option value="">Chọn năm xuất bản</option>
+                            <script>
+                                var currentYear = new Date().getFullYear();
+                                var startYear = 1500;
+                                for (var year = currentYear; year >= startYear; year--) {
+                                    document.write('<option value="' + year + '">' + year + '</option>');
+                                }
+                            </script>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--Số lượng-->
+                    <div class="form-group col">
+                        <label>Số lượng:</label>
+                        <input type="number" class="form-control" id="inputSoLuongModal">
+                    </div>
+
+                    <!--Giá sách-->
+                    <div class="form-group col">
+                        <label>Giá / 1 sách:</label>
+                        <input type="number" class="form-control" id="inputGiaSachModal">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!-- Hiển thị hình ảnh -->
+                    <div class="form-group">
+                        <label>Hình ảnh:</label>
+                        <input type="file" class="form-control-file" id="inputHinhAnhModal" accept="image/*" onchange="hienThiAnh()">
+                        <img id="hinhAnhPreview" class="img-fluid mt-2" style="max-height: 200px;" alt="Hình ảnh preview">
+                    </div>
+
+
+                    <!-- Mô tả -->
+                    <div class="form-group col">
+                        <label>Mô tả:</label>
+                        <textarea class="form-control" id="inputMoTaModal" rows="3"></textarea>
+                    </div>
+                </div>
+
+            </form>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Đóng </button>
+                <button type="button" class="btn btn-primary" onclick="themSachMoi()"> Thêm sách </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal nhập số lượng và giá để thêm sách có sẵn-->
+<div class="modal fade" id="ThemSachCoSanModal" tabindex="-1" role="dialog" aria-labelledby="ThemSachCoSanModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-primary col-8" style="font-weight:bold;">Nhập thông tin</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label class="col-form-label">Số lượng sách muốn nhập thêm:</label>
+                        <input type="number" class="form-control" id="SoLuongSachThemModal" name="SoLuongSachThemModal" placeholder="Nhập số lượng">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Giá sách của 1 cuốn:</label>
+                        <input type="number" class="form-control" id="GiaSachThemModal" name="GiaSachThemModal" placeholder="Nhập giá 1 cuốn">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary" onclick="themSachCoSan()">Thêm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Thêm nhà cung cấp-->
+<div class="modal fade" id="ThemNccModal" tabindex="-1" role="dialog" aria-labelledby="ThemNccModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-primary col-8" style="font-weight:bold;">Thêm Nhà Cung Cấp</h4>
+                <div class="col-3">
+                    <button type="button" class="btn btn-warning lamMoiSach" id="lamMoiButtonModal" onclick="">Làm mới</button>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label class="col-form-label">Tên nhà cung cấp:</label>
+                        <input type="text" class="form-control" id="TenNccModal">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Số điện thoại:</label>
+                        <input type="text" class="form-control" id="SdtNccModal">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Địa chỉ:</label>
+                        <input type="text" class="form-control" id="DiaChiNccModal">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary" onclick="btnThemNCC()">Thêm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal error-->
+<div class="modal fade" id="ModalError" tabindex="-1" role="dialog" aria-labelledby="ModalError" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center bg-danger">
+                <span class="" id="contentModalError"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal success-->
+<div class="modal fade" id="ModalSuccess" tabindex="-1" role="dialog" aria-labelledby="ModalSuccess" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center bg-green">
+                <span class="" id="contentModalSuccess"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        var listSachNhap = [];
+
+
+
+        function searchNhaCungCap() {
+            // Get the search keyword from the input field
+            var keyword = document.getElementById("inputSearch").value.toLowerCase();
+
+            // Get the rows of the table danhSachNCC
+            var nccRows = document.querySelectorAll("#danhSachNCC tr.ncc-row");
+
+            // Iterate through each row to check for the keyword
+            nccRows.forEach(function (row) {
+                // Get the content of each cell in the row
+
+                var tenNCC = row.querySelector("td:nth-child(2)").innerText.toLowerCase();
+                var sdtNCC = row.querySelector("td:nth-child(3)").innerText.toLowerCase();
+
+                // Check if the keyword appears in any of the cells
+                if ( tenNCC.includes(keyword) || sdtNCC.includes(keyword) ) {
+                    // Display the row if the keyword is found
+                    row.style.display = "table-row";
+                } else {
+                    // Hide the row if the keyword is not found
+                    row.style.display = "none";
+                }
+            });
+        }
+        function searchSachSan() {
+            // Get the search keyword from the input field
+            var keyword = document.getElementById("inputSearch").value.toLowerCase();
+
+            // Get the rows of the table thongTinSachTable
+            var sachRows = document.querySelectorAll("#thongTinSachTable tr.sach-row");
+
+            // Iterate through each row to check for the keyword
+            sachRows.forEach(function (row) {
+                // Get the content of each cell in the row
+                var maSach = row.querySelector("td:nth-child(1)").innerText.toLowerCase();
+                var tenSach = row.querySelector("td:nth-child(2)").innerText.toLowerCase();
+
+                // Check if the keyword appears in any of the cells
+                if (maSach.includes(keyword) || tenSach.includes(keyword)) {
+                    // Display the row if the keyword is found
+                    row.style.display = "table-row";
+                } else {
+                    // Hide the row if the keyword is not found
+                    row.style.display = "none";
+                }
+            });
+        }
+        function search() {
+            if (thongTinNCCTable.style.display = "block" && thongTinSachTable.style.display == "none") {
+                searchNhaCungCap();
+            }
+            else {
+                searchSachSan();
+            }
+        }
+        function handleKeyPress(event) {
+            // Kiểm tra xem người dùng đã nhấn phím "Enter" chưa (mã ASCII: 13)
+            if (event.keyCode === 13) {
+                // Ngăn chặn hành động mặc định của phím "Enter" trên form
+                event.preventDefault();
+            }
+            if (thongTinNCCTable.style.display = "block" && thongTinSachTable.style.display == "none") {
+                searchNhaCungCap();
+            }
+            else {
+                searchSachSan();
+            }
+
+        }
+
+
+        //=====================  Set dữ liệu mặc định  =====================
+        // Lấy ngày hiện tại
+        var currentDate = new Date();
+
+        // Định dạng ngày hiện tại thành chuỗi YYYY-MM-DD
+        var formatCurrentDate = currentDate.toISOString().slice(0, 10);
+
+        // Set ngày mượn là ngày hiện tại
+        document.getElementById("NgayNhap").value = formatCurrentDate;
+        document.getElementById("tongTienNhap").value = formatMoney(0);
+
+        // Hàm format tiền
+        function formatMoney(number) {
+            return number.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+        }
+
+        // Set mã nhân viên
+        var manv = @HttpContext.Current.Session["manv"]
+        document.getElementById("MaNhanVien").value = manv;
+
+        function changeTableShow(tableToShow, tableToHide) {
+            tableToShow.style.display = "block";
+            tableToHide.style.display = "none";
+        }
+
+        // Lấy các phần tử của bảng
+        var thongTinNCCTable = document.getElementById("thongTinNCCTable");
+        var thongTinSachTable = document.getElementById("thongTinSachTable");
+
+        // Mặc định chọn nút "Thông tin độc giả"
+        changeTableShow(thongTinNCCTable, thongTinSachTable);
+
+
+        //=====================  Lấy dữ liệu khi click vào hàng trong table tt nhà cung cấp  =====================
+        var tableContainer = document.getElementById("thongTinNCCTable");
+
+        tableContainer.addEventListener("click", function (event) {
+            var targetRow = event.target.closest(".ncc-row");
+
+            if (targetRow) {
+                var maNCC = targetRow.querySelector("td:nth-child(1)").textContent;
+                var tenNCC = targetRow.querySelector("td:nth-child(2)").textContent;
+                var sdt = targetRow.querySelector("td:nth-child(3)").textContent;
+                var diaChi = targetRow.querySelector("td:nth-child(4)").textContent;
+
+                // Update input values
+                document.getElementById("MaNCC").value = maNCC;
+                document.getElementById("TenNCC").value = tenNCC;
+                document.getElementById("SDT").value = sdt;
+                document.getElementById("DiaChi").value = diaChi;
+            }
+        });
+
+
+
+        //=====================  Thêm nhà cung cấp  =====================
+        function LamMoiNCC()
+        {
+            document.getElementById("TenNccModal").value = "";
+            document.getElementById("SdtNccModal").value = "";
+            document.getElementById("DiaChiNccModal").value = "";
+        }
+
+        function btnShowModalThemNCC()
+        {
+            document.getElementById("TenNccModal").value = "";
+            document.getElementById("SdtNccModal").value = "";
+            document.getElementById("DiaChiNccModal").value = "";
+            $("#ThemNccModal").modal("show");
+        }
+
+        function btnThemNCC() {
+            var tenNcc = document.getElementById("TenNccModal").value;
+
+            var sdtNcc = document.getElementById("SdtNccModal").value;
+
+            var diaChiNcc = document.getElementById("DiaChiNccModal").value;
+
+            if (!tenNcc || !sdtNcc || !diaChiNcc) {
+                 document.getElementById("contentModalError").innerHTML = "Thông tin nhà cung cấp không được để trống!";
+                 $("#ModalError").modal("show");
+            } else {
+                var phoneRegex = /^\d{10,11}$/;
+                if (!phoneRegex.test(sdtNcc)) {
+                    document.getElementById("contentModalError").innerHTML = "Hãy nhập đúng định dạng số điện thoại!";
+                    $("#ModalError").modal("show");
+                } else {
+                    var confirmed = confirm("Bạn có chắc muốn thêm nhà cung cấp không?");
+                    if (confirmed) {
+                        $.ajax({
+                            url: '@Url.Action("ThemNhaCungCap", "NhapSach")',
+                            type: 'POST',
+                            data: {
+                                tenNcc: tenNcc,
+                                sdtNcc: sdtNcc,
+                                diaChiNcc: diaChiNcc,
+                            },
+                            success: function (response) {
+                                if (response.success) {
+
+                                    document.getElementById("TenNccModal").value = "";
+                                    document.getElementById("SdtNccModal").value = "";
+                                    document.getElementById("DiaChiNccModal").value = "";
+
+                                    GetAllNhaCungCap();
+
+                                    document.getElementById("contentModalSuccess").innerHTML = "Thêm nhà cung cấp thành công";
+                                    $("#ModalSuccess").modal("show");
+                                    $("#ThemNccModal").modal("hide");
+                                } else {
+                                    document.getElementById("contentModalError").innerHTML = "Lỗi khi thêm, Hãy thử lại!";
+                                    $("#ModalError").modal("show");
+                                }
+                            },
+                            error: function () {
+                                alert("Lỗi khi gửi yêu cầu đến máy chủ.");
+                            }
+                        });
+                    }
+                }
+            }
+        }
+
+
+
+        ////=====================  Xử lý sự kiện khi click vào 1 hàng  trong table  =====================
+        var tableContainerSach = document.getElementById("thongTinSachTable");
+        tableContainerSach.addEventListener("click", function (event) {
+            var targetRow = event.target.closest(".sach-row");
+
+            if (targetRow) {
+
+                // Lấy thông tin
+                var maS = targetRow.querySelector("td:nth-child(1)").textContent;
+
+                // Điền modal với dữ liệu
+                document.getElementById("maSachModal").value = maS;
+
+                var maSach = parseInt(maS);
+
+                $.ajax({
+                    url: '@Url.Action("ChiTietSach", "NhapSach")',
+                    type: 'POST',
+                    data: {
+                        id: maSach,
+                    },
+                    success: function (data) {
+                        if (data.success) {
+
+                            var sach = data.data;
+
+                            console.log("Thông tin sách: ", sach);
+
+                            document.getElementById("soLuongHienTaiModal").value = sach.SoLuongHIENTAI;
+                            document.getElementById("tenSachModal").value = sach.TenSach;
+                            document.getElementById("theLoaiModal").value = sach.TheLoai;
+                            document.getElementById("ngonNguModal").value = sach.NgonNgu;
+                            document.getElementById("tacGiaModal").value = sach.TacGia;
+                            document.getElementById("nhaXuatBanModal").value = sach.NXB;
+                            document.getElementById("namXuatBanModal").value = sach.NamXB;
+
+                            // Mở modal
+                            $("#showChiTietSachModal").modal("show");
+                        } else {
+                            console.error("Không thành công trong việc nhận dữ liệu từ server.");
+                        }
+                    },
+                    error: function (error) {
+                        console.error("Error:", error);
+                    }
+                });
+            }
+        });
+
+
+        ////=====================  Xử lý sự kiện khi click vào 1 hàng  trong table  =====================
+
+        //// Lấy danh sách các hàng của table
+        //var sachRows = document.querySelectorAll(".sach-row");
+
+        //// Bắt sự kiện click cho từng hàng sách
+        //sachRows.forEach(function (row) {
+        //    row.addEventListener("click", function () {
+
+        //    });
+        //});
+
+
+
+
+        //===================== Hàm Thêm Sách  =====================
+        var maSachMoi = -1;
+        var tongTienNhap = 0;
+        function ThemSach(idMaSach, idTenSach, idTheLoai, idNgonNgu, idTacGia, idNhaXB, idNamXB, idSoLuong, idGiaSach)
+        {
+            var maSach
+            idMaSach == "maSachModal" ? maSach = document.getElementById(idMaSach).value : maSach = maSachMoi--;
+            var tenSach = document.getElementById(idTenSach).value;
+            var theLoai = document.getElementById(idTheLoai).value;
+            var ngonNgu = document.getElementById(idNgonNgu).value;
+            var tacGia = document.getElementById(idTacGia).value;
+            var nhaXB = document.getElementById(idNhaXB).value;
+            var namXB = document.getElementById(idNamXB).value;
+
+            var soLuong = document.getElementById(idSoLuong).value;
+            var giaSach = document.getElementById(idGiaSach).value;
+
+            tongTienNhap = tongTienNhap + giaSach * soLuong
+
+            document.getElementById("tongTienNhap").value = formatMoney(tongTienNhap);
+
+            if (!tenSach.trim() || !theLoai.trim() || !ngonNgu.trim() || !tacGia.trim() || !nhaXB.trim() || !namXB.trim()) {
+                document.getElementById("contentModalError").innerHTML = "Hãy nhập đủ thông tin sách!";
+                $("#ModalError").modal("show");
+            } else if (!Number.isInteger(Number(soLuong)) || soLuong <= 0) {
+                document.getElementById("contentModalError").innerHTML = "Hãy nhập đúng số lượng sách nhập!";
+                $("#ModalError").modal("show");
+            } else if (isNaN(giaSach) || giaSach <= 0) {
+                document.getElementById("contentModalError").innerHTML = "Hãy nhập đúng giá sách!";
+                $("#ModalError").modal("show");
+            } else {
+                $.ajax({
+                    url: '@Url.Action("ThemSach", "NhapSach")',
+                    type: 'POST',
+                    data: {
+                        maSach: maSach,
+                        tenSach: tenSach,
+                        theLoai: theLoai,
+                        ngonNgu: ngonNgu,
+                        tacGia: tacGia,
+                        nhaXB: nhaXB,
+                        namXB: namXB,
+                        soLuong: soLuong,
+                        giaSach: giaSach,
+                    },
+                    success: function (data) {
+                        if (data) {
+                            // Cập nhật danh sách sách mượn trong view
+                            var danhSachSachNhap = $("#danhSachSachNhap");
+
+                            // Xóa nội dung bảng
+                            danhSachSachNhap.empty();
+
+
+                            $.each(data, function (index, item) {
+                                //var masachCell = item.maSach < 0 ? 'New' : item.maSach;
+                                var newRow = $(`
+                                  <tr class="sachNhap-row" data-ma-sach="${item.maSach}">
+                                    <td>${item.maSach < 0 ? 'New' : item.maSach}</td>
+                                    <td>${item.tenSach}</td>
+                                    <td>${item.theLoai}</td>
+                                    <td>${item.tacGia}</td>
+                                    <td>${item.ngonNgu}</td>
+                                    <td>${item.nhaXB}</td>
+                                    <td>${item.namXB}</td>
+                                    <td>${item.soLuong}</td>
+                                    <td>${item.giaSach}</td>
+                                    <td>
+                                      <button type="button" class="btn btn-danger xoaSachNhap" id="xoaSachNhap">Xóa</button>
+                                    </td>
+                                  </tr>
+                                `);
+
+
+                                danhSachSachNhap.append(newRow);
+                            });
+
+                            $("#ThemSachCoSanModal").modal("hide");
+
+                            $("#showChiTietSachModal").modal("hide");
+
+                            $("#inputSachModal").modal("hide");
+
+                            // Gọi hàm suKienXoaSach để cập nhật sự kiện xóa cho các hàng sách nhập
+                           // suKienXoaSach();
+                        }
+                    }
+                });
+            }
+        }
+
+
+        function ThemSachV2(idMaSach, idTenSach, idTheLoai, idNgonNgu, idTacGia, idNhaXB, idNamXB, idSoLuong, idGiaSach)
+        {
+            var maSach
+            idMaSach == "maSachModal" ? maSach = document.getElementById(idMaSach).value : maSach = maSachMoi--;
+            var tenSach = document.getElementById(idTenSach).value;
+            var theLoai = document.getElementById(idTheLoai).value;
+            var ngonNgu = document.getElementById(idNgonNgu).value;
+            var tacGia = document.getElementById(idTacGia).value;
+            var nhaXB = document.getElementById(idNhaXB).value;
+            var namXB = document.getElementById(idNamXB).value;
+
+            var soLuong = document.getElementById(idSoLuong).value;
+            var giaSach = document.getElementById(idGiaSach).value;
+
+            tongTienNhap = tongTienNhap + giaSach * soLuong
+
+            document.getElementById("tongTienNhap").value = formatMoney(tongTienNhap);
+
+            if (!tenSach.trim() || !theLoai.trim() || !ngonNgu.trim() || !tacGia.trim() || !nhaXB.trim() || !namXB.trim()) {
+                document.getElementById("contentModalError").innerHTML = "Hãy nhập đủ thông tin sách!";
+                $("#ModalError").modal("show");
+            } else if (!Number.isInteger(Number(soLuong)) || soLuong <= 0) {
+                document.getElementById("contentModalError").innerHTML = "Hãy nhập đúng số lượng sách nhập!";
+                $("#ModalError").modal("show");
+            } else if (isNaN(giaSach) || giaSach <= 0) {
+                document.getElementById("contentModalError").innerHTML = "Hãy nhập đúng giá sách!";
+                $("#ModalError").modal("show");
+            } else {
+                if (maSach < 0) { //sach mới
+                    var input = document.getElementById('inputHinhAnhModal');
+                    var moTa = document.getElementById("inputMoTaModal").value;
+
+
+                    if (!input.files || !input.files[0]) {
+                        document.getElementById("contentModalError").innerHTML = "Hãy chọn ảnh sách!";
+                        $("#ModalError").modal("show");
+                    } else if (!moTa.trim()) {
+                        document.getElementById("contentModalError").innerHTML = "Hãy nhập mô tả sách!";
+                        $("#ModalError").modal("show");
+                    } else {
+                        var file = input.files[0];
+                        //var ext = '.' + file.name.split('.').pop();
+                        //var name = tenSach.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
+                        //var nameImage = name + ext;
+
+                        //console.log("urlImage: ", urlImage);
+
+
+                        var index = listSachNhap.findIndex((element) => element.maSach == maSach);
+                        if (index == -1) { // không tìm thấy
+                            listSachNhap.push({
+                                maSach: maSach,
+                                tenSach: tenSach,
+                                theLoai: theLoai,
+                                tacGia: tacGia,
+                                nhaXB: nhaXB,
+                                namXB: namXB,
+                                soLuong: soLuong,
+                                giaSach: giaSach,
+                                ngonNgu: ngonNgu,
+                                fileImage: file,
+                                moTa: moTa
+                            });
+
+                            console.log(listSachNhap);
+                        } else {
+
+                            listSachNhap[index].giaSach = giaSach;
+                            listSachNhap[index].soLuong = soLuong;
+                            console.log(listSachNhap);
+                        }
+                    }
+                } else { // sach có sẵn
+                    var index = listSachNhap.findIndex((element) => element.maSach == maSach);
+                    if (index == -1) { // không tìm thấy
+                        listSachNhap.push({
+                            maSach: maSach,
+                            tenSach: tenSach,
+                            theLoai: theLoai,
+                            tacGia: tacGia,
+                            nhaXB: nhaXB,
+                            namXB: namXB,
+                            soLuong: soLuong,
+                            giaSach: giaSach,
+                            ngonNgu: ngonNgu
+                        });
+
+                        console.log(listSachNhap);
+                    } else {
+
+                        listSachNhap[index].giaSach = giaSach;
+                        listSachNhap[index].soLuong = soLuong;
+                        console.log(listSachNhap);
+                    }
+                }
+
+
+                renderListSachNhap();
+
+                $("#ThemSachCoSanModal").modal("hide");
+
+                $("#showChiTietSachModal").modal("hide");
+
+                $("#inputSachModal").modal("hide");
+
+                // Gọi hàm suKienXoaSach để cập nhật sự kiện xóa cho các hàng sách nhập
+                //suKienXoaSach();
+            }
+
+        }
+
+
+        //=====================  Thêm Sách có sẵn  =====================
+        function nhapThemSoLuongVaGiaSach() {
+            document.getElementById("SoLuongSachThemModal").value = "";
+            document.getElementById("GiaSachThemModal").value = "";
+            $("#ThemSachCoSanModal").modal("show");
+        }
+
+        function themSachCoSan() {
+            ThemSachV2(
+                "maSachModal", "tenSachModal", "theLoaiModal",
+                "ngonNguModal", "tacGiaModal", "nhaXuatBanModal",
+                "namXuatBanModal", "SoLuongSachThemModal", "GiaSachThemModal"
+            )
+        }
+
+
+        //===================== show view Thêm sách mới =====================
+        function showInputThemSachMoi() {
+            document.getElementById("inputTenSachModal").value = "";
+            document.getElementById("inputTheLoaiModal").value = "Chọn thể loại";
+            document.getElementById("inputNgonNguModal").value = "Chọn ngôn ngữ";
+            document.getElementById("inputTacGiaModal").value = "";
+            document.getElementById("inputNhaXuatBanModal").value = "";
+            document.getElementById("inputNamXuatBanModal").value  = "Chọn năm xuất bản";
+
+            document.getElementById("inputSoLuongModal").value = "";
+            document.getElementById("inputGiaSachModal").value = "";
+            $("#inputSachModal").modal("show");
+        }
+        //=====================  btn Thêm Sách mới  =====================
+        function themSachMoi() {
+            ThemSachV2(
+                "", "inputTenSachModal", "inputTheLoaiModal",
+                "inputNgonNguModal", "inputTacGiaModal", "inputNhaXuatBanModal",
+                "inputNamXuatBanModal", "inputSoLuongModal", "inputGiaSachModal"
+            )
+        }
+
+
+        //===================== Hàm Làm mới danh sách sách nhập =====================
+        function lamMoiPhieuNhap() {
+            $.ajax({
+                url: '@Url.Action("LamMoiDanhSachSachNhap", "NhapSach")',
+                type: 'POST',
+                success: function (data) {
+                    if (data.success) {
+                        // Cập nhật giao diện
+                        var danhSachSachNhap = document.getElementById("danhSachSachNhap");
+                        danhSachSachNhap.innerHTML = "";
+
+                        document.getElementById("MaNCC").value = "";
+                        document.getElementById("TenNCC").value = "";
+                        document.getElementById("SDT").value = "";
+                        document.getElementById("DiaChi").value = "";
+                        document.getElementById("tongTienNhap").value = formatMoney(0);
+                    }
+                }
+            });
+        }
+
+        function lamMoi() {
+            //lamMoiPhieuNhap();
+
+            listSachNhap = [];
+            // Làm mới trang
+            //location.reload();
+        }
+
+
+        //=====================  Xử lý khi load lại trang  =====================
+        document.addEventListener("DOMContentLoaded", function () {
+            lamMoiPhieuNhap();
+        });
+
+
+        //===================== Xử lý Xóa sách nhập =====================
+        //function suKienXoaSach() {
+        //    // Lấy danh sách các hàng trong bảng
+        //    var danhSachSachNhapRows = document.querySelectorAll(".sachNhap-row");
+
+        //    // Gán sự kiện click cho nút xóa trên từng hàng
+        //    danhSachSachNhapRows.forEach(function (row) {
+        //        row.querySelector(".xoaSachNhap").addEventListener("click", function () {
+        //            var maSach = row.querySelector("td:nth-child(1)").textContent;
+
+        //            var isDeleting = confirm("Bạn có chắc chắn muốn xóa sách ra khỏi danh sách nhập!");
+        //            if (isDeleting) {
+        //                xoaSachNhap(maSach);
+        //            }
+        //        });
+        //    });
+        //}
+
+        // Hàm xóa 1 sách trong danh sách sách nhập
+        function xoaSachNhap(maSach) {
+            // Gửi yêu cầu AJAX đến controller để xóa sách
+            @*$.ajax({
+                url: '@Url.Action("XoaSachNhap", "NhapSach")',
+                type: 'POST',
+                data: { maSach: maSach },
+                success: function (result) {
+                    if (result.success) {
+                        // Xóa hàng chứa sách đã xóa khỏi bảng
+                        var rowToDelete = $(`tr[data-ma-sach="${maSach}"]`);
+                        rowToDelete.remove();
+
+                    } else {
+                        console.log('Xóa sách không thành công');
+                    }
+                }
+            });*@
+
+            var index = listSachNhap.findIndex((element) => element.maSach == maSach);
+            if (index != -1) {
+                listSachNhap.splice(index, 1);
+                renderListSachNhap();
+                console.log(listSachNhap);
+            }
+        }
+
+        //===================== Hàm tạo phiếu nhập =====================
+        function taoPhieuNhap() {
+            var maNCC = document.getElementById("MaNCC").value;
+            var maNhanVien = document.getElementById("MaNhanVien").value;
+            var ngayNhap = document.getElementById("NgayNhap").value;
+
+            if (!maNCC.trim()) {
+                document.getElementById("contentModalError").innerHTML = "Thông tin nhà cung cấp không được để trống!";
+                $("#ModalError").modal("show");
+            } else {
+                var confirmed = confirm("Bạn có chắc muốn tạo phiếu nhập không?");
+                if (confirmed) {
+
+                    var formData = new FormData();
+                    formData.append('MaNhaCungCap', maNCC);
+                    formData.append('MaNhanVien', maNhanVien);
+                    formData.append('NgayNhap', ngayNhap);
+
+                    listSachNhap.forEach((item, index) => {
+
+                        formData.append('listSachNhap[' + index + '].maSach', item.maSach);
+                        formData.append('listSachNhap[' + index + '].tenSach', item.tenSach);
+                        formData.append('listSachNhap[' + index + '].theLoai', item.theLoai);
+                        formData.append('listSachNhap[' + index + '].ngonNgu', item.ngonNgu);
+                        formData.append('listSachNhap[' + index + '].tacGia', item.tacGia);
+                        formData.append('listSachNhap[' + index + '].nhaXB', item.nhaXB);
+                        formData.append('listSachNhap[' + index + '].soLuong', item.soLuong);
+                        formData.append('listSachNhap[' + index + '].namXB', item.namXB);
+                        formData.append('listSachNhap[' + index + '].giaSach', item.giaSach);
+                        formData.append('listSachNhap[' + index + '].fileImage', item.fileImage);
+                        formData.append('listSachNhap[' + index + '].moTa', item.moTa);
+                        console.log(index + JSON.stringify(item));
+
+                    });
+
+                    $.ajax({
+                        url: '@Url.Action("TaoPhieuNhap", "NhapSach")',
+                        type: 'POST',
+                        processData: false,
+                        contentType: false,
+                        data: formData,
+                        //contentType: 'multipart/form-data',
+                        success: function (data) {
+                            if (data.success) {
+
+                                lamMoi();
+                                lamMoiPhieuNhap();
+
+
+                                document.getElementById("contentModalSuccess").innerHTML = "Nhập sách thành công!";
+                                GetAllSach();
+                                $("#ModalSuccess").modal("show");
+                                console.log('Tạo phiếu nhập: ', data);
+                            } else {
+                                document.getElementById("contentModalError").innerHTML = "Hãy thêm sách muốn nhập!";
+                                $("#ModalError").modal("show");
+                                console.log('Hãy thêm sách muốn nhập: ', data);
+                            }
+                        }
+                    });
+                }
+            }
+        }
+
+
+        function GetAllSach() {
+            $.ajax({
+                type: "GET",
+                url: '@Url.Action("GetAllSach", "NhapSach")',
+                dataType: 'json', // Đảm bảo dữ liệu trả về là JSON
+                success: function (res) {
+                    var render = "";
+
+                    $.each(res.Result, function (i, item) {
+                        render += '<tr class="sach-row" aria-expanded="false" data-widget="expandable-table" data-ma-sach=' + item.MaSach +'>';
+                        render += '<td>' + item.MaSach + '</td>';
+                        render += '<td>' + item.TenSach + '</td>';
+                        render += '</tr>';
+                    });
+
+                    let danhSachSach = document.getElementById("danhSachSach");
+                    danhSachSach.innerHTML = render;
+                },
+                error: function (status) {
+                    alert("Không tìm thấy dữ liệu");
+                }
+            });
+        }
+
+
+        function GetAllNhaCungCap() {
+            $.ajax({
+                type: "GET",
+                url: '@Url.Action("GetAllNhaCungCap", "NhapSach")',
+                dataType: 'json', // Đảm bảo dữ liệu trả về là JSON
+                success: function (res) {
+                    var render = "";
+
+                    $.each(res.Result, function (i, item) {
+                        render += '<tr class="ncc-row" aria-expanded="false" data-widget="expandable-table" data-ma-sach='+item.MaNCC+'>';
+                        render += '<td>' + item.MaNCC + '</td>';
+                        render += '<td>' + item.TenNCC + '</td>';
+                        render += '<td>' + item.sdtNCC + '</td>';
+                        render += '<td>' + item.DiaChiNCC + '</td>';
+
+                        render += '</tr>';
+                    });
+
+                    let danhSachNhaCungCap = document.getElementById("danhSachNCC");
+                    danhSachNhaCungCap.innerHTML = render;
+                },
+                error: function (status) {
+                    alert("Không tìm thấy dữ liệu");
+                }
+            });
+        }
+
+
+        $(document).ready(function () {
+            GetAllNhaCungCap(); // Gọi hàm khi trang đã sẵn sàng
+            GetAllSach();
+        });
+
+
+        function hienThiAnh() {
+            var input = document.getElementById('inputHinhAnhModal');
+            var imgPreview = document.getElementById('hinhAnhPreview');
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    imgPreview.src = e.target.result;
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+
+        function renderListSachNhap() {
+            var danhSachSachNhap = $("#danhSachSachNhap");
+            // Xóa nội dung bảng
+            danhSachSachNhap.empty();
+            $.each(listSachNhap, function (index, item) {
+                //var masachCell = item.maSach < 0 ? 'New' : item.maSach;
+                var newRow = $(`
+                                  <tr class="sachNhap-row" data-ma-sach="${item.maSach}">
+                                    <td>${item.maSach < 0 ? 'New' : item.maSach}</td>
+                                    <td>${item.tenSach}</td>
+                                    <td>${item.theLoai}</td>
+                                    <td>${item.tacGia}</td>
+                                    <td>${item.ngonNgu}</td>
+                                    <td>${item.nhaXB}</td>
+                                    <td>${item.namXB}</td>
+                                    <td>${item.soLuong}</td>
+                                    <td>${item.giaSach}</td>
+                                    <td>
+                                      <button type="button" class="btn btn-danger xoaSachNhap" id="xoaSachNhap" onclick="xoaSachNhapV2('${item.maSach}')">Xóa</button>
+                                    </td>
+                                  </tr>
+                                `);
+
+
+                danhSachSachNhap.append(newRow);
+            });
+        }
+
+        function xoaSachNhapV2(maSach) {
+            var index = listSachNhap.findIndex((element) => element.maSach == maSach);
+            if (index != -1) {
+
+                var isDeleting = confirm("Bạn có chắc chắn muốn xóa sách ra khỏi danh sách nhập!");
+                    if (isDeleting) {
+                        listSachNhap.splice(index, 1);
+                        renderListSachNhap();
+                        console.log(listSachNhap);
+                    }
+
+            }
+        }
+
+    </script>
+
+}

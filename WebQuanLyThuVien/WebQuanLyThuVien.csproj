@@ -46,12 +46,139 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BCrypt.Net, Version=0.1.5073.29922, Culture=neutral, PublicKeyToken=6bcd409ee6bc9292, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt-Official.0.1.109\lib\BCrypt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Authentication.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.Core, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Authentication.Core.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authorization, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Authorization.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authorization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authorization.Policy, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Authorization.Policy.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authorization.Policy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Extensions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Extensions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features, Version=5.0.17.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.5.0.17\lib\net461\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Core.2.2.5\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.ResponseCaching.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.ResponseCaching.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Routing, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Routing.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Routing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Routing.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Routing.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Routing.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.WebUtilities, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.WebUtilities.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.DotNet.PlatformAbstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.DotNet.PlatformAbstractions.2.1.0\lib\net45\Microsoft.DotNet.PlatformAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.2.2.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyModel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyModel.2.1.0\lib\net451\Microsoft.Extensions.DependencyModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Hosting.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.ObjectPool, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.ObjectPool.2.2.0\lib\netstandard2.0\Microsoft.Extensions.ObjectPool.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=5.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.5.0.1\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.Headers.2.2.0\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.5.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -169,17 +296,77 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\SessionConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DangKyMuonSachController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\KhoSachController.cs" />
+    <Compile Include="Areas\Admin\Controllers\NhapSachController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PhanQuyenController.cs" />
     <Compile Include="Areas\Admin\Controllers\PhieuMuonController.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PhieuTraController.cs" />
+    <Compile Include="Areas\Admin\Controllers\QuanLyMuonController.cs" />
+    <Compile Include="Areas\Admin\Controllers\QuanLyPhieuTraController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ThanhLySachController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TheDocGiaController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ThongTinDocGiaController.cs" />
+    <Compile Include="Areas\Admin\Data\ApiResponse.cs" />
+    <Compile Include="Areas\Admin\Data\DTO.cs" />
+    <Compile Include="Areas\Admin\Data\GetListPhieuMuonPaging.cs" />
+    <Compile Include="Areas\Admin\Data\GetListPhieuTraPaging.cs" />
+    <Compile Include="Areas\Admin\Data\KhoThanhLyDTO.cs" />
+    <Compile Include="Areas\Admin\Data\PagingResult.cs" />
+    <Compile Include="Areas\Admin\Data\PhieuMuon_DTO.cs" />
+    <Compile Include="Areas\Admin\Data\PhieuTra_DTO.cs" />
+    <Compile Include="Areas\Admin\Data\SachDTOcs.cs" />
+    <Compile Include="Areas\Admin\Data\SachMuonDTO.cs" />
+    <Compile Include="Areas\Admin\Interfaces\IDocGiaRepository.cs" />
+    <Compile Include="Areas\Admin\Interfaces\Services\IDangKySachMuonService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\Services\IDocGiaService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\Services\IDonViTLService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\Services\IKhoThanhLyService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\Services\INhaCungCapService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\Services\INhapSachService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\Services\IPhieuMuonCTPhieuMuonService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\Services\IPhieuMuonService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\Services\IPhieuThanhLyService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\Services\IPhieuTraCTPhieuTraService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\Services\IPhieuTraService.cs" />
+    <Compile Include="Areas\Admin\Repository\DocGiaRepository.cs" />
+    <Compile Include="Areas\Admin\Services\DangKyMuonSachService.cs" />
+    <Compile Include="Areas\Admin\Services\DocGiaService.cs" />
+    <Compile Include="Areas\Admin\Services\DonViTLService.cs" />
+    <Compile Include="Areas\Admin\Services\KhoThanhLyService.cs" />
+    <Compile Include="Areas\Admin\Services\NhaCungCapService.cs" />
+    <Compile Include="Areas\Admin\Services\NhapSachService.cs" />
+    <Compile Include="Areas\Admin\Services\PhieuMuonCTPhieuMuonService.cs" />
+    <Compile Include="Areas\Admin\Services\PhieuMuonService.cs" />
+    <Compile Include="Areas\Admin\Services\PhieuThanhLyService.cs" />
+    <Compile Include="Areas\Admin\Services\PhieuTraCTPhieuTraService.cs" />
+    <Compile Include="Areas\Admin\Services\PhieuTraService.cs" />
+    <Compile Include="Common\CommonController.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ClassesController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ThueSachController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Areas\Admin\Interfaces\IGenericRepository.cs" />
+    <Compile Include="Areas\Admin\Interfaces\INhanVienRepository.cs" />
+    <Compile Include="Areas\Admin\Interfaces\IRepository.cs" />
+    <Compile Include="Areas\Admin\Interfaces\ISachRepository.cs" />
+    <Compile Include="Areas\Admin\Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Areas\Admin\Interfaces\Services\INhanVienService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\Services\ISachService.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ChiTietDk.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ChiTietPM.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -192,6 +379,9 @@
     <Compile Include="Models\ChiTietPTL.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\DkiMuonSach.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\DocGia.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -202,10 +392,15 @@
     <Compile Include="Models\KhoSachThanhLy.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ListSachMuon.cs" />
+    <Compile Include="Models\LOGIN_DG.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\LOGIN_NV.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\mapTaiKhoan.cs" />
     <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -245,10 +440,62 @@
     <Compile Include="Models\TheDocGia.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\TT_SACH.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Areas\Admin\Repository\GenericRepository.cs" />
+    <Compile Include="Areas\Admin\Repository\NhanVienRepository.cs" />
+    <Compile Include="Areas\Admin\Repository\SachRepository.cs" />
+    <Compile Include="Areas\Admin\Repository\UnitOfWork.cs" />
+    <Compile Include="Areas\Admin\Services\NhanVienService.cs" />
+    <Compile Include="Areas\Admin\Services\SachService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\style.css" />
+    <Content Include="Assets\img\about-1.jpg" />
+    <Content Include="Assets\img\about-2.jpg" />
+    <Content Include="Assets\img\about-3.jpg" />
+    <Content Include="Assets\img\appointment.jpg" />
+    <Content Include="Assets\img\call-to-action.jpg" />
+    <Content Include="Assets\img\carousel-1.jpg" />
+    <Content Include="Assets\img\carousel-2.jpg" />
+    <Content Include="Assets\img\carousel-3.jpg" />
+    <Content Include="Assets\img\carousel-4.jpg" />
+    <Content Include="Assets\img\classes-1.jpg" />
+    <Content Include="Assets\img\classes-2.jpg" />
+    <Content Include="Assets\img\classes-3.jpg" />
+    <Content Include="Assets\img\classes-4.jpg" />
+    <Content Include="Assets\img\classes-5.jpg" />
+    <Content Include="Assets\img\classes-6.jpg" />
+    <Content Include="Assets\img\header-1.jpg" />
+    <Content Include="Assets\img\team-1.jpg" />
+    <Content Include="Assets\img\team-2.jpg" />
+    <Content Include="Assets\img\team-3.jpg" />
+    <Content Include="Assets\img\testimonial-1.jpg" />
+    <Content Include="Assets\img\testimonial-2.jpg" />
+    <Content Include="Assets\img\testimonial-3.jpg" />
+    <Content Include="Assets\img\user.jpg" />
+    <Content Include="Assets\js\main.js" />
+    <Content Include="Assets\lib\animate\animate.css" />
+    <Content Include="Assets\lib\animate\animate.min.css" />
+    <Content Include="Assets\lib\easing\easing.js" />
+    <Content Include="Assets\lib\easing\easing.min.js" />
+    <Content Include="Assets\lib\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="Assets\lib\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="Assets\lib\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="Assets\lib\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="Assets\lib\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="Assets\lib\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="Assets\lib\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="Assets\lib\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="Assets\lib\owlcarousel\owl.carousel.js" />
+    <Content Include="Assets\lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="Assets\lib\waypoints\waypoints.min.js" />
+    <Content Include="Assets\lib\wow\wow.js" />
+    <Content Include="Assets\lib\wow\wow.min.js" />
     <Content Include="Content\Assets\css\bootstrap.min.css" />
     <Content Include="Content\Assets\css\style.css" />
     <Content Include="Content\Assets\img\about-1.jpg" />
@@ -291,6 +538,48 @@
     <Content Include="Content\Assets\lib\waypoints\waypoints.min.js" />
     <Content Include="Content\Assets\lib\wow\wow.js" />
     <Content Include="Content\Assets\lib\wow\wow.min.js" />
+    <Content Include="Content\Assets\Login\css\main.css" />
+    <Content Include="Content\Assets\Login\css\util.css" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Content\Assets\Login\fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="Content\Assets\Login\fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="Content\Assets\Login\fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Content\Assets\Login\images\bg-01.jpg" />
+    <Content Include="Content\Assets\Login\images\icons\favicon.ico" />
+    <Content Include="Content\Assets\Login\js\main.js" />
+    <Content Include="Content\Assets\Login\vendor\animate\animate.css" />
+    <Content Include="Content\Assets\Login\vendor\animsition\css\animsition.css" />
+    <Content Include="Content\Assets\Login\vendor\animsition\css\animsition.min.css" />
+    <Content Include="Content\Assets\Login\vendor\animsition\js\animsition.js" />
+    <Content Include="Content\Assets\Login\vendor\animsition\js\animsition.min.js" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\js\popper.js" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="Content\Assets\Login\vendor\countdowntime\countdowntime.js" />
+    <Content Include="Content\Assets\Login\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="Content\Assets\Login\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="Content\Assets\Login\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="Content\Assets\Login\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="Content\Assets\Login\vendor\daterangepicker\moment.js" />
+    <Content Include="Content\Assets\Login\vendor\daterangepicker\moment.min.js" />
+    <Content Include="Content\Assets\Login\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Content\Assets\Login\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="Content\Assets\Login\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="Content\Assets\Login\vendor\select2\select2.css" />
+    <Content Include="Content\Assets\Login\vendor\select2\select2.js" />
+    <Content Include="Content\Assets\Login\vendor\select2\select2.min.css" />
+    <Content Include="Content\Assets\Login\vendor\select2\select2.min.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -348,6 +637,9 @@
     <Content Include="Content\Clients\dist\js\pages\dashboard.js" />
     <Content Include="Content\Clients\dist\js\pages\dashboard2.js" />
     <Content Include="Content\Clients\dist\js\pages\dashboard3.js" />
+    <Content Include="Content\mailDangKy.html" />
+    <Content Include="Content\mailLayLaiMatKhau.html" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="Content\Clients\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.css" />
     <Content Include="Content\Clients\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.min.css" />
     <Content Include="Content\Clients\plugins\bootstrap-colorpicker\js\bootstrap-colorpicker.js" />
@@ -2190,6 +2482,52 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img_web\1119-BKS-Hoby-superJumbo.jpg" />
+    <Content Include="img_web\199MayHoiAyLamGi.jpg" />
+    <Content Include="img_web\450NouveauxExercicesVocabulaireNiveaudebutant.jpg" />
+    <Content Include="img_web\90%25TreThongMinh.jpg" />
+    <Content Include="img_web\999LaThuGuiChoChinhMinh.jpg" />
+    <Content Include="img_web\avticon.jpg" />
+    <Content Include="img_web\BiXanhVaBongTim.jpg" />
+    <Content Include="img_web\CanhNgo.jpg" />
+    <Content Include="img_web\CayCamNgotCuaToi.jpg" />
+    <Content Include="img_web\ChoToiXin1VeDiTuoiTho.jpg" />
+    <Content Include="img_web\ChuaKipLonDaTruongThanh.jpg" />
+    <Content Include="img_web\ChuyenKeRangCoNangVaToi.jpg" />
+    <Content Include="img_web\CN8%28CTST%29.jpg" />
+    <Content Include="img_web\ConChimXanhBiecBayVe.jpg" />
+    <Content Include="img_web\CungBanTruongThanh.jpg" />
+    <Content Include="img_web\DamNghiLai.jpg" />
+    <Content Include="img_web\DamTreODaiDuongDen.jpg" />
+    <Content Include="img_web\DatRungPhuongNam.jpg" />
+    <Content Include="img_web\Dear_Darling.jpg" />
+    <Content Include="img_web\Destination_B1_GrammarAndVocabularywithAnswerKey.jpg" />
+    <Content Include="img_web\DuaTreHieuChuyenThuongKhongCoKeoAn.jpg" />
+    <Content Include="img_web\GiaoTrinhChuanHSK1.jpg" />
+    <Content Include="img_web\HaiHuocMotChutTheGioiSeKhacDi.jpg" />
+    <Content Include="img_web\LichSuVaDiaLi6.jpg" />
+    <Content Include="img_web\MoiLanVapNgaLaMotLanTruongThanh.jpg" />
+    <Content Include="img_web\MuaHeKhongTen.jpg" />
+    <Content Include="img_web\NhaGiaKim.jpg" />
+    <Content Include="img_web\NobitaVaVungDatLyTuongTrenBauTroi.jpg" />
+    <Content Include="img_web\OngGiaVaBienCa.jpg" />
+    <Content Include="img_web\Robertson.jpg" />
+    <Content Include="img_web\sach.jpg" />
+    <Content Include="img_web\SinhHoc11%28CTST%29.jpg" />
+    <Content Include="img_web\TA1_GlobalSuccess_SBT.jpg" />
+    <Content Include="img_web\TAL3_FamilyAndFriends%28National Edition%29_Workbook%282023%29.jpg" />
+    <Content Include="img_web\TamQuocDienNghia.jpg" />
+    <Content Include="img_web\ThanDongDatViet2_TNSP.jpg" />
+    <Content Include="img_web\ThayDoiCSVoiNhanSoHoc.jpg" />
+    <Content Include="img_web\ThieuNu%28Shoujo%29.jpg" />
+    <Content Include="img_web\Tho_bay_mau.jpg" />
+    <Content Include="img_web\Thuong.jpg" />
+    <Content Include="img_web\Toan4_Tap1%28CTST%29.jpg" />
+    <Content Include="img_web\TongOnNguPhapTiengAnh%28TB2023%29.jpg" />
+    <Content Include="img_web\TrangQuynh_402_OngTomBaTep.jpg" />
+    <Content Include="img_web\TruyenTranhVN_SoDua.jpg" />
+    <Content Include="img_web\VT2.jpg" />
+    <Content Include="LICENSE.txt" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -2287,13 +2625,6 @@
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_PartialSideBar.cshtml" />
-    <EntityDeploy Include="Models\Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
     <Content Include="Content\Assets\lib\owlcarousel\LICENSE" />
     <Content Include="Content\Assets\lib\waypoints\links.php" />
     <Content Include="Content\Assets\scss\bootstrap.scss" />
@@ -2379,6 +2710,90 @@
     <Content Include="Content\Assets\scss\bootstrap\scss\_utilities.scss" />
     <Content Include="Content\Assets\scss\bootstrap\scss\_variables.scss" />
     <Content Include="Areas\Admin\Views\PhieuMuon\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\PhieuTra\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_LayoutLogin.cshtml" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="Content\Assets\Login\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="Content\Assets\Login\fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="Content\Assets\Login\fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Content\Assets\Login\fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Content\Assets\Login\fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="Content\Assets\Login\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Content\Assets\Login\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Areas\Admin\Views\Account\Login.cshtml" />
+    <Content Include="Areas\Admin\Views\QuanLyMuon\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\KhoSach\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\QuanLyPhieuTra\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\NhapSach\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ThanhLySach\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\PhanQuyen\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\TheDocGia\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ThongTinDocGia\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\PhanQuyen\LoiPhanQuyen.cshtml" />
+    <Content Include="Areas\Admin\Views\DangKyMuonSach\Index.cshtml" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Assets\lib\owlcarousel\LICENSE" />
+    <Content Include="Assets\lib\waypoints\links.php" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2399,35 +2814,107 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="scss\bootstrap.scss" />
+    <Content Include="scss\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="scss\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="scss\bootstrap\scss\bootstrap-utilities.scss" />
+    <Content Include="scss\bootstrap\scss\bootstrap.scss" />
+    <Content Include="scss\bootstrap\scss\forms\_floating-labels.scss" />
+    <Content Include="scss\bootstrap\scss\forms\_form-check.scss" />
+    <Content Include="scss\bootstrap\scss\forms\_form-control.scss" />
+    <Content Include="scss\bootstrap\scss\forms\_form-range.scss" />
+    <Content Include="scss\bootstrap\scss\forms\_form-select.scss" />
+    <Content Include="scss\bootstrap\scss\forms\_form-text.scss" />
+    <Content Include="scss\bootstrap\scss\forms\_input-group.scss" />
+    <Content Include="scss\bootstrap\scss\forms\_labels.scss" />
+    <Content Include="scss\bootstrap\scss\forms\_validation.scss" />
+    <Content Include="scss\bootstrap\scss\helpers\_clearfix.scss" />
+    <Content Include="scss\bootstrap\scss\helpers\_colored-links.scss" />
+    <Content Include="scss\bootstrap\scss\helpers\_position.scss" />
+    <Content Include="scss\bootstrap\scss\helpers\_ratio.scss" />
+    <Content Include="scss\bootstrap\scss\helpers\_stretched-link.scss" />
+    <Content Include="scss\bootstrap\scss\helpers\_text-truncation.scss" />
+    <Content Include="scss\bootstrap\scss\helpers\_visually-hidden.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_color-scheme.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_container.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_deprecate.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_table-variants.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_utilities.scss" />
+    <Content Include="scss\bootstrap\scss\mixins\_visually-hidden.scss" />
+    <Content Include="scss\bootstrap\scss\utilities\_api.scss" />
+    <Content Include="scss\bootstrap\scss\vendor\_rfs.scss" />
+    <Content Include="scss\bootstrap\scss\_accordion.scss" />
+    <Content Include="scss\bootstrap\scss\_alert.scss" />
+    <Content Include="scss\bootstrap\scss\_badge.scss" />
+    <Content Include="scss\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="scss\bootstrap\scss\_button-group.scss" />
+    <Content Include="scss\bootstrap\scss\_buttons.scss" />
+    <Content Include="scss\bootstrap\scss\_card.scss" />
+    <Content Include="scss\bootstrap\scss\_carousel.scss" />
+    <Content Include="scss\bootstrap\scss\_close.scss" />
+    <Content Include="scss\bootstrap\scss\_containers.scss" />
+    <Content Include="scss\bootstrap\scss\_dropdown.scss" />
+    <Content Include="scss\bootstrap\scss\_forms.scss" />
+    <Content Include="scss\bootstrap\scss\_functions.scss" />
+    <Content Include="scss\bootstrap\scss\_grid.scss" />
+    <Content Include="scss\bootstrap\scss\_helpers.scss" />
+    <Content Include="scss\bootstrap\scss\_images.scss" />
+    <Content Include="scss\bootstrap\scss\_list-group.scss" />
+    <Content Include="scss\bootstrap\scss\_mixins.scss" />
+    <Content Include="scss\bootstrap\scss\_modal.scss" />
+    <Content Include="scss\bootstrap\scss\_nav.scss" />
+    <Content Include="scss\bootstrap\scss\_navbar.scss" />
+    <Content Include="scss\bootstrap\scss\_offcanvas.scss" />
+    <Content Include="scss\bootstrap\scss\_pagination.scss" />
+    <Content Include="scss\bootstrap\scss\_popover.scss" />
+    <Content Include="scss\bootstrap\scss\_progress.scss" />
+    <Content Include="scss\bootstrap\scss\_reboot.scss" />
+    <Content Include="scss\bootstrap\scss\_root.scss" />
+    <Content Include="scss\bootstrap\scss\_spinners.scss" />
+    <Content Include="scss\bootstrap\scss\_tables.scss" />
+    <Content Include="scss\bootstrap\scss\_toasts.scss" />
+    <Content Include="scss\bootstrap\scss\_tooltip.scss" />
+    <Content Include="scss\bootstrap\scss\_transitions.scss" />
+    <Content Include="scss\bootstrap\scss\_type.scss" />
+    <Content Include="scss\bootstrap\scss\_utilities.scss" />
+    <Content Include="scss\bootstrap\scss\_variables.scss" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Classes\Index.cshtml" />
+    <Content Include="Views\Classes\ThongTinSach.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\ConfirmEmail.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ForgotPassword.cshtml" />
-    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ResetPassword.cshtml" />
-    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\SendCode.cshtml" />
-    <Content Include="Views\Account\VerifyCode.cshtml" />
-    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
-    <Content Include="Views\Manage\ChangePassword.cshtml" />
-    <Content Include="Views\Manage\Index.cshtml" />
-    <Content Include="Views\Manage\ManageLogins.cshtml" />
-    <Content Include="Views\Manage\SetPassword.cshtml" />
-    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
-    <Content Include="Views\Shared\Lockout.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\ThueSach\GioHang.cshtml" />
+    <Content Include="Views\ThueSach\Index.cshtml" />
+    <Content Include="Views\ThueSach\SearchSach.cshtml" />
+    <Content Include="Views\ThueSach\ThongTinSach.cshtml" />
+    <Content Include="Views\User\DangKy.cshtml" />
+    <Content Include="Views\User\History.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\User\NewPassword.cshtml" />
+    <Content Include="Views\User\UpdatePassWord.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -2444,6 +2931,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

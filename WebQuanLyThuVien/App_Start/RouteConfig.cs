@@ -19,6 +19,12 @@ namespace WebQuanLyThuVien
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 namespaces: new[] {"WebQuanLyThuVien.Controllers"} 
             );
+
+            routes.MapRoute(
+               name: "ThongTinSach",
+               url: "{controller}/{action}/{id}",
+               defaults: new { controller = "ThongTinSach", action = "ThongTinSach", id = UrlParameter.Optional }
+           );
         }
     }
 }

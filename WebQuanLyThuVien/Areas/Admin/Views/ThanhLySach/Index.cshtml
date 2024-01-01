@@ -1,0 +1,895 @@
+﻿@{
+    ViewBag.Title = "Phiếu Thanh Lý";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="content">
+    <div class="container-fluid pt-4">
+        <div class="row">
+            <!-- kho sách và thông tin đơn vị thanh lý -->
+            <div class="col-6" style="height: 80vh;">
+                <div class="card" style="height: 100%;">
+                    <div class="card-header">
+                        <div class="form-row">
+                            <div class="col-6">
+                                <h3 class="text-center text-blue text-bold"> Phiếu Thanh Lý </h3>
+                            </div>
+                            <div class="col-3">
+                                <button type="submit" class="btn btn-primary taoPhieuTL" id="taoPhieuTL" onclick="taoPhieuTL()">Tạo phiếu TL</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-warning lamMoiSach" onclick="lamMoi()">Làm mới</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body" style="overflow-y: auto;">
+                        <form>
+                            <div class="form-row">
+                                <!--Mã DV-->
+                                <div class="form-group col">
+                                    <label for="name">Mã đơn vị:</label>
+                                    <input type="text" class="form-control" id="MaDV" name="MaDV" readonly>
+                                    <!--Thêm readonly sẽ không cho phép sửa-->
+                                </div>
+
+                                <!--Mã nhân viên-->
+                                <div class="form-group col">
+                                    <label for="MaNhanVien">Mã nhân viên:</label>
+                                    <input type="text" class="form-control" id="MaNhanVien" name="MaNhanVien" readonly>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!--Tên ĐƠN VỊ-->
+                                <div class="form-group col">
+                                    <label for="name">Tên đơn vị:</label>
+                                    <input type="text" class="form-control" id="Name" name="Name" readonly>
+                                </div>
+
+                                <!-- Số điện thoại-->
+                                <div class="form-group col">
+                                    <label for="book">Số điện thoại:</label>
+                                    <input type="text" class="form-control" id="SDT" name="SDT" readonly>
+
+     
+                                </div>
+                             </div>
+                                <div class="form-row">
+
+                                    <div class="form-group col">
+                                        <label for="book">Địa chỉ:</label>
+                                        <input type="text" class="form-control" id="DiaChi" name="DiaChi" readonly>
+                                    </div>
+                                 <!--Ngày thanh lý-->
+                                <div class="form-group col">
+                                    <label for="NgayTL">Ngày thanh lý:</label>
+                                    <input type="date" class="form-control" id="NgayTL" name="NgayTL" readonly>
+                                </div>
+                           
+                            </div>
+
+                            <!--Danh sách sách thanh lý-->
+                            <div class="text-center">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã</th>
+                                            <th>Tên sách</th>
+                                            <th>S/Lượng</th>
+                                            <th>Giá sách</th>
+                                            <th>Thao tác</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="danhSachSachTL">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ĐƠN VỊ VÀ SÁCH TL -->
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header" style="height: 50px; display: flex; justify-content: flex-end; align-items: center;">
+                        <div class="card-tools">
+                            <div class="input-group input-group-sm pt-2" style="width: 150px">
+                                <input type="text" name="table_search" class="form-control float-right" id="searchInput" placeholder="Search" />
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default" id="searchButton">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-header" style="height: 60px;">
+                        <button id="thongTinDonViButton" class="btn btn-primary" onclick="changeTableShow(thongTinDonViTable, thongTinSachTable, thongTinSachNhapKho)" style=" margin-right: 20px;  margin-left: 20px;">
+                            Thông tin đơn vị
+                        </button>
+                        <button id="thongTinSachTLButton" class="btn btn-primary" onclick="changeTableShow(thongTinSachTable, thongTinDonViTable,thongTinSachNhapKho)" style=" margin-right: 20px;">
+                            Thông tin sách
+                        </button>
+                        <!-- Adjust the height as needed -->
+                        <button id="themDVButton" class="btn btn-secondary" onclick="btnShowModalThemDV()" style="height: 100%; font-size: 15px; margin-right: 20px; ">
+                            Thêm Đơn vị
+                        </button>
+                        <button id="ThemKhoTLButton" class="btn btn-secondary" onclick="changeTableShow(thongTinSachNhapKho,thongTinDonViTable, thongTinSachTable)" style="height: 100%; font-size: 15px; margin-right: 20px; ">
+                            Nhập Kho
+                        </button>
+                    </div>
+                    <!--Body table ĐƠN VỊ-->
+                    <div class="card-body table-responsive p-0"
+                         style="height: 71.2vh" id="thongTinDonViTable">
+                        <table class="table table-head-fixed table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Mã ĐV</th>
+                                    <th>Tên ĐV</th>
+                                    <th>SDT</th>
+                                    <th>Địa chỉ</th>
+                                </tr>
+                            </thead>
+                            <tbody id="danhSachDV">
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!--Body table thông tin sách-->
+                    <div class="card-body table-responsive p-0"
+                         style="height: 71.2vh; display: none;" id="thongTinSachTable">
+                        <table class="table table-head-fixed table-hover table-bordered">
+                            <!--text-nowrap-->
+                            <thead>
+                                <tr>
+                                    <th>Mã </th>
+                                    <th>Tên sách</th>
+                                    <th>S/l kho</th>
+                                    <th>Giá</th>
+                                    <th>S/l Tl</th>
+                                    <th>Thao tác</th>
+                                </tr>
+
+                            </thead>
+                            <tbody id="danhSachSach">
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="card-body table-responsive p-0"
+                         style="height: 71.2vh; display: none;" id="thongTinSachNhapKho">
+                        <table class="table table-head-fixed table-hover table-bordered">
+                            <!--text-nowrap-->
+                            <thead>
+                                <tr>
+                                    <th>Mã </th>
+                                    <th>Tên sách</th>
+                                    <th>S/l Hiện tại</th>
+                                    <th>Thao tác</th>
+                                </tr>
+
+                            </thead>
+                            <tbody id="danhSachSachNhapKho">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Modal Thêm đơn vị-->
+<div class="modal fade" id="ThemDVModal" tabindex="-1" role="dialog" aria-labelledby="ThemDVModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-primary col-8" style="font-weight:bold;">Thêm đơn vị thanh lý mới</h4>
+                <div class="col-3">
+                    <button type="button" class="btn btn-warning lamMoiSach" id="lamMoiButtonModal" onclick="lamMoiDVInsert()">Làm mới</button>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label class="col-form-label">Tên Đơn vị TL:</label>
+                        <input type="text" class="form-control" id="TenDVModal">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Số điện thoại:</label>
+                        <input type="text" class="form-control" id="SdtDVModal">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Địa chỉ:</label>
+                        <input type="text" class="form-control" id="DiaChiDVModal">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary" onclick="btnThemDV()">Thêm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Thêm sách-->
+<div class="modal fade" id="ThemKhoTLModal" tabindex="-1" role="dialog" aria-labelledby="ThemKhoTLModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-primary col-8" style="font-weight:bold;">Thêm kho thanh lý </h4>
+                <div class="col-3">
+                    <button type="button" class="btn btn-warning lamMoiSach" id="lamMoiButtonModal" onclick="lamMoiKhoTLInsert()">Làm mới</button>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label class="col-form-label">Mã sách TL:</label>
+                        <input type="text" class="form-control" id="MasachThanhLyModal" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Tên sách Thanh lý:</label>
+                        <input type="text" class="form-control" id="tenSachThanhLyModal" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Số lượng hiện tại:</label>
+                        <input type="text" class="form-control" id="soluongHienTaiSachThanhLyModal" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Số lượng:</label>
+                        <input type="text" class="form-control" id="SoluongModal">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary" onclick="btnThemKhoTL()">Thêm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal error-->
+<div class="modal fade" id="ModalError" tabindex="-1" role="dialog" aria-labelledby="ModalError" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center bg-danger">
+                <span class="" id="contentModalError"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal success-->
+<div class="modal fade" id="ModalSuccess" tabindex="-1" role="dialog" aria-labelledby="ModalSuccess" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center bg-green">
+                <span class="" id="contentModalSuccess"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts
+{
+    <script>
+        var thongTinSachTableDatas = [];
+
+        //=====================  Set dữ liệu mặc định  =====================
+
+        // Lấy các phần tử DOM
+        const searchInput = document.getElementById("searchInput");
+        const searchButton = document.getElementById("searchButton");
+
+        // Lấy ngày hiện tại
+        var currentDate = new Date();
+
+        // Định dạng ngày hiện tại thành chuỗi YYYY-MM-DD
+        var formatCurrentDate = currentDate.toISOString().slice(0, 10);
+
+        // Set ngày mượn là ngày hiện tại
+        document.getElementById("NgayTL").value = formatCurrentDate;
+
+        // Set mã nhân viên
+        var manv = @HttpContext.Current.Session["manv"]
+            document.getElementById("MaNhanVien").value = manv;
+
+        function changeTableShow(tableToShow, tableToHide, tableToHide2) {
+            searchInput.value = "";
+
+            tableToShow.style.display = "block";
+            tableToHide.style.display = "none";
+            tableToHide2.style.display = "none";
+
+            if (thongTinSachTable.style.display == "block" && thongTinDonViTable.style.display == "none" && thongTinSachNhapKho.style.display == 'none') {
+                loadsachTLs("");
+            }
+            if (thongTinDonViTable.style.display == "block" && thongTinSachTable.style.display == "none" && thongTinSachNhapKho.style.display == 'none') {
+                loadDVTLs("");
+            }
+
+            if (thongTinDonViTable.style.display == "block" && thongTinSachTable.style.display == "none"
+                && thongTinSachNhapKho.style.display == 'none') {
+                loadDanhSachNhapKho("");
+            }
+        }
+
+        // Lấy các phần tử của bảng
+        var thongTinDonViTable = document.getElementById("thongTinDonViTable");
+        var thongTinSachTable = document.getElementById("thongTinSachTable");
+        var thongTinSachNhapKho = document.getElementById("thongTinSachNhapKho");
+
+  // Mặc định chọn nút "Thông tin đơn vị"
+        changeTableShow(thongTinDonViTable, thongTinSachTable, thongTinSachNhapKho);
+
+
+        //=====================  Lấy dữ liệu khi search =====================
+        searchButton.addEventListener("click", function () {
+            const keyword = searchInput.value.trim(); // Lấy từ khóa từ ô tìm kiếm
+            // Gửi yêu cầu tìm kiếm đến Controller
+
+            if (thongTinSachTable.style.display == "block" && thongTinDonViTable.style.display == "none" && thongTinSachNhapKho.style.display == "none") {
+                loadsachTLs(keyword);
+            }
+            if (thongTinDonViTable.style.display == "block" && thongTinSachTable.style.display == "none" && thongTinSachNhapKho.style.display == "none") {
+                loadDVTLs(keyword);
+            }
+            if (thongTinSachTable.style.display == "none" && thongTinDonViTable.style.display == "none" && thongTinSachNhapKho.style.display == "block") {
+                loadDanhSachNhapKho(keyword);
+            }
+
+        });
+
+
+        // Lắng nghe sự kiện keyup trên trường nhập tìm kiếm
+        searchInput.addEventListener("keyup", function (event) {
+            if (event.key === "Enter") {
+                const keyword = searchInput.value.trim();
+
+                if (thongTinSachTable.style.display == "block" && thongTinDonViTable.style.display == "none" && thongTinSachNhapKho.style.display == "none") {
+                    loadsachTLs(keyword);
+                }
+                if (thongTinDonViTable.style.display == "block" && thongTinSachTable.style.display == "none" && thongTinSachNhapKho.style.display == "none") {
+                    loadDVTLs(keyword);
+                }
+                if (thongTinSachTable.style.display == "none" && thongTinDonViTable.style.display == "none" && thongTinSachNhapKho.style.display == "block") {
+                    loadDanhSachNhapKho(keyword);
+                }
+
+            }
+        });
+
+
+        //// Hàm thực hiện tìm kiếm
+        //function performSearch() {
+        //    const keyword = searchInput.value.trim(); // Lấy từ khóa từ ô tìm kiếm
+        //    if (thongTinSachTable.style.display == "block" && thongTinDonViTable.style.display == "none" && thongTinSachNhapKho.style.display == "none") {
+        //        loadsachTLs(keyword);
+        //    }
+        //    if (thongTinDonViTable.style.display == "block" && thongTinSachTable.style.display == "none" && thongTinSachNhapKho.style.display == "none") {
+        //        loadDVTLs(keyword);
+        //    }
+        //    if (thongTinSachTable.style.display == "none" && thongTinDonViTable.style.display == "none" && thongTinSachNhapKho.style.display == "block") {
+        //        loadDanhSachNhapKho(keyword);
+        //    }
+        //}
+
+        //===================== Hàm show don vi thanh ly =====================
+
+        function loadDVTLs(keyword) {
+
+            $.ajax({
+                type: "GET",
+                url: "/Admin/ThanhLySach/SelectDV?keyword=" + keyword,
+                dataType: 'json',
+                success: function (res) {
+                    var render = "";
+                    $.each(res.Result, function (i, item) {
+                        render += '<tr class="DVRow" aria-expanded="false" data-widget="expandable-table">';
+                        render += '<td  class="selectMaDV">' + item.MaDV + '</td>';
+                        render += '<td >' + item.TenDV + '</td>';
+                        render += '<td >' + item.SDTDV + '</td>';
+                        render += '<td >' + item.DiaChiDV + '</td>';
+                        render += '</tr>';
+                    });
+
+                    let danhSachDV = document.getElementById("danhSachDV");
+                    danhSachDV.innerHTML = render;
+                    selectDV();
+                },
+                error: function (status) {
+                    // show aler cảnh báo nếu lôi
+                    alert("Không tìm thấy data");
+                }
+            });
+        }
+        //=====================  Lấy dữ liệu khi click vào DDON VI muốn thực hiện thao tác thanh ly =====================
+
+        function selectDV() {
+            // Lấy danh sách các hàng trong bảng thông tin DON VI
+            var DVRow = document.querySelectorAll(".DVRow");
+
+            DVRow.forEach(function (row) {
+                row.addEventListener("click", function () {
+                    var maDV = row.querySelector("td:nth-child(1)").textContent;
+                    var TenDV= row.querySelector("td:nth-child(2)").textContent;
+                    var sdtDV = row.querySelector("td:nth-child(3)").textContent;
+                    var diachiDV = row.querySelector("td:nth-child(4)").textContent;
+                    // Hiển thị thông tin
+                    document.getElementById("MaDV").value = maDV;
+                    document.getElementById("Name").value = TenDV;
+                    document.getElementById("SDT").value = sdtDV;
+                    document.getElementById("DiaChi").value = diachiDV;
+
+                });
+            });
+        }
+
+        //hàm show sách ở kho thanh lý
+        function loadsachTLs(keyword) {
+
+            $.ajax({
+                type: "GET",
+                url: "/Admin/ThanhLySach/SelectSach?keyword=" + keyword,
+                dataType: 'json',
+                success: function (res) {
+
+                    thongTinSachTableDatas = res.Result;
+
+                    var render = "";
+                    $.each(res.Result, function (i, item) {
+                        render += '<tr class="SachtlRow" aria-expanded="false" data-widget="expandable-table">';
+                        render += '<td  class="selectsach" tyle="width: 12%">' + item.MaSachKho + '</td>';
+                        render += '<td style="width: 40%">' + item.TenSach + '</td>';
+                        render += '<td style="width: 15%">' + item.SoLuongKhoTL + '</td>';
+                        render += '<td style="width: 12%">' + item.GiaSachTL + '</td>';
+                        render += '<td style="width: 15%">  <input class="soLuongInsert" id="soLuongInsert' + item.MaSachKho + '" min="0"  max ="'+ item.SoLuongKhoTL+'"  type="number" value="0" style="width: 75%" onkeydown="validateInput(event, ' + item.SoLuongKhoTL + ')" />  </td>';
+                        render += '<td style="width: 2%"> <button class="btn btn-primary"   onclick="themButtonClick(' + item.MaSachKho + ', \'' + item.TenSach + '\', ' + item.GiaSachTL + ', ' + item.SoLuongKhoTL + ')">Thêm</button></td>';
+                        render += '</tr>';
+                    });
+
+                    let danhSachSach = document.getElementById("danhSachSach");
+                    danhSachSach.innerHTML = render;
+                    //document.getElementById("tongTienPhuThu").value = formatMoney(0);
+                    //selectDV();
+                },
+                error: function (status) {
+                    // show aler cảnh báo nếu lôi
+                    alert("Không tìm thấy data");
+                }
+            });
+        }
+
+        //function updateTongTien() {
+        //    var tongTienPhuThu = 0;
+
+        //    // Lấy danh sách các hàng trong bảng thông tin sách
+        //    var sachRows = document.querySelectorAll(".SachtlRow");
+
+        //    // Lặp qua từng hàng và tính tổng tiền Phụ Thu
+        //    sachRows.forEach(function (row) {
+        //        var soLuongInsert = document.getElementById("soLuongInsert" + maSach).value;
+        //        var giaSach = parseFloat(row.querySelector('td:nth-child(4)').textContent);
+
+        //        // Kiểm tra nếu số lượng và giá sách là các số hợp lệ thì thêm vào tổng tiền
+        //        if (!isNaN(soLuong) && !isNaN(giaSach)) {
+        //            tongTienPhuThu += soLuong * giaSach;
+        //        }
+        //    });
+
+        //    // Hiển thị tổng tiền trong trường "Tổng tiền"
+        //    document.getElementById("tongTienPhuThu").value = formatMoney(tongTienPhuThu);
+        //}
+        // Hàm format tiền
+        //function formatMoney(number) {
+        //    return number.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+        //}
+        function loadDanhSachNhapKho(keyword) {
+            $.ajax({
+                type: "GET",
+                url: "/Admin/ThanhLySach/GetSachNhapKho?keyword=" + keyword,
+                dataType: 'json',
+                success: function (res) {
+                    var render = "";
+                    $.each(res.Result, function (i, item) {
+                        render += '<tr class="SachtlRow" aria-expanded="false" data-widget="expandable-table">';
+                        render += '<td  class="selectsach" tyle="width: 8%">' + item.MaSach + '</td>';
+                        render += '<td style="width: 40%">' + item.TenSach + '</td>';
+                        render += '<td style="width: 15%">' + item.SoLuongHienTai + '</td>';
+                        render += '<td style="width: 2%"> <button class="btn btn-primary" onclick="NhapKho(' + item.MaSach + ', \'' + item.TenSach + '\', ' + item.SoLuongHienTai + ');">Nhập kho</button></td>';
+                        render += '</tr>';
+                    });
+
+                    let danhSachSach = document.getElementById("danhSachSachNhapKho");
+                    danhSachSach.innerHTML = render;
+                    //selectDV();
+                },
+                error: function (status) {
+                    // show aler cảnh báo nếu lôi
+                    alert("Không tìm thấy data");
+                }
+            });
+        }
+
+
+        function NhapKho(masach,tenSachThanhLy, soLuongHientai){
+
+            document.getElementById("MasachThanhLyModal").value = masach;
+            document.getElementById("tenSachThanhLyModal").value = tenSachThanhLy;
+            document.getElementById("soluongHienTaiSachThanhLyModal").value = soLuongHientai;
+
+
+            $("#ThemKhoTLModal").modal("show");
+        }
+
+        //khong cho nhap chu
+        function validateInput(event, maxQuantity) {
+            // Prevent input of non-numeric characters
+            if (!isNumericInput(event)) {
+                event.preventDefault();
+            }
+            // Prevent input of 'e' or 'E'
+            if (event.key === 'e' || event.key === 'E') {
+                event.preventDefault();
+            }
+            // Ensure the input is within the allowed range (0 to maxQuantity)
+            let inputValue = event.target.value;
+            if (inputValue < 0 || inputValue > maxQuantity) {
+                event.preventDefault();
+            }
+        }
+
+        function isNumericInput(event) {
+            const key = event.key;
+            return (key >= '0' && key <= '9') || key === 'Backspace' || key === 'Delete' || key === 'ArrowLeft' || key === 'ArrowRight';
+        }
+
+
+
+        var sachValues = [];
+
+    //=====================  Lấy dữ liệu khi click vào nút thêm sách tl  =====================
+    function themButtonClick(maSach, tenSach, giaSach, soLuongKhoTL) {
+        var soLuongInsert = document.getElementById("soLuongInsert" + maSach).value;
+     
+        //// Lấy danh sách các hàng trong bảng thông tin DON VI
+        //var danhSachSach = document.querySelectorAll(".danhSachSach");
+
+
+        // Kiểm tra nếu số lượng nhập vào là 0 thì không thêm vào bảng
+        if (soLuongInsert == 0 || soLuongInsert > soLuongKhoTL) {
+            alert("Số lượng không chính xác!.");
+            return;
+        }
+
+      
+        var index = sachValues.findIndex((element) => element.MaSach == maSach);
+        if (index == -1) { // không tìm thấy
+        sachValues.push({
+            MaSach: maSach,
+            TenSach: tenSach,
+            SoLuong: parseInt(soLuongInsert), // Chuyển đổi sang kiểu số nguyên
+            GiaSach: giaSach
+        });
+
+        console.log(sachValues);
+        } else {
+        // Chuyển đổi giá trị soLuongInsert sang kiểu số nguyên và cộng dồn
+            if (parseInt(soLuongInsert)  > soLuongKhoTL) {
+                alert("Vui lòng nhập số lượng nhỏ hơn số lượng còn lại.");
+                return;
+            } else {
+                sachValues[index].SoLuong = parseInt(soLuongInsert) + sachValues[index].SoLuong;
+                console.log(sachValues);
+            }
+        }
+
+        var indexSachGiam = thongTinSachTableDatas.findIndex((element) => element.MaSachKho == maSach);
+
+        if (indexSachGiam == -1) { // không tìm thấy
+            console.log(sachValues);
+        } else {
+         
+            thongTinSachTableDatas[indexSachGiam].SoLuongKhoTL = thongTinSachTableDatas[indexSachGiam].SoLuongKhoTL - parseInt(soLuongInsert);
+            console.log(thongTinSachTableDatas);
+
+
+            var render = "";
+            $.each(thongTinSachTableDatas, function (i, item) {
+                render += '<tr class="SachtlRow" aria-expanded="false" data-widget="expandable-table">';
+                render += '<td  class="selectsach" tyle="width: 12%">' + item.MaSachKho + '</td>';
+                render += '<td style="width: 40%">' + item.TenSach + '</td>';
+                render += '<td style="width: 15%">' + item.SoLuongKhoTL + '</td>';
+                render += '<td style="width: 12%">' + item.GiaSachTL + '</td>';
+                render += '<td style="width: 15%">  <input class="soLuongInsert" id="soLuongInsert' + item.MaSachKho + '" min="0"  max ="' + item.SoLuongKhoTL + '"  type="number" value="0" style="width: 75%" onkeydown="validateInput(event, ' + item.SoLuongKhoTL + ')" />  </td>';
+                render += '<td style="width: 2%"> <button class="btn btn-primary"   onclick="themButtonClick(' + item.MaSachKho + ', \'' + item.TenSach + '\', ' + item.GiaSachTL + ', ' + item.SoLuongKhoTL + ');">Thêm</button></td>';
+                render += '</tr>';
+            });
+
+            let danhSachSach = document.getElementById("danhSachSach");
+            danhSachSach.innerHTML = render;
+           // updateTongTien();
+        }
+
+        // Gọi hàm thêm sách vào bảng
+        themSachVaoBang(sachValues);
+     }
+
+        function themSachVaoBang(sachValue) {
+            // Tìm đến tbody của bảng danh sách sách thanh lý
+            let danhSachSachTL = document.getElementById("danhSachSachTL");
+
+            // Xóa tất cả các dòng hiện tại trong bảng
+            danhSachSachTL.innerHTML = "";
+
+            // Duyệt qua từng sách trong danh sách
+            sachValue.forEach(function (sach) {
+                // Tạo một dòng mới trong bảng
+                let newRow = danhSachSachTL.insertRow();
+
+                // Thêm các ô (cell) vào dòng mới
+                let cellMaSach = newRow.insertCell(0);
+                let cellTenSach = newRow.insertCell(1);
+                let cellSoLuong = newRow.insertCell(2);
+                let cellGiaSach = newRow.insertCell(3);
+                let cellThaoTac = newRow.insertCell(4);
+
+                // Gán giá trị cho từng ô
+                cellMaSach.innerHTML = sach.MaSach;
+                cellTenSach.innerHTML = sach.TenSach;
+                cellSoLuong.innerHTML = sach.SoLuong;
+                cellGiaSach.innerHTML = sach.GiaSach;
+
+                // Tạo button Xóa và gắn sự kiện xóa khi click
+                let deleteButton = document.createElement("button");
+                deleteButton.className = "btn btn-danger";
+                deleteButton.innerHTML = "Xóa";
+                deleteButton.onclick = function () {
+                    // Gọi hàm xóa dòng khi click vào nút Xóa
+                    xoaDong(this);
+                };
+
+                // Thêm button vào ô Thao tác
+                cellThaoTac.appendChild(deleteButton);
+                // Reset the input field for quantity
+                let inputField = document.getElementById("soLuongInsert" + sach.MaSach);
+                inputField.value = 0;
+
+
+            });
+        }
+
+        // Hàm xóa dòng khỏi bảng
+        function xoaDong(button) {
+            let row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+
+            // Lấy mã sách từ dòng bị xóa
+            let maSachXoa = row.cells[0].innerHTML;
+
+            // Lọc danh sách sách để loại bỏ sách với mã sách tương ứng
+            sachValues = sachValues.filter((sach) => sach.MaSach != maSachXoa);
+
+
+            var indexSachGiam = thongTinSachTableDatas.findIndex((element) => element.MaSachKho == maSachXoa);
+
+            if (indexSachGiam == -1) { // không tìm thấy
+                console.log(sachValues);
+            } else {
+                let soLuongCongLai = row.cells[2].innerHTML;
+
+                thongTinSachTableDatas[indexSachGiam].SoLuongKhoTL = thongTinSachTableDatas[indexSachGiam].SoLuongKhoTL + parseInt(soLuongCongLai);
+                console.log(thongTinSachTableDatas);
+
+                var render = "";
+                $.each(thongTinSachTableDatas, function (i, item) {
+                    render += '<tr class="SachtlRow" aria-expanded="false" data-widget="expandable-table">';
+                    render += '<td  class="selectsach" tyle="width: 12%">' + item.MaSachKho + '</td>';
+                    render += '<td style="width: 40%">' + item.TenSach + '</td>';
+                    render += '<td style="width: 15%">' + item.SoLuongKhoTL + '</td>';
+                    render += '<td style="width: 12%">' + item.GiaSachTL + '</td>';
+                    render += '<td style="width: 15%">  <input class="soLuongInsert" id="soLuongInsert' + item.MaSachKho + '" min="0"  max ="' + item.SoLuongKhoTL + '"  type="number" value="0" style="width: 75%" onkeydown="validateInput(event, ' + item.SoLuongKhoTL + ')" />  </td>';
+                    render += '<td style="width: 2%"> <button class="btn btn-primary"   onclick="themButtonClick(' + item.MaSachKho + ', \'' + item.TenSach + '\', ' + item.GiaSachTL + ', ' + item.SoLuongKhoTL + ');">Thêm</button></td>';
+                    render += '</tr>';
+                });
+
+                let danhSachSach = document.getElementById("danhSachSach");
+                danhSachSach.innerHTML = render;
+
+            }
+
+            // Gọi lại hàm thêm sách vào bảng để cập nhật số lượng hiển thị
+            themSachVaoBang(sachValues);
+        }
+
+        //=====================  Thêm đơn vị =====================
+        function btnShowModalThemDV()
+        {
+            $("#ThemDVModal").modal("show");
+        }
+
+        function btnThemDV() {
+            var tenDv = document.getElementById("TenDVModal").value;
+            var sdtDv = document.getElementById("SdtDVModal").value;
+            var diaChiDv = document.getElementById("DiaChiDVModal").value;
+
+            if (!tenDv || !sdtDv || !diaChiDv) {
+                 document.getElementById("contentModalError").innerHTML = "Thông tin đơn vị không được để trống!";
+                 $("#ModalError").modal("show");
+            } else {
+                var phoneRegex = /^\d{10,11}$/;
+                if (!phoneRegex.test(sdtDv)) {
+                    document.getElementById("contentModalError").innerHTML = "Hãy nhập đúng định dạng số điện thoại!";
+                    $("#ModalError").modal("show");
+                } else {
+                    var confirmed = confirm("Bạn có chắc muốn thêm đơn vị thanh lý không?");
+                    if (confirmed) {
+                        $.ajax({
+                            url: '@Url.Action("ThemDonViThanhLy", "ThanhLySach")',
+                            type: 'POST',
+                            data: {
+                                tenDv: tenDv,
+                                sdtDv: sdtDv,
+                                diaChiDv: diaChiDv,
+                            },
+                            success: function (response) {
+                                if (response.success) {
+
+                                    document.getElementById("TenDVModal").value = "";
+                                    document.getElementById("SdtDVModal").value = "";
+                                    document.getElementById("DiaChiDVModal").value = "";
+
+                                    document.getElementById("contentModalSuccess").innerHTML = "Thêm đơn vị thành công";
+
+                                    $("#ThemDVModal").modal("hide");
+                                    loadDVTLs("");
+                                    console.log("dv: ", data)
+                                } else {
+                                    document.getElementById("contentModalError").innerHTML = response.message;
+                                    $("#ModalError").modal("show");
+                                }
+                            },
+                            error: function () {
+                                alert("Lỗi khi gửi yêu cầu đến máy chủ.");
+                            }
+                        });
+                    }
+                }
+            }
+        }
+        function lamMoiDVInsert() {
+            document.getElementById("TenDVModal").value = "";
+            document.getElementById("SdtDVModal").value = "";
+            document.getElementById("DiaChiDVModal").value = "";
+
+        }
+
+        function btnThemKhoTL() {
+           var masach = document.getElementById("MasachThanhLyModal").value;
+    var soluong = document.getElementById("SoluongModal").value;
+    var soluonghientai = document.getElementById("soluongHienTaiSachThanhLyModal").value;
+
+    if (!masach || !soluong) {
+        document.getElementById("contentModalError").innerHTML = "Thông tin sách không được để trống!";
+        $("#ModalError").modal("show");
+    } else if (parseInt(soluong) <= parseInt(soluonghientai)) {
+        var confirmed = confirm("Bạn có chắc muốn thêm vào kho sách thanh lý không?");
+        if (confirmed) {
+            $.ajax({
+                url: '@Url.Action("ThemSachThanhLy", "ThanhLySach")',
+                type: 'POST',
+                data: {
+                    masach: masach,
+                    soluong: soluong,
+                },
+                success: function (response) {
+                    if (response.success) {
+                        document.getElementById("MasachThanhLyModal").value = "";
+                        document.getElementById("SoluongModal").value = "";
+
+                        document.getElementById("contentModalSuccess").innerHTML = "Thêm vào kho sách thành công";
+                        $("#ThemKhoTLModal").modal("hide");
+                        loadsachTLs("");
+                        loadDanhSachNhapKho("");
+                       
+                    } else {
+                        document.getElementById("contentModalError").innerHTML = "Lỗi khi thêm, Hãy thử lại!";
+                        $("#ModalError").modal("show");
+                      
+                    }
+                },
+                error: function () {
+                    alert("Lỗi khi gửi yêu cầu đến máy chủ.");
+                }
+            });
+        }
+    } else {
+        document.getElementById("contentModalError").innerHTML = "Số lượng nhập kho không được lớn hơn số lượng hiện tại!";
+        $("#ModalError").modal("show");
+    }
+        }
+        function lamMoiKhoTLInsert() {
+            document.getElementById("MasachModal").value = "";
+            document.getElementById("SoluongModal").value = "";
+
+        }
+
+        ///=============Làm mới trang////////////////
+        function lamMoi() {
+            document.getElementById("MaDV").value = "";
+            document.getElementById("Name").value = "";
+            document.getElementById("SDT").value = "";
+            document.getElementById("DiaChi").value = "";
+
+            let danhSachSachTL = document.getElementById("danhSachSachTL");
+            danhSachSachTL.innerHTML = "";
+            changeTableShow(thongTinDonViTable, thongTinSachTable);
+        }
+
+
+        function taoPhieuTL() {
+            var maDonVi = document.getElementById("MaDV").value;
+            if (maDonVi == "" || maDonVi == 'undefined') {
+                alert("Vui lòng chọn Đơn vị.");
+                return;
+            }
+
+            if (sachValues == null || sachValues.length == 0) {
+                alert("Vui lòng chọn sách thanh lý.");
+                return;
+            }
+
+
+
+            var dataPost = {
+                MaNhanVien: @HttpContext.Current.Session["manv"],
+                MaDonVi: document.getElementById("MaDV").value,
+                listSachTL: sachValues,
+            };
+            var confirmed = confirm("Bạn có chắc muốn tạo phiếu phiếu thanh lý không?");
+            if (confirmed) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Admin/ThanhLySach/TaoSachThanhLy",
+                    data: JSON.stringify(dataPost),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (response) {
+                        if (response.success) {
+                            document.getElementById("contentModalSuccess").innerHTML = "Thêm phiếu thanh lý thành công!";
+                            $("#ModalSuccess").modal("show");
+                            sachValues = [];
+                            lamMoi();
+
+                            console.log('Tạo phiếu thanh lý: ', response);
+                        } else {
+                            document.getElementById("contentModalError").innerHTML = "Vui lòng nhập đầy đủ thông tin!";
+                            $("#ModalError").modal("show");
+                            console.log('Tạo phiếu thanh lý: ', response);
+                        }
+                    },
+                    error: function () {
+                        alert("Lỗi khi gửi yêu cầu đến máy chủ.");
+                    }
+                });
+            }
+
+        }
+
+
+    </script>
+}

@@ -18,7 +18,7 @@ namespace WebQuanLyThuVien.Models
         public int MaSach { get; set; }
         public Nullable<int> Soluongmuon { get; set; }
     
-        public virtual Sach Sach { get; set; }
         public virtual PhieuMuon PhieuMuon { get; set; }
+        public virtual Sach Sach { get; set; }
     }
 }

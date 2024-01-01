@@ -1,0 +1,236 @@
+﻿@model WebQuanLyThuVien.Models.LOGIN_DG
+
+@{
+    ViewBag.Title = "DangKy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container justify-content-center" style="max-width:600px">
+    <h2 style="font-family:'Times New Roman', Times, serif; text-align:center">Đăng ký</h2>
+    <form class="g-3 needs-validation" style="margin-top:10px" novalidate>
+        <div class="form-group">
+            <label for="validationCustom01" class="form-label">Họ tên</label>
+            <input type="text" class="form-control" id="validationCustom01" value="" required>
+            <div class="invalid-feedback" id="name-error">
+                Vui lòng điền họ tên!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="validationCustom02" class="form-label">Email</label>
+            <input type="text" class="form-control" id="validationCustom02" value="" required>
+            <div class="invalid-feedback" id="email-error">
+                Vui lòng điền đúng định dạng email!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="validation04" class="form-label">Số điện thoại</label>
+            <input type="text" class="form-control" id="validation04" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback" id="phone-error">
+                Vui lòng điền đúng định dạng số điện thoại!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="validationCustom03" class="form-label">Mật khẩu</label>
+            <input type="password" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback" id="password-error">
+                Mật khẩu phải có ít nhất 8 ký tự.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="validationCustom05" class="form-label">Nhập lại mật khẩu</label>
+            <input type="password" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback" id="confirm-password-error">
+                Mật khẩu không khớp.
+            </div>
+        </div>
+        <div class="form-group" style="justify-items:center; text-align:center; margin-top:30px">
+            <button class="btn btn-primary" type="button" onclick="validateForm()">Đăng ký</button>
+        </div>
+    </form>
+</div>
+
+<!-- Modal -->
+<div class="modal" tabindex="-1" role="dialog" id="otpModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" style="color:orangered">Enter OTP</h5>
+                <span aria-hidden="true">&times;</span>
+            </div>
+            <div class="modal-body">
+                <!-- Form để nhập OTP -->
+                <form id="otpForm">
+                    <div class="form-group">
+                        <label for="otpInput" style="font-weight:bold">OTP:</label>
+                        <input type="text" class="form-control" id="otpInput" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="submitOTP()" style="margin-top:10px;">Submit OTP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function validateForm() {
+        var fullNameInput = document.getElementById('validationCustom01').value.trim();
+        var emailInput = document.getElementById('validationCustom02').value.trim();
+        var phoneNumberInput = document.getElementById('validation04').value.trim();
+        var passwordInput = document.getElementById('validationCustom03').value.trim();
+        var confirmPasswordInput = document.getElementById('validationCustom05').value.trim();
+
+        var validFullName = validateFullName(fullNameInput);
+        var validEmail = validateEmail(emailInput);
+        var validPhoneNumber = validatePhoneNumber(phoneNumberInput);
+        var validPassword = validatePassword(passwordInput);
+        var validConfirmPassword = validateConfirmPassword(passwordInput, confirmPasswordInput);
+
+        console.log("validFullName", fullNameInput);
+        console.log("validEmail", emailInput);
+        console.log("validFullName", phoneNumberInput);
+        console.log("validPassword", passwordInput);
+        console.log("validConfirmPassword", confirmPasswordInput);
+
+
+        if (validFullName && validEmail && validPhoneNumber && validPassword && validConfirmPassword) {
+            $.ajax({
+                url: "/User/DangKyTaiKhoan",
+                type: "POST",
+                data:
+                {
+                    email: emailInput
+                },
+                success: function (data) {
+                    if (data.success) {
+                        // Mở modal nhập OTP
+                        $('#otpModal').modal('show');
+                    } else
+                    {
+                        alert("Email đã được sử dụng!");
+
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert("Đăng ký thất bại!");
+                    console.error("AJAX error: " + status + ' ' + error);
+                }
+            });
+        }
+    }
+
+    function submitOTP() {
+        var fullNameInput = document.getElementById('validationCustom01').value.trim();
+        var emailInput = document.getElementById('validationCustom02').value.trim();
+        var phoneNumberInput = document.getElementById('validation04').value.trim();
+        var passwordInput = document.getElementById('validationCustom03').value.trim();
+        // Lấy OTP từ người dùng nhập vào
+        var enteredOTP = $('#otpInput').val();
+        console.log(enteredOTP);
+
+        $.ajax({
+            url: "/User/XacNhanDangKyTaiKhoan",
+            type: "POST",
+            data: {
+                hoTen: fullNameInput,
+                email: emailInput,
+                sdt: phoneNumberInput,
+                matKhau: passwordInput,
+                OTPInput: enteredOTP
+            },
+            success: function (data) {
+                if (data.success) {
+                    // Nếu mã OTP hợp lệ, đóng modal
+                    $('#otpModal').modal('hide');
+                    alert("Đăng ký thành công!");
+                    // chuyển hướng view sang index
+                    window.location.href = '/User/Index';
+
+                } else {
+                    alert(data.message)
+                }
+
+            },
+            error: function (xhr, status, error) {
+                alert("Đăng ký thất bại!");
+                console.error("AJAX error: " + status + ' ' + error);
+            }
+        });
+
+    }
+
+    function validateFullName(fullName) {
+        console.log("Check Name");
+        var errorElement = document.getElementById('name-error');
+        var fullNameInput = document.getElementById('validationCustom01').value.trim();
+        if (fullName !== "") {
+            errorElement.style.display = 'none';
+            return true;
+        } else {
+            errorElement.textContent = 'Vui lòng điền họ tên!';
+            errorElement.style.display = 'block';
+            return false;
+        }
+    }
+
+    function validateEmail(email) {
+        console.log("Check email");
+        var emailRegex = /^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        var errorElement = document.getElementById('email-error');
+
+        if (email !== "" && emailRegex.test(email)) {
+            errorElement.style.display = 'none';
+            return true;
+        } else {
+            errorElement.textContent = 'Vui lòng nhập đúng định dạng email!';
+            errorElement.style.display = 'block';
+            return false;
+        }
+    }
+
+
+
+    function validatePhoneNumber(phoneNumber) {
+        console.log("Check sdt");
+        var phoneNumberRegex = /^[0-9]{10,11}$/;
+        var errorElement = document.getElementById('phone-error');
+
+        if (phoneNumber !== "" && phoneNumberRegex.test(phoneNumber)) {
+            errorElement.style.display = 'none';
+            return true;
+        } else {
+            errorElement.textContent = 'Vui lòng điền đúng định dạng số điện thoại!';
+            errorElement.style.display = 'block';
+            return false;
+        }
+    }
+
+    function validatePassword(password) {
+        console.log("Check pass");
+        var minLength = 8;
+        var errorElement = document.getElementById('password-error');
+
+        if (password !== "" && password.length >= minLength) {
+            errorElement.style.display = 'none';
+            return true;
+        } else {
+            errorElement.textContent = 'Mật khẩu phải có ít nhất 8 ký tự.';
+            errorElement.style.display = 'block';
+            return false;
+        }
+    }
+
+    function validateConfirmPassword(password, confirmPassword) {
+        console.log("Check repass");
+        var errorElement = document.getElementById('confirm-password-error');
+
+        if (confirmPassword !== "" && confirmPassword === password) {
+            errorElement.style.display = 'none';
+            return true;
+        } else {
+            errorElement.textContent = 'Mật khẩu không khớp.';
+            errorElement.style.display = 'block';
+            return false;
+        }
+    }
+</script>

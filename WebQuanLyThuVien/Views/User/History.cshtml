@@ -1,0 +1,221 @@
+﻿@model IEnumerable<WebQuanLyThuVien.Models.DkiMuonSach>
+
+@{
+    ViewBag.Title = "History";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 style="text-align:center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:orangered">Lịch sử đăng ký</h1>
+
+<div class="table-responsive">
+    <table class="table table-striped" style="text-align:center">
+        <thead>
+            <tr>
+                <th>
+                    <h6>Mã đăng ký</h6>
+                </th>
+                <th>
+                    <h6>Ngày đăng ký mượn</h6>
+                </th>
+                <th>
+                    <h6>Ngày hẹn</h6>
+                </th>
+                <th>
+                    <h6>Tình trạng</h6>
+                </th>
+                <th>
+                    <h6>Thao tác</h6>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr id="row_@item.MaDK" class="@if(item.Tinhtrang == 3) { <text>da-huy</text> }">
+                    <td style="margin-right:50px">
+                        @Html.DisplayFor(modelItem => item.MaDK)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayDKMuon)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayHen)
+                    </td>
+                    <td class="trang-thai">
+                        @if (item.Tinhtrang == 0)
+                        {
+                            <span class="badge badge-secondary" style="color:black;">Chưa duyệt</span>
+                        }
+
+                        else if (item.Tinhtrang == 1)
+                        {
+                            <span class="badge badge-success" style="color:black">Đã duyệt</span>
+
+                        }
+                        else if (item.Tinhtrang == 2)
+                        {
+                            <span class="badge badge-info" style="color:black">Đã mượn</span>
+                        }
+                        else if (item.Tinhtrang == 3)
+                        {
+                            <span class="badge badge-danger" style="color:black">Đã hủy</span>
+                        }
+                    </td>
+
+                    <td>
+                        @if (item.Tinhtrang == 0)
+                        {
+                            <button class="btn btn-danger btn-sm btn-huy" onclick="HuyDon(@item.MaDK)">Hủy</button>
+                        }
+
+                        <button class="btn btn-danger btn-sm" onclick="showDetails(@item.MaDK)">Chi tiết</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@*/////////////////////////////////*@
+
+<div class="modal fade bd-example-modal-lg" id="ModaldanhSachDkiMuon" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+            <!-- Header -->
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 text-blue" style="font-weight: bold;" id="">Chi tiết</h4>
+            </div>
+
+            <!-- Body -->
+            <form class="modal-body p-4">
+                <div class="form-row">
+                    <!--Mã đăng ký-->
+                    <div class="form-group col-2">
+                        <label>Mã ĐK:</label>
+                        <input class="form-control" id="maDangKyModal" readonly>
+                    </div>
+                </div>
+
+                <!--Danh sách sách đăng ký mượn-->
+                <div class="text-center">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Mã sách</th>
+                                <th>Tên sách</th>
+                                <th>S/Lượng</th>
+                            </tr>
+                        </thead>
+                        <tbody id="danhSachSachDk">
+                            <!--Render từ ajax-->
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+
+            <!-- Footer -->
+            <div class="modal-footer" id="modal-footer">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Update the "Details" action link in your existing table -->
+
+<script>
+    function HuyDon(maDK) {
+
+        var confirmed = confirm("Bạn chắc chắn muốn hủy đơn?");
+        if (confirmed) {
+
+            console.log("maDK", maDK)
+
+            $.ajax({
+                url: "/User/HuyDon",
+                type: "POST",
+                data: {
+                    maDK: maDK,
+                },
+                success: function (data) {
+                    if (data.success) {
+                        alert(data.message);
+
+                        // Ẩn nút Hủy và cập nhật trạng thái đã hủy
+                        var row = $("#row_" + maDK);
+                        var trangThaiElement = row.find(".trang-thai");
+                        trangThaiElement.html("<span class='badge badge-danger' style='color:black;'>Đã hủy</span>");
+                        row.addClass("da-huy");
+                        row.find(".btn-huy").hide();
+                    } else {
+                        console.log("Huy don thanh cong");
+                    }
+                },
+                error: function () {
+                    alert("Error fetching data.");
+                }
+            });
+        }
+    }
+
+
+    function showDetails(maDK) {
+
+
+        $.ajax({
+            url: "/User/GetDetails",
+            type: "POST",
+            data: {
+                maDK: maDK,
+            },
+            success: function (data) {
+                console.log("details: ", data);
+                // Show the modal
+                $("#Details").modal("show");
+
+                var danhSachSachDK = $("#danhSachSachDk");
+
+                danhSachSachDK.empty(); // Xóa nội dung bảng
+
+                $.each(data.details, function (index, item) {
+                    console.log("item: ", item);
+
+                    document.getElementById("maDangKyModal").value = item.chiTietDk.MaDK;
+
+
+                    var newRow = $(` <tr class="sachdk-row" data-ma-sach="${item.MaSach}">
+                        <td>${item.chiTietDk.MaSach}</td>
+                        <td>${item.tenSach}</td>
+                        <td>${item.chiTietDk.Soluongmuon}</td>
+                        </tr> `);
+
+                    danhSachSachDK.append(newRow);
+                    $("#ModaldanhSachDkiMuon").modal("show");
+                });
+            },
+            error: function () {
+                // Handle the error if the request fails
+                alert("Error fetching details.");
+            }
+        });
+    }
+
+
+    function getTinhTrangLabel(tinhTrang) {
+        // Implement logic to get the label for the TinhTrang based on the value
+        // Example logic:
+        if (tinhTrang == 0) {
+            return "Chưa duyệt";
+        } else if (tinhTrang == 1) {
+            return "Đã duyệt";
+        } else if (tinhTrang == 2) {
+            return "Đã mượn";
+        } else if (tinhTrang == 3) {
+            return "Đã hủy";
+        }
+        return "";
+    }
+</script>

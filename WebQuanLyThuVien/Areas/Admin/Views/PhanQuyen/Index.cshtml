@@ -1,0 +1,574 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Hiển thị danh sách NhanViens -->
+<section class="content">
+    <div class="container-fluid pt-4">
+        <div class="row">
+
+            <!-- Sách và Thông tin độc giả -->
+            <div class="col-6" style="height: 80vh;">
+                <div class="card" style="height: 100%;">
+                    <div class="card-header">
+                        <div class="form-row">
+                            <div class="col-8">
+                                <h3 class="text-center text-blue text-bold"> Thêm Tài Khoản Nhân Viên </h3>
+                            </div>
+                            <div class="col-2">
+                                <button type="submit" class="btn btn-primary taoPhieuMuon" id="taoPhieuMuon" onclick="ThemNhanVien()"> Thêm </button>
+                            </div>
+                            <div class="col-2">
+                                <button type="button" class="btn btn-warning lamMoiSach" id="lamMoiButton" onclick="lamMoi()">Làm mới</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body" style="overflow-y: auto;">
+                        <form>
+                            <div class="form-row">
+                                <!--Họ tên-->
+                                <div class="form-group col">
+                                    <label for="hoTen">Họ tên:</label>
+                                    <input type="text" class="form-control" id="hoTen" name="hoTen">
+                                </div>
+
+                                <!--Số điện thoại-->
+                                <div class="form-group col">
+                                    <label for="soDienThoai">Số điện thoại:</label>
+                                    <input type="text" class="form-control" id="soDienThoai" name="soDienThoai">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Ngày sinh -->
+                                <div class="form-group col">
+                                    <label for="ngaySinh">Ngày sinh:</label>
+                                    <input type="date" class="form-control" id="ngaySinh" name="ngaySinh">
+                                </div>
+
+                                <!-- Giới tính -->
+                                <div class="form-group col">
+                                    <label for="gioiTinh">Giới tính:</label>
+                                    <select class="form-control" id="gioiTinh" name="gioiTinh">
+                                        <option>Chọn giới tính</option>
+                                        <option value="Nam"> Nam </option>
+                                        <option value="Nữ"> Nữ </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!--Địa chỉ-->
+                                <div class="form-group col">
+                                    <label for="diaChi">Địa chỉ:</label>
+                                    <input type="text" class="form-control" id="diaChi" name="diaChi">
+                                </div>
+
+                                <!-- Chức vụ -->
+                                <div class="form-group col">
+                                    <label for="chucVu">Chức vụ:</label>
+                                    <select class="form-control" id="chucVu" name="chucVu">
+                                        <option>Chọn chức vụ</option>
+                                        <option value="ADMIN">Admin</option>
+                                        <option value="QuanLyKho">Quản lý kho</option>
+                                        <option value="ThuThu">Thủ thư</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!--Username-->
+                                <div class="form-group col">
+                                    <label for="username">Username:</label>
+                                    <input type="text" class="form-control" id="username" name="username">
+                                </div>
+
+                                <!-- Password -->
+                                <div class="form-group col">
+                                    <label for="password">Password:</label>
+                                    <input type="text" class="form-control" id="password" name="password">
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sách và Thông tin độc giả -->
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <button id="thongTinDocGiaButton" class="btn btn-primary">
+                            Danh sách nhân viên
+                        </button>
+                        <div class="card-tools">
+                            <div class="input-group input-group-sm pt-2"
+                                 style="width: 150px">
+                                <input type="text"
+                                       name="table_search"
+                                       class="form-control float-right"
+                                       placeholder="Search" />
+
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Body table nhân viên-->
+                    <div class="card-body table-responsive p-0"
+                         style="height: 71.2vh" id="thongTinNhanVienTable">
+                        <table class="table table-head-fixed table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Mã</th>
+                                    <th>Họ tên</th>
+                                    <th>SDT</th>
+                                    <th>Chức vụ</th>
+                                </tr>
+                            </thead>
+                            <tbody id="thongTinNhanVien">
+                                @*@foreach (var item in ViewData["thongTinNhanVien"] as List<WebQuanLyThuVien.Models.NhanVien>)
+                                {
+                                    <tr class="thongtinnhanvien-row" data-ma-nv="@item.MaNV">
+                                        <td>@item.MaNV</td>
+                                        <td>@item.HoTenNV</td>
+                                        <td>@item.SDT</td>
+                                        <td>@item.ChucVu</td>
+                                    </tr>
+                                }*@
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Chỉnh sửa thông tin nhân viên-->
+<div class="modal fade bd-example-modal-lg" id="chinhSuaThongTinModal" tabindex="-1" role="dialog" aria-labelledby="chinhSuaThongTinModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+            <!-- Header -->
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 text-blue" style="font-weight: bold;" id="">Chỉnh Sửa Thông Tin Tài Khoản Nhân Viên</h4>
+            </div>
+
+            <!-- Body -->
+            <form class="modal-body p-4">
+                <div class="form-row">
+                    <!--Mã Nhân viên-->
+                    <div class="form-group col-2">
+                        <label>Mã nhân viên:</label>
+                        <input class="form-control" id="maNhanVienModal" readonly>
+                    </div>
+
+                    <!-- Giới tính -->
+                    <div class="form-group col">
+                        <label for="gioiTinhModal">Giới tính:</label>
+                        <select class="form-control" id="gioiTinhModal" name="gioiTinhModal">
+                            <option>Chọn giới tính</option>
+                            <option value="Nam"> Nam </option>
+                            <option value="Nữ"> Nữ </option>
+                        </select>
+                    </div>
+
+                    <!-- Ngày sinh -->
+                    <div class="form-group col">
+                        <label for="ngaySinhModal">Ngày sinh:</label>
+                        <input type="date" class="form-control" id="ngaySinhModal" name="ngaySinhModal">
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    <!-- Tên nhân viên-->
+                    <div class="form-group col">
+                        <label for="tenNhanVienModal">Tên nhân viên:</label>
+                        <input type="text" class="form-control" id="tenNhanVienModal" name="tenNhanVienModal">
+                    </div>
+
+                    <!-- Số điện thoại-->
+                    <div class="form-group col">
+                        <label for="soDienThoaiModal">Số điện thoại:</label>
+                        <input type="text" class="form-control" id="soDienThoaiModal" name="soDienThoaiModal">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!-- Địa chỉ -->
+                    <div class="form-group col">
+                        <label for="diaChiModal">Địa chỉ:</label>
+                        <input type="text" class="form-control" id="diaChiModal" name="diaChiModal">
+                    </div>
+
+                    <!-- Chức vụ -->
+                    <div class="form-group col">
+                        <label for="chucVuModal">Chức vụ:</label>
+                        <select class="form-control" id="chucVuModal" name="chucVuModal">
+                            <option>Chọn chức vụ</option>
+                            <option value="ADMIN">Admin</option>
+                            <option value="QuanLyKho">Quản lý kho</option>
+                            <option value="ThuThu">Thủ thư</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--Username-->
+                    <div class="form-group col">
+                        <label for="usernameModal">Username:</label>
+                        <input type="text" class="form-control" id="usernameModal" name="usernameModal">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group col">
+                        <label for="passwordModal">Password:</label>
+                        <input type="text" class="form-control" id="passwordModal" name="passwordModal">
+                    </div>
+                </div>
+            </form>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Đóng </button>
+                <button type="button" class="btn btn-primary" onclick="CapNhatThongTin()"> Cập nhật </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal error-->
+<div class="modal fade" id="ModalError" tabindex="-1" role="dialog" aria-labelledby="ModalError" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center bg-danger">
+                <span class="" id="contentModalError"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal success-->
+<div class="modal fade" id="ModalSuccess" tabindex="-1" role="dialog" aria-labelledby="ModalSuccess" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center bg-green">
+                <span class="" id="contentModalSuccess"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+
+        function isValidUsername(username) {
+            // Kiểm tra username không chứa ký tự đặc biệt, viết hoa, dấu cách và có chiều dài từ 3 đến 20 ký tự
+            var regex = /^[a-z0-9]{3,20}$/;
+            return regex.test(username);
+        }
+
+       function isValidPassword(password) {
+        // Không cho phép khoảng trắng và kí tự có dấu
+        var regex = /^[a-zA-Z0-9!#$%^&*()_+{}\[\]:;<>,.?~\\/-]+$/;
+
+        // Kiểm tra chiều dài từ 3 đến 20 ký tự
+        return regex.test(password) && password.length >= 3 && password.length <= 20;
+        }
+
+
+        // Hàm check số điện thoại
+        function isValidPhoneNumber(phone) {
+            var phoneRegex = /^\d{10,11}$/;
+            return phoneRegex.test(phone);
+        }
+
+        // Hàm check ngày sinh
+        function isValidDateOfBirth(dateOfBirth) {
+            var today = new Date();
+            var selectedDate = new Date(dateOfBirth);
+
+            // Chỉ cho phép ngày sinh không lớn hơn hiện tại
+            return selectedDate <= today;
+        }
+
+        //===================== Hàm Làm mới danh sách sách nhập =====================
+
+        function lamMoi() {
+            // Làm mới trang
+            location.reload();
+        }
+
+
+        ////=====================  Xử lý sự kiện khi click vào 1 hàng  trong table  =====================
+        var tableContainer = document.getElementById("thongTinNhanVienTable");
+        tableContainer.addEventListener("click", function (event) {
+            var targetRow = event.target.closest(".thongtinnhanvien-row");
+
+            if (targetRow) {
+                 // Lấy thông tin
+                var maNV = targetRow.querySelector("td:nth-child(1)").textContent;
+
+                 $.ajax({
+                    url: '@Url.Action("ThongTinNhanVien", "PhanQuyen")',
+                    type: 'POST',
+                    data: {
+                        id: maNV,
+                    },
+                    success: function (data) {
+                        if (data.success) {
+
+                            var nv = data.data;
+
+                            console.log("Thông tin NhanVien: ", nv);
+                            document.getElementById("maNhanVienModal").value = nv.MaNV;
+                            document.getElementById("gioiTinhModal").value = nv.GioiTinh;
+                            document.getElementById("tenNhanVienModal").value = nv.HoTenNV;
+                            document.getElementById("soDienThoaiModal").value = nv.SDT;
+                            document.getElementById("diaChiModal").value = nv.DiaChi;
+                            document.getElementById("chucVuModal").value = nv.ChucVu;
+                            document.getElementById("usernameModal").value = nv.Username;
+                            document.getElementById("passwordModal").value = "";
+
+                            // Lấy ngày sinh từ đối tượng nv.NgaySinh
+                            var ngaySinhTicks = parseInt(nv.NgaySinh.replace("/Date(", "").replace(")/", ""));
+                            var ngaySinhDate = new Date(ngaySinhTicks);
+
+                            // Chuyển đổi ngày thành định dạng "yyyy-mm-dd" để đặt giá trị cho input type="date"
+                            var formattedNgaySinh = ngaySinhDate.toLocaleDateString('en-CA');
+
+                            document.getElementById("ngaySinhModal").value = formattedNgaySinh;
+
+
+                            // Mở modal
+                            $("#chinhSuaThongTinModal").modal("show");
+                        } else {
+                            console.error("Không thành công trong việc nhận dữ liệu từ server.");
+                        }
+                    },
+                    error: function (error) {
+                        console.error("Error:", error);
+                    }
+                });
+            }
+        });
+
+
+
+        //=====================  Thêm nhân viên  =====================
+        function ThemNhanVien() {
+            var hoTen = document.getElementById('hoTen').value;
+            var soDienThoai = document.getElementById('soDienThoai').value;
+            var gioiTinh = document.getElementById('gioiTinh').value;
+            var ngaySinh = document.getElementById('ngaySinh').value;
+            var diaChi = document.getElementById('diaChi').value;
+            var chucVu = document.getElementById('chucVu').value;
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Hàm kiểm tra và hiển thị lỗi
+            function showError(message) {
+                document.getElementById("contentModalError").innerHTML = message;
+                $("#ModalError").modal("show");
+            }
+
+            if (!hoTen || !soDienThoai || !diaChi || !ngaySinh || gioiTinh === "Chọn giới tính" || chucVu === "Chọn chức vụ" || !username || !password) {
+                showError("Hãy điền đầy đủ thông tin!");
+                return;
+            }
+
+            if (!isValidPhoneNumber(soDienThoai)) {
+                showError("Hãy nhập đúng định dạng số điện thoại!");
+                return;
+            }
+
+            if (!isValidDateOfBirth(ngaySinh)) {
+                showError("Ngày sinh không đúng!");
+                return;
+            }
+
+            if (!isValidUsername(username)) {
+                showError("Username không chứa ký tự đặc biệt, viết hoa, và từ 3 -> 20 ký tự!");
+                return;
+            }
+
+            //if (!isValidPassword(password)) {
+            //    showError("Password không chứa ký tự đặc biệt, viết hoa và từ 3 -> 20 ký tự!");
+            //    return;
+            //}
+
+            var confirmed = confirm("Bạn có chắc muốn thêm nhân viên không?");
+            if (confirmed) {
+                $.ajax({
+                    url: '@Url.Action("ThemNhanVien", "PhanQuyen")',
+                    type: 'POST',
+                    data: {
+                        hoTen: hoTen,
+                        soDienThoai: soDienThoai,
+                        gioiTinh: gioiTinh,
+                        ngaySinh: ngaySinh,
+                        diaChi: diaChi,
+                        chucVu: chucVu,
+                        username: username,
+                        password: password,
+                    },
+                    success: function (data) {
+                        if (data.success) {
+                            console.log("data: ", data)
+
+                            document.getElementById("contentModalSuccess").innerHTML = "Thêm nhân viên thành công";
+                            $("#ModalSuccess").modal("show");
+
+                            GetAllNhanVien();
+
+                            document.getElementById('hoTen').value = "";
+                            document.getElementById('soDienThoai').value = "";
+                            document.getElementById('gioiTinh').value = "Chọn giới tính";
+                            document.getElementById('ngaySinh').value = "yyyy-MM-dd";
+                            document.getElementById('diaChi').value = "";
+                            document.getElementById('chucVu').value = "Chọn chức vụ";
+                            document.getElementById('username').value = "";
+                            document.getElementById('password').value = "";
+
+                        } else {
+                            console.log("data: ", data)
+
+                            document.getElementById("contentModalError").innerHTML = data.message;
+                            $("#ModalError").modal("show");
+                        }
+                    }
+                });
+            }
+        }
+
+
+        //=====================  Cập nhật thông tin  =====================
+        function CapNhatThongTin() {
+
+            var maNV = document.getElementById("maNhanVienModal").value;
+            var gioiTinh = document.getElementById("gioiTinhModal").value;
+            var hoTen = document.getElementById("tenNhanVienModal").value;
+            var soDienThoai = document.getElementById("soDienThoaiModal").value;
+            var diaChi = document.getElementById("diaChiModal").value;
+            var chucVu = document.getElementById("chucVuModal").value;
+            var username = document.getElementById("usernameModal").value;
+            var password = document.getElementById("passwordModal").value;
+            var ngaySinh = document.getElementById("ngaySinhModal").value;
+
+            // Hàm kiểm tra và hiển thị lỗi
+            function showError(message) {
+                document.getElementById("contentModalError").innerHTML = message;
+                $("#ModalError").modal("show");
+            }
+
+            if (!hoTen || !soDienThoai || !diaChi || !ngaySinh || gioiTinh === "Chọn giới tính" || chucVu === "Chọn chức vụ" || !username) {
+                showError("Hãy điền đầy đủ thông tin!");
+                return;
+            }
+
+            if (!isValidPhoneNumber(soDienThoai)) {
+                showError("Hãy nhập đúng định dạng số điện thoại!");
+                return;
+            }
+
+            if (!isValidDateOfBirth(ngaySinh)) {
+                showError("Ngày sinh không đúng!");
+                return;
+            }
+
+            if (!isValidUsername(username)) {
+                showError("Username không chứa ký tự đặc biệt, viết hoa, và từ 3 -> 20 ký tự!");
+                return;
+            }
+
+            if (!isValidPassword(password) && password.trim() != "") {
+                showError("Password không chứa khoảng trắng, kí tự có dấu và từ 3 -> 20 ký tự!");
+                return;
+            }
+
+            var confirmed = confirm("Bạn có chắc muốn cập nhật thông tin không?");
+            if (confirmed) {
+                $.ajax({
+                    url: '@Url.Action("CapNhatThongTin", "PhanQuyen")',
+                    type: 'POST',
+                    data: {
+                        maNV: maNV,
+                        gioiTinh: gioiTinh,
+                        hoTen: hoTen,
+                        soDienThoai: soDienThoai,
+                        diaChi: diaChi,
+                        chucVu: chucVu,
+                        username: username,
+                        password: password,
+                        ngaySinh: ngaySinh,
+                    },
+                    success: function (data) {
+                        if (data.success) {
+                            console.log("data: ", data)
+
+                            document.getElementById("contentModalSuccess").innerHTML = "Cập nhật thông tin nhân viên thành công!";
+                            $("#ModalSuccess").modal("show");
+
+                            GetAllNhanVien()
+
+                            $("#chinhSuaThongTinModal").modal("hide");
+                        } else {
+                            console.log("data: ", data)
+
+                            document.getElementById("contentModalError").innerHTML = data.message;
+                            $("#ModalError").modal("show");
+                        }
+                    }
+                });
+            }
+        }
+
+
+        function GetAllNhanVien() {
+            $.ajax({
+                type: "GET",
+                url: '@Url.Action("GetAllNhanVien", "PhanQuyen")',
+                dataType: 'json', // Đảm bảo dữ liệu trả về là JSON
+                success: function (res) {
+                    var render = "";
+
+                    $.each(res.Result, function (i, item) {
+                        render += '<tr class="thongtinnhanvien-row" data-ma-nv="' + item.MaNV + '">';
+                        render += '<td>' + item.MaNV + '</td>';
+                        render += '<td>' + item.HoTenNV + '</td>';
+                        render += '<td>' + item.SDT + '</td>';
+                        render += '<td>' + item.ChucVu + '</td>';
+                    });
+
+                    let danhSachNhanVien = document.getElementById("thongTinNhanVien");
+                    danhSachNhanVien.innerHTML = render;
+                },
+                error: function (status) {
+                    // Hiển thị cảnh báo nếu có lỗi
+                    alert("Không tìm thấy dữ liệu");
+                }
+            });
+        }
+
+
+        $(document).ready(function () {
+            GetAllNhanVien(); // Gọi hàm khi trang đã sẵn sàng
+        });
+
+
+    </script>
+}
+
+

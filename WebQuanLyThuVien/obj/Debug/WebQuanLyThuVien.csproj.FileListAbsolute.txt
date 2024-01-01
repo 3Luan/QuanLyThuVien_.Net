@@ -106,3 +106,1306 @@ D:\Visual Studio Source\Lập Trình Web\WebQuanLyThuVien\WebQuanLyThuVien\obj\D
 D:\Visual Studio Source\Lập Trình Web\WebQuanLyThuVien\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CopyComplete
 D:\Visual Studio Source\Lập Trình Web\WebQuanLyThuVien\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.dll
 D:\Visual Studio Source\Lập Trình Web\WebQuanLyThuVien\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.pdb
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll.config
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.pdb
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Web.Infrastructure.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Owin.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebGrease.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.pdb
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.AssemblyReference.cache
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CopyComplete
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.dll
+D:\Visual Studio Source\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.pdb
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll.config
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.pdb
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe.config
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.rsp
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe.config
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.rsp
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.AppContext.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Collections.Immutable.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Console.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Globalization.Calendars.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Http.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Sockets.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.ValueTuple.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe.config
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.rsp
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe.config
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Web.Infrastructure.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Owin.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebGrease.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.pdb
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.AssemblyReference.cache
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CopyComplete
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.pdb
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll.config
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.pdb
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe.config
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.rsp
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe.config
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.rsp
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.AppContext.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Collections.Immutable.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Console.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Globalization.Calendars.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Http.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Sockets.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.ValueTuple.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe.config
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.rsp
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe.config
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Web.Infrastructure.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Owin.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebGrease.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.pdb
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.AssemblyReference.cache
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CopyComplete
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.dll
+D:\Nam3Ky1\BAITAPLON\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.pdb
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll.config
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\WebQuanLyThuVien.pdb
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\csc.exe
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\csc.exe.config
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\csc.rsp
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\csi.exe
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\csi.exe.config
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\csi.rsp
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.AppContext.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Collections.Immutable.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Console.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Globalization.Calendars.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Net.Http.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Net.Sockets.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.ValueTuple.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\vbc.exe
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\vbc.exe.config
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\vbc.rsp
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe.config
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Antlr3.Runtime.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\EntityFramework.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\EntityFramework.SqlServer.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Web.Infrastructure.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Newtonsoft.Json.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Owin.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.Helpers.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.Mvc.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.Optimization.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.Razor.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.WebPages.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\WebGrease.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.Helpers.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.Mvc.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.Optimization.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.Razor.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.WebPages.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Newtonsoft.Json.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Antlr3.Runtime.pdb
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\EntityFramework.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\EntityFramework.SqlServer.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.AssemblyReference.cache
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CopyComplete
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.dll
+D:\Visual Studio Source\Lập Trình Web\BTLWEB_PTTKTT_KL\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.pdb
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll.config
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.pdb
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe.config
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.rsp
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe.config
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.rsp
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.AppContext.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Collections.Immutable.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Console.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Globalization.Calendars.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Http.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Sockets.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.ValueTuple.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe.config
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.rsp
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe.config
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Web.Infrastructure.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Owin.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebGrease.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.pdb
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.AssemblyReference.cache
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CopyComplete
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.dll
+D:\Nam3Ky1\BAITAPLON\kimlien\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.pdb
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll.config
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.pdb
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe.config
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.rsp
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe.config
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.rsp
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.AppContext.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Collections.Immutable.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Console.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Globalization.Calendars.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Http.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Sockets.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.ValueTuple.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe.config
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.rsp
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe.config
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Web.Infrastructure.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Owin.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebGrease.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.pdb
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.AssemblyReference.cache
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CopyComplete
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.dll
+D:\Visual Studio Source\Lập Trình Web\Alpha\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.pdb
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll.config
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.pdb
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe.config
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.rsp
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe.config
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.rsp
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.AppContext.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Collections.Immutable.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Console.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Globalization.Calendars.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Http.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Sockets.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.ValueTuple.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe.config
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.rsp
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe.config
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Web.Infrastructure.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Owin.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebGrease.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.pdb
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.AssemblyReference.cache
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CopyComplete
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.pdb
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.dll
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.pdb
+D:\Visual Studio Source\Lập Trình Web\Bài tập lớn\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.pdb
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll.config
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.pdb
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe.config
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.rsp
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe.config
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.rsp
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.AppContext.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Collections.Immutable.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Console.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Globalization.Calendars.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Http.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Sockets.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.ValueTuple.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe.config
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.rsp
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe.config
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Web.Infrastructure.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Owin.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebGrease.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.pdb
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.pdb
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.AssemblyReference.cache
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CopyComplete
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.dll
+D:\gegem\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.pdb
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll.config
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.pdb
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe.config
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.rsp
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe.config
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.rsp
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.AppContext.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Collections.Immutable.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Console.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Globalization.Calendars.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Http.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Sockets.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.ValueTuple.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe.config
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.rsp
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe.config
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Web.Infrastructure.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Owin.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebGrease.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.pdb
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.pdb
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.AssemblyReference.cache
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CopyComplete
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.dll
+D:\Nam3Ky1\BAITAPLON\KimLien\BTLWEB_PTTKTT\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.pdb
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.AssemblyReference.cache
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.pdb
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll.config
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.pdb
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe.config
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.rsp
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe.config
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.rsp
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.AppContext.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Collections.Immutable.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Console.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Globalization.Calendars.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Http.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Sockets.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.ValueTuple.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe.config
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.rsp
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe.config
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Web.Infrastructure.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Owin.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebGrease.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.pdb
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.pdb
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CopyComplete
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Buffers.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.IO.Pipelines.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Memory.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Numerics.Vectors.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Threading.Tasks.Extensions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Primitives.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Buffers.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.IO.Pipelines.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Memory.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Numerics.Vectors.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Threading.Tasks.Extensions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authentication.Core.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authorization.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Mvc.Core.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Routing.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.WebUtilities.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.DependencyModel.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.ObjectPool.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Options.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Net.Http.Headers.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.ComponentModel.Annotations.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Text.Encodings.Web.dll
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authentication.Core.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authorization.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Mvc.Core.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Routing.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.WebUtilities.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.ObjectPool.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Options.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Net.Http.Headers.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Nam3Ky1\BAITAPLON\TestKimLien\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Text.Encodings.Web.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.AssemblyReference.cache
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll.config
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebQuanLyThuVien.pdb
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.exe.config
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csc.rsp
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.exe.config
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\csi.rsp
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.AppContext.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Collections.Immutable.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Console.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Globalization.Calendars.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Http.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Net.Sockets.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.ValueTuple.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.exe.config
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\vbc.rsp
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\roslyn\VBCSCompiler.exe.config
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authentication.Core.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authorization.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Mvc.Core.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Routing.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.WebUtilities.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.DependencyModel.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.ObjectPool.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Options.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Primitives.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Net.Http.Headers.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Web.Infrastructure.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Owin.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\PagedList.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\PagedList.Mvc.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Buffers.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.ComponentModel.Annotations.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.IO.Pipelines.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Memory.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Numerics.Vectors.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Text.Encodings.Web.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Threading.Tasks.Extensions.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\WebGrease.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.pdb
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\BCrypt.Net.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authentication.Core.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authorization.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Mvc.Core.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Routing.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNetCore.WebUtilities.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.ObjectPool.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Options.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Extensions.Primitives.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Net.Http.Headers.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\PagedList.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\PagedList.Mvc.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Buffers.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.IO.Pipelines.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Memory.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Numerics.Vectors.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Text.Encodings.Web.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Threading.Tasks.Extensions.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Helpers.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Mvc.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Optimization.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.Razor.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Deployment.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\System.Web.WebPages.Razor.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Newtonsoft.Json.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Antlr3.Runtime.pdb
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\EntityFramework.SqlServer.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Google.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.csproj.CopyComplete
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.dll
+D:\Nam3Ky1\BAITAPLON\Gom code\BTLWEB_PTTKTT\WebQuanLyThuVien\obj\Debug\WebQuanLyThuVien.pdb

@@ -1,0 +1,134 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Hiển thị danh sách NhanViens -->
+<section class="content">
+    <div class="container-fluid pt-4">
+        <div class="row">
+            <!-- kho Sách -->
+            <div class="col-12" style="height: 80vh;">
+                <div class="card" style="height: 100%;">
+                    <div class="card-header">
+                        <div class="form-row">
+
+                            <div class="col-6">
+                                <h3 class="text-center text-blue text-bold"> Kho Sách </h3>
+                            </div>
+
+                            <div class="card-tools col-3">
+                                <div class="input-group input-group-sm pt-1">
+                                    <input type="text"
+                                           name="table_search"
+                                           class="form-control float-right" placeholder="Search" id="inputSearch" onkeypress="handleKeyPress(event)" />
+
+                                    <div class="input-group-append">
+                                        <button type="submit" onclick="search()" class="btn btn-default">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-warning lamMoiSach" id="lamMoiButton" onclick="lamMoi()">Làm mới</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-body table-responsive p-0">
+                        <form>
+                            <!-- hiển thị Danh sách sách-->
+                            <div class="text-center">
+                                <table class="table table-hover table-head-fixed table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã</th>
+                                            <th>Tên sách</th>
+                                            <th>Thể loại</th>
+                                            <th>Tác giả</th>
+                                            <th>N/Ngữ</th>
+                                            <th>NhàXB</th>
+                                            <th>NămXB</th>
+                                            <th>S/Lượng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="danhSachPhieuMuon">
+                                        @foreach (var item in ViewData["Sach"] as List<WebQuanLyThuVien.Models.Sach>)
+                                        {
+                                            <tr class="qly_phieumuon_row" data-ma-the="@item.MaSach">
+                                                <td>@item.MaSach</td>
+                                                <td>@item.TenSach</td>
+                                                <td>@item.TheLoai</td>
+                                                <td>@item.TacGia</td>
+                                                <td>@item.NgonNgu</td>
+                                                <td>@item.NXB</td>
+                                                <td>@item.NamXB</td>
+                                                <td>@item.SoLuongHIENTAI</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@section scripts
+{
+    <script>
+        function search() {
+            // Lấy giá trị từ ô input
+            var keyword = document.getElementById("inputSearch").value.toLowerCase();
+
+            // Lấy danh sách các hàng trong bảng danhSachPhieuMuon
+            var sachRows = document.querySelectorAll("#danhSachPhieuMuon tr.qly_phieumuon_row");
+
+            // Duyệt qua từng hàng để kiểm tra từ khóa
+            sachRows.forEach(function (row) {
+                // Lấy nội dung của từng ô trong hàng
+
+                var tenSach = row.querySelector("td:nth-child(2)").innerText.toLowerCase();
+                var theLoai = row.querySelector("td:nth-child(3)").innerText.toLowerCase();
+                var tacGia = row.querySelector("td:nth-child(4)").innerText.toLowerCase();
+
+
+                // Kiểm tra xem từ khóa có xuất hiện trong bất kỳ ô nào hay không
+                if (tenSach.includes(keyword) || theLoai.includes(keyword) || tacGia.includes(keyword)) {
+                    // Hiển thị hàng nếu có từ khóa
+                    row.style.display = "table-row";
+                }
+                else {
+                    // Ẩn hàng nếu không có từ khóa
+                    row.style.display = "none";
+                }
+            });
+        }
+
+        function handleKeyPress(event) {
+            // Kiểm tra xem người dùng đã nhấn phím "Enter" chưa (mã ASCII: 13)
+            if (event.keyCode === 13) {
+                // Ngăn chặn hành động mặc định của phím "Enter" trên form
+                event.preventDefault();
+                search();
+            }
+        }
+        function lamMoi() {
+            // Làm mới trang
+            location.reload();
+        }
+    </script>
+}
+
+
+
+
+
+

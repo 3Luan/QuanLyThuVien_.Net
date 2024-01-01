@@ -1,0 +1,432 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Hiển thị danh phiếu mượn -->
+<section class="content">
+    <div class="container-fluid pt-4">
+        <div class="row">
+            <!-- Sách và Thông tin độc giả -->
+            <div class="col-12" style="height: 80vh;">
+                <div class="card" style="height: 100%;">
+                    <div class="card-header">
+                        <div class="form-row">
+
+                            <div class="col-6">
+                                <h3 class="text-center text-blue text-bold">Quản Lý Phiếu Mượn </h3>
+                            </div>
+
+                            <div class="card-tools col-3">
+                                <div class="input-group input-group-sm pt-1">
+                                    @*<input type="text"
+                                           name="table_search"
+                                           class="form-control float-right"
+                                           placeholder="Search" id="inputSearch" onkeypress="handleKeyPress(event)" />*@
+
+                                    @*<div class="input-group-append">
+                                        <button type="submit" onclick="search()" class="btn btn-default">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>*@
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-warning lamMoiSach" id="lamMoiButton" onclick="lamMoi()">Làm mới</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-body table-responsive p-0">
+                        <form>
+                            <!--Danh sách sách mượn-->
+                            <div class="text-center">
+                                <table class="table table-hover table-head-fixed table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã PM</th>
+                                            <th>Mã Thẻ</th>
+                                            <th>Độc giả</th>
+                                            <th>Ngày mượn</th>
+                                            <th>Hạn trả</th>
+                                            <th>Mã NV</th>
+                                            <th>Tình trạng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="danhSachPhieuMuon">
+                                        @foreach (var item in ViewData["PhieuMuon"] as List<WebQuanLyThuVien.Areas.Admin.Data.PhieuMuon_DTO>)
+                                        {
+                                            <tr class="qly_phieumuon_row" data-ma-the="@item.MaThe">
+                                                <td>@item.MaPM</td>
+                                                <td>@item.MaThe</td>
+                                                <td>@item.HoTenDG</td>
+                                                <td>@string.Format("{0:dd-MM-yyyy}", item.NgayMuon)</td>
+                                                <td>@string.Format("{0:dd-MM-yyyy}", item.HanTra)</td>
+                                                <td>@item.MaNV</td>
+                                                <td>
+                                                    @if (item.HanTra < DateTime.Now && !item.Tinhtrang)
+                                                    {
+                                                        <button type="button" class="btn btn-danger p-1" style="font-size: 11px;" onclick="console.log('Xử lý quá hạn')">Quá hạn</button>
+                                                    }
+                                                    else
+                                                    {
+                                                        <button type="button" class="btn btn-warning p-1" style="font-size: 11px;" onclick="console.log('Xử lý đã trả')">Chưa trả</button>
+                                                    }
+
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+            <!-- Header -->
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 text-blue" style="font-weight: bold;" id="">Chi tiết phiếu mượn</h4>
+            </div>
+
+            <!-- Body -->
+            <form class="modal-body p-4">
+                <div class="form-row">
+                    <!--Mã phiếu mượn-->
+                    <div class="form-group col">
+                        <label>Mã phiếu mượn:</label>
+                        <input class="form-control" id="maPhieuMuonModal" readonly>
+                    </div>
+
+                    <!--Mã thẻ-->
+                    <div class="form-group col">
+                        <label>Mã thẻ độc giả:</label>
+                        <input class="form-control" id="maTheModal" readonly>
+                    </div>
+                </div>
+
+                <!--Danh sách sách mượn-->
+                <div class="text-center">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Mã</th>
+                                <th>Tên sách</th>
+                                <th>S/Lượng</th>
+                            </tr>
+                        </thead>
+                        <tbody id="danhSachSachMuon">
+                            @foreach (var item in ViewData["CTPhieuMuon"] as List<WebQuanLyThuVien.Areas.Admin.Data.DTO_Sach_Muon> ?? new List<WebQuanLyThuVien.Areas.Admin.Data.DTO_Sach_Muon>())
+                            {
+                                <tr class="sachmuon-row" data-ma-sach="@item.">
+                                    <td>@item.MaSach</td>
+                                    <td>@item.TenSach</td>
+                                    <td>@item.SoLuong</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Đóng </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+
+        function search() {
+            // Lấy giá trị từ ô input
+            var keyword = document.getElementById("inputSearch").value.toLowerCase();
+
+            // Lấy danh sách các hàng trong bảng thongTinDocGiaTable
+            var phieuMuonRows = document.querySelectorAll("#danhSachPhieuMuon tr.qly_phieumuon_row");
+            // Duyệt qua từng hàng để kiểm tra từ khóa
+            phieuMuonRows.forEach(function (row) {
+                // Lấy nội dung của từng ô trong hàng
+                var maPhieuMuon = row.querySelector("td:nth-child(1)").innerText.toLowerCase();
+                var maTheDocGia = row.querySelector("td:nth-child(2)").innerText.toLowerCase();
+                var hoTenDocGia = row.querySelector("td:nth-child(3)").innerText.toLowerCase();
+                var ngayMuon = row.querySelector("td:nth-child(4)").innerText.toLowerCase();
+
+                // Kiểm tra xem từ khóa có xuất hiện trong bất kỳ ô nào hay không
+                if (maPhieuMuon.includes(keyword) || maTheDocGia.includes(keyword) || hoTenDocGia.includes(keyword) || ngayMuon.includes(keyword)) {
+                    // Hiển thị hàng nếu có từ khóa
+                    row.style.display = "table-row";
+                } else {
+                    // Ẩn hàng nếu không có từ khóa
+                    row.style.display = "none";
+                }
+            });
+        }
+        function handleKeyPress(event) {
+            // Kiểm tra xem người dùng đã nhấn phím "Enter" chưa (mã ASCII: 13)
+            if (event.keyCode === 13) {
+                // Ngăn chặn hành động mặc định của phím "Enter" trên form
+                event.preventDefault();
+                search();
+            }
+
+        }
+        function lamMoi() {
+            // Làm mới trang
+            location.reload();
+        }
+
+        //=====================  Xử lý sự kiện khi click vào 1 hàng  trong table  =====================
+
+        // Lấy danh sách các hàng của table
+        var quanLyPhieuMuonRows = document.querySelectorAll(".qly_phieumuon_row");
+
+        // Bắt sự kiện click cho từng hàng sách
+        quanLyPhieuMuonRows.forEach(function (row) {
+             row.addEventListener("click", function () {
+                // Lấy thông tin
+                var maPhieuMuon = row.querySelector("td:nth-child(1)").textContent;
+                var maTheDocGia = row.querySelector("td:nth-child(2)").textContent;
+
+                // Điền modal với dữ liệu
+                document.getElementById("maPhieuMuonModal").value = maPhieuMuon;
+                document.getElementById("maTheModal").value = maTheDocGia;
+
+                var maPm = parseInt(maPhieuMuon);
+
+                $.ajax({
+                    url: '@Url.Action("ChiTietPhieuMuon", "QuanLyMuon")',
+                    type: 'POST',
+                    data: {
+                        id: maPm,
+                    },
+                    success: function (data) {
+                        if (data.success) {
+                            // Xử lý dữ liệu JSON trả về
+                            var ctpmData = data.data;
+                            // Cập nhật danh sách sách mượn trong view
+                            var danhSachSachMuon = $("#danhSachSachMuon");
+
+                            danhSachSachMuon.empty(); // Xóa nội dung bảng
+
+                            $.each(ctpmData, function (index, item) {
+                                var newRow = $(` <tr class="sachmuon-row" data-ma-sach="${item.MaSach}">
+                                    <td>${item.MaSach}</td>
+                                    <td>${item.TenSach}</td>
+                                    <td>${item.SoLuong}</td>
+                                </tr> `);
+
+                                danhSachSachMuon.append(newRow);
+                            });
+
+                            // Mở modal
+                            $("#exampleModalScrollable").modal("show");
+                        } else {
+                            console.error("Không thành công trong việc nhận dữ liệu từ server.");
+                        }
+                    }
+                });
+            });
+        });
+
+
+        // Format date
+        function formatDate(dateString) {
+            var options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+            var formattedDate = new Date(dateString).toLocaleDateString(undefined, options);
+            return formattedDate;
+        }
+        function init() {
+            $('#danhSachPhieuMuon').DataTable({
+                processing: true, //Hiển thị thông báo khi dữ liệu đang được xử lý.
+                serverSide: true,//Bật chế độ xử lý phía máy chủ.
+                paging: true,//paging, search, searching: Cho phép phân trang và tìm kiếm.
+                search: true,
+                searching: true,
+                searchDelay: 400, // sau khi thay đổi input search delay 1 tý, tránh thay đổi text liên tục thì gọi liên tục
+                scrollY: false,//Cho phép cuộn (scroll) theo chiều dọc.
+                iDisplayLength: 5, // chỉnh nếu muốn hiện số row mỗi trang
+                bLengthChange: false,//Không hiển thị lựa chọn thay đổi số lượng hàng hiển thị trên trang.
+                language: {
+                    info: "Hiện thị _START_ đến _END_ của _TOTAL_ mục",
+                    lengthMenu: "Hiện thị _MENU_ mục",
+                    search: "Search",
+                    processing: "Đang tải dữ liệu...",
+                    paginate: {
+                        previous: "Đầu",
+                        next: "Tiếp theo",
+                        last: "Cuối"
+                    }
+                },
+                ajax: {
+                    url: "/QuanLyPhieuTra/GetListPhieuTraPaging",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "JSON",
+                    beforeSend: function () {
+                        // alone.startLoading();
+                    },
+                    data: function (data) { //Chuẩn bị dữ liệu trước khi gửi yêu cầu.
+                        var settings = $("#tblDanhSachPhieuTra").dataTable().fnSettings();
+                        var currentPageIndex = Math.ceil(settings._iDisplayStart / settings._iDisplayLength) + 1;
+                        var request =
+                        {
+                            // CategoryId: parseInt($('#ddlCategory').val(), 10),
+                            PageSize: 5,
+                            Page: currentPageIndex,
+                            Keyword: $('.dataTables_filter input[type="search"]').val()
+                        };
+                        return JSON.stringify(request);
+                    },
+                    dataSrc: function (res) {//Trích xuất dữ liệu từ phản hồi.
+                        if (res.Result != null && res.Result.Results != null) {
+                            return res.Result.Results;
+                            //alone.stopLoading();
+                        }
+                        else {
+                            //alone.notify('Cannot load data of Product', 'danger');
+                            //alone.stopLoading();
+                            return [];
+                        }
+                    },
+                    dataFilter: function (data) {
+                        // Xử lý dữ liệu trước khi nó được sử dụng.
+                        var page = $.parseJSON(data);
+                        if (page.Result == null) {
+                            page.recordsTotal = 0;
+                            page.recordsFiltered = 0;
+                            //alone.stopLoading();
+                            return JSON.stringify(page);
+                        }
+                        page.recordsTotal = page.Result.RowCount;
+                        page.recordsFiltered = page.Result.RowCount;
+                        //alone.stopLoading();
+                        return JSON.stringify(page);
+                    },
+                    error: function (status) {//Xử lý lỗi khi yêu cầu không thành công.
+                        //alone.notify('Cannot load data of Product', 'danger');
+                        //alone.stopLoading();
+                    }
+                },
+                columns: [
+                    {
+                        name: 'first',
+                        "data": "MaPM", "width": "7%"
+                    },
+                    {
+                        name: 'second',
+                        render: function (data, type, row) {
+                            return '<button class="btn btn-icon btn-hover btn-sm btn-see-all" id="' + row.MaPM +'_'+ row.MaThe + '">See All</button>'
+                        }
+                    },
+                    {
+                        "data": "MaPT", "width": "10%"
+                        //render: $.fn.dataTable.render.number(',')
+                    },
+                    {
+                        "data": "NgayTra", "width": "15%",
+                        render: DataTable.render.datetime('D-M-yyyy')
+                    },
+                    {
+                        "data": "MaThe", "width": "15%"
+                    },
+                    {
+                        "data": "HoTenDG", "width": "15%"
+                    },
+                    {
+                        "data": "SDT", "width": "15%"
+                    },
+                    {
+                        "data": "MaNV", "width": "15%"
+                    },
+
+                ],
+                rowsGroup: [
+                    'first:name', 'second:name',
+                ],
+                columnDefs: [{//Nếu giá trị của một ô là null hoặc undefined, sẽ hiển thị giá trị mặc định là "-".
+                    "defaultContent": "-",
+                    "targets": "_all"
+                }],
+                initComplete: function () {
+                    //$("#tblDanhSachPhieuTra label input").attr('id', 'search_box');
+                    //var input = $('.dataTables_filter input').unbind(),
+                    //    self = this.api(),
+                    //    $searchButton = $('<a href="javascript:void(0);"' +
+                    //        '<i class="anticon anticon-search"></i></a>')
+                    //        .click(function () {
+                    //            self.search(input.val()).draw();
+                    //        })
+                    //$('.dataTables_filter').append($searchButton);
+                },
+            });
+
+        }
+
+        $('body').on('click', '.btn-see-all', function (e) {
+            e.preventDefault();
+            var arr = $(this)[0].id.split("_");
+               $.ajax({
+                    url: '@Url.Action("ChiTietptByPM", "QuanLyPhieuTra")',
+                    type: 'POST',
+                    data: {
+                        maPM: arr[0],
+                    },
+                    success: function (data) {
+                        if (data.success) {
+                            // Xử lý dữ liệu JSON trả về
+                            var ctptData = data.data;
+                            // Cập nhật danh sách sách mượn trong view
+                            var danhSachSachTrabyPM = $("#danhSachSachTrabyPM");
+
+                            danhSachSachTrabyPM.empty(); // Xóa nội dung bảng
+
+                            $.each(ctptData, function (index, item) {
+                                var newRow = $(` <tr class="sachtra-row" data-ma-sach="${item.MaSach}">
+                                 <td>${item.MaPT}</td>
+                                <td>${item.MaSach}</td>
+                                    <td>${item.TenSach}</td>
+                                    <td>${item.SoLuongTra}</td>
+                                     <td>${item.SoLuongLoi}</td>
+                                      <td>${item.SoLuongMat}</td>
+                                </tr> `);
+
+                                danhSachSachTrabyPM.append(newRow);
+                            });
+
+                            // Mở modal
+                            $("#exampleModalScrollable").modal("show");
+
+                            //        // Điền modal với dữ liệu
+                            document.getElementById("maPhieuMuonModal").value = arr[0];
+                            document.getElementById("maTheModal2").value = arr[1];
+
+                        } else {
+                            console.error("Không thành công trong việc nhận dữ liệu từ server.");
+
+                        }
+                    }
+              });
+
+        });
+    </script>
+}
+
+
+
+

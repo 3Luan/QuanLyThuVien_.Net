@@ -1,31 +1,304 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.active = 1;
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<!-- Carousel Start -->
+<div class="container-fluid p-0 mb-5">
+    <div class="owl-carousel header-carousel position-relative">
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="~/Assets/img/carousel-3.jpg" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-2 text-white animated slideInDown mb-4">Không có gì có thể thay thế văn hóa đọc</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Đằng sau thành công của một con người không thể thiếu một cuốn sách gối đầu. 
+                            Sách là kho báu tri thức của cả nhân loại, là kết tinh trí tuệ qua bao thế hệ con người. Một cuốn sách hay chính là chìa khóa quan trọng 
+                            để mỗi con người có thể chinh phục mọi khó khăn và chạm đến thành công</p>
+                            @*<a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
+                            <a href="" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="~/Assets/img/carousel-4.jpg" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-2 text-white animated slideInDown mb-4">Sách là nguồn tài nguyên tri thức vô hạn</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">"Chúng ta sẽ trở thành gì phụ thuộc vào điều chúng ta đọc sau khi các thầy cô giáo đã xong việc với chúng ta.
+                            Trường học vĩ đại nhất chính là sách vở.” - Thomas Carlyle</p>
+                            @*<a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
+                            <a href="" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<!-- Carousel End -->
+<!-- Facilities Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Thư viện ABC</h1>
+            <p>Thư viện ABC là một thư viện công cộng tại trung tâm Thành phố Thủ Đức.</p>
+        </div>
+        </div>
+    </div>  
+<!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+           @*     <h1 class="mb-4">Learn More About Our Work And Our Cultural Activities</h1>*@
+                <h4 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Món quà tuyệt vời nhất chính là niềm đam mê với việc đọc sách. Nó rẻ, nó an ủi, nó làm sao lãng, nó kích thích, nó mang đến cho bạn những tri thức về thế giới và trải nghiệm về những lĩnh vực khác nhau. Nó chính là sự khai sáng tinh thần</h4>
+                <div class="row g-4 align-items-center">
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center">
+                            <img class="rounded-circle flex-shrink-0" src="~/img_web/1119-BKS-Hoby-superJumbo.jpg" alt="" style="width: 45px; height: 45px;">
+                            <div class="ms-3">
+                                <h6 class="text-primary mb-1">Elizabeth Hardwick</h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img class="img-fluid w-50 rounded-circle bg-light p-3" src="~/img_web/docsach2.jpg" alt="">
+                    </div>
+                    <div class="col-6 text-start" style="margin-top: -150px;">
+                        <img class="img-fluid w-100 rounded-circle bg-light p-3" src="~/img_web/docsach1.jpg" alt="">
+                    </div>
+                    <div class="col-6 text-end" style="margin-top: -150px;">
+                        <img class="img-fluid w-100 rounded-circle bg-light p-3" src="~/img_web/docsach3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+<!-- Call To Action Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="bg-light rounded">
+            <div class="row g-0">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded" src="~/img_web/sach.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="h-100 d-flex flex-column justify-content-center p-5">
+                        <h4 class="mb-4">
+                            Cuốn sách tốt nhất cho bạn là cuốn sách nói nhiều nhất với bạn vào lúc bạn đọc nó. Tôi không nói tới cuốn sách cho bạn nhiều bài học nhất mà là cuốn sách nuôi dưỡng tâm hồn bạn. Và điều đó phụ thuộc vào tuổi tác, trải nghiệm, nhu cầu về tâm lý và tinh thần.
+                        </h4>
+                        <div class="row g-4 align-items-center">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle flex-shrink-0" src="~/img_web/Robertson.jpg" alt="" style="width: 45px; height: 45px;">
+                                    <div class="ms-3">
+                                        <h6 class="text-primary mb-1">Robertson Davies</h6>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<!-- Call To Action End -->
+<!-- Classes Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Sách nổi bật</h1>
+            <p>Sách là nguồn của cải quý báu của thế giới và là di sản xứng đáng của các thế hệ và các quốc gia.</p>
+        </div>
+    </div>
+    <div  class="row g-4 pt-5" id="resultContainer">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="classes-item">
+                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+
+                    <img class="img-fluid rounded-circle" src="~/img_web/Dear_Darling.jpg" alt="" style="width: 330px; height: 300px;">
+                </div>
+                <div class="bg-light rounded p-4 pt-5 mt-n5">
+                    <a class="d-block text-center h3 mt-3 mb-4">Dear, Darling</a>
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <div class="d-flex align-items-center">
+
+                            <img class="rounded-circle flex-shrink-0" src="~/img_web/avticon.jpg" alt="" style="width: 45px; height: 45px;">
+                            <div class="ms-3">
+                                <h6 class="text-primary mb-1">Hiên</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-1">
+                        <div class="col-4">
+                            <div class="border-top border-3 border-primary pt-2">
+                                <h6 class="text-primary mb-1">Thể loại</h6>
+                                <small>Ngôn tình</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="border-top border-3 border-success pt-2">
+                                <h6 class="text-success mb-1">Năm xuất bản</h6>
+                                <small>2022</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="border-top border-3 border-warning pt-2">
+                                <h6 class="text-warning mb-1">Ngôn ngữ</h6>
+                                <small>Tiếng việt</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="classes-item">
+                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+
+                    <img class="img-fluid rounded-circle" src="~/img_web/MuaHeKhongTen.jpg" alt="" style="width: 330px; height: 300px;">
+                </div>
+                <div class="bg-light rounded p-4 pt-5 mt-n5">
+                    <a class="d-block text-center h3 mt-3 mb-4">Mùa hè không tên</a>
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <div class="d-flex align-items-center">
+
+                            <img class="rounded-circle flex-shrink-0" src="~/img_web/avticon.jpg" alt="" style="width: 45px; height: 45px;">
+                            <div class="ms-3">
+                                <h6 class="text-primary mb-1">Nguyễn Nhật Ánh</h6>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-1">
+                        <div class="col-4">
+                            <div class="border-top border-3 border-primary pt-2">
+                                <h6 class="text-primary mb-1">Thể loại</h6>
+                                <small>Tiểu thuyết</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="border-top border-3 border-success pt-2">
+                                <h6 class="text-success mb-1">Năm xuất bản</h6>
+                                <small>2023</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="border-top border-3 border-warning pt-2">
+                                <h6 class="text-warning mb-1">Ngôn ngữ</h6>
+                                <small>Tiếng việt</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="classes-item">
+                <div class="bg-light rounded-circle w-75 mx-auto p-3">
+
+                    <img class="img-fluid rounded-circle" src="~/img_web/Tho_bay_mau.jpg" alt="" style="width: 330px; height: 300px;">
+                </div>
+                <div class="bg-light rounded p-4 pt-5 mt-n5">
+                    <a class="d-block text-center h3 mt-3 mb-4">Thỏ Bảy Màu và Những người nghĩ nó là bạn</a>
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <div class="d-flex align-items-center">
+
+                            <img class="rounded-circle flex-shrink-0" src="~/img_web/avticon.jpg" alt="" style="width: 45px; height: 45px;">
+                            <div class="ms-3">
+                                <h6 class="text-primary mb-1">Huỳnh Thái Ngọc</h6>
+                                <small>Tiếng việt </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-1">
+                        <div class="col-4">
+                            <div class="border-top border-3 border-primary pt-2">
+                                <h6 class="text-primary mb-1">Thể loại</h6>
+                                <small>Truyện thiếu nhi</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="border-top border-3 border-success pt-2">
+                                <h6 class="text-success mb-1">Năm xuất bản</h6>
+                                <small>2023</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="border-top border-3 border-warning pt-2">
+                                <h6 class="text-warning mb-1">Ngôn ngữ</h6>
+                                <small>Tiếng việt</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Classes End -->
+
+
+<!-- Testimonial Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Những câu nói hay</h1>
+            
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item bg-light rounded p-5">
+                <p class="fs-5">Thua mà không đau, thua mà không nhục, cái cần học trước tiên là giỏi thua.</p>
+                <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="~/img_web/TamQuocDienNghia.jpg" style="width: 90px; height: 90px;">
+                    <div class="ps-3">
+                        <h3 class="mb-1">Tư Mã Ý</h3>
+                        <span>Tam quốc diễn nghĩa</span>
+                    </div>
+                    <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                </div>
+            </div>
+            <div class="testimonial-item bg-light rounded p-5">
+                <p class="fs-5">Bí mật của cuộc sống chính là ngã bảy lần và đứng dậy tám lần</p>
+                <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="~/img_web/NhaGiaKim.jpg" style="width: 90px; height: 90px;">
+                    <div class="ps-3">
+                        <h3 class="mb-1">Paulo Coelho</h3>
+                        <span>Nhà Giả Kim</span>
+                    </div>
+                    <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                </div>
+            </div>
+            <div class="testimonial-item bg-light rounded p-5">
+                <p class="fs-5">Trái tim chúng ta cần phải đủ lớn để có chỗ cho tất cả mọi thứ chúng ta yêu thương</p>
+                <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="~/img_web/CayCamNgotCuaToi.jpg" style="width: 90px; height: 90px;">
+                    <div class="ps-3">
+                        <h3 class="mb-1">José Mauro de Vasconcelos</h3>
+                        <span>Cây cam ngọt của tôi</span>
+                    </div>
+                    <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->

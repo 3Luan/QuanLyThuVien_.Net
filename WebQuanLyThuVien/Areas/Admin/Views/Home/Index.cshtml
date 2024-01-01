@@ -1,67 +1,130 @@
-﻿@model List<WebQuanLyThuVien.Models.NhanVien> 
+﻿@model List<WebQuanLyThuVien.Models.NhanVien>
 
 @{
     ViewBag.Title = "Trang chủ admin";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
 
-<!-- Content Header (Page header) -->
-<!--<section class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <h1>Advanced Form</h1>
-            </div>
-            <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active">Advanced Form</li>
-                </ol>
-            </div>
-        </div>
-    </div>--><!-- /.container-fluid -->
-<!--</section>-->
-
-<!-- Hiển thị danh sách NhanViens -->
 <section class="content">
-    <div class="container-fluid">
+    <div class="container-fluid pt-4">
         <div class="row">
-            <div class="col-12">
-                <div class="card">
+            <div class="col-12" style="height: 80vh;">
+                <div class="card" style="height: 100%;">
                     <div class="card-header">
-                        <h3 class="card-title">Danh sách Nhân viên</h3>
+                        <div class="form-row">
+                            <div class="col">
+                                <h3 class="text-center text-blue text-bold">Thống Kê Thư Viện ABC</h3>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <table class="table table-bordered table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Mã NV</th>
-                                    <th>Họ và tên</th>
-                                    <th>Giới tính</th>
-                                    <th>Địa chỉ</th>
-                                    <th>Ngày sinh</th>
-                                    <th>Số điện thoại</th>
-                                    <th>Chức vụ</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var item in Model)
-                                {
-                                    <tr>
-                                        <td>@item.MaNV</td>
-                                        <td>@item.HoTenNV</td>
-                                        <td>@item.GioiTinh</td>
-                                        <td>@item.DiaChi</td>
-                                        <td>@item.NGAYSINH</td>
-                                        <td>@item.SDT</td>
-                                        <td>@item.ChucVu</td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
+
+                    <div class="card-body text-center">
+                        <div class="row">
+
+                            <!-- Tổng tiền thanh lý sách -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="">Tổng tiền thanh lý sách</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 id="tongTienThanhLySach">@ViewData["tongTienThanhLySach"]</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tổng tiền phụ thu-->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="">Tổng tiền phụ thu</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 id="tongTienPhuThu">@ViewData["tongTienPhuThu"]</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tổng tiền nhập sách-->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="">Tổng tiền nhập sách</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 id="tongTienNhapSach">@ViewData["tongTienNhapSach"]</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tổng tiền đăng ký thẻ -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="">Tổng tiền đăng ký thẻ độc giả</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 id="tongTienDangKyThe">@ViewData["tongTienDangKyThe"]</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tổng số lượng độc giả-->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="">Số lượng độc giả</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 id="soLuongDocGia">@ViewData["soLuongDocGia"]</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Doanh thu -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="">Doanh thu</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 id="doanhThu">@ViewData["doanhThu"]</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+@section scripts
+{
+    <script>
+
+        // Hàm format tiền
+        function formatMoney(number) {
+            return number.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+        }
+
+        function parseAndFormat(elementId) {
+            var element = document.getElementById(elementId);
+            if (element) {
+                var value = parseFloat(element.innerHTML);
+                if (!isNaN(value)) {
+                    element.innerHTML = formatMoney(value);
+                }
+            }
+        }
+
+        parseAndFormat('tongTienThanhLySach');
+        parseAndFormat('tongTienDangKyThe');
+        parseAndFormat('tongTienNhapSach');
+        parseAndFormat('tongTienPhuThu');
+        parseAndFormat('doanhThu');
+
+    </script>
+}

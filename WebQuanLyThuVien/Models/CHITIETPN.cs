@@ -16,6 +16,7 @@ namespace WebQuanLyThuVien.Models
     {
         public int MaPN { get; set; }
         public int MaSACH { get; set; }
+        public Nullable<decimal> GiaSach { get; set; }
         public Nullable<int> SoLuongNHAP { get; set; }
     
         public virtual PhieuNhapSach PhieuNhapSach { get; set; }

@@ -1,0 +1,705 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Hiển thị danh sách NhanViens -->
+<section class="content">
+    <div class="container-fluid pt-4">
+        <div class="row">
+
+            <!-- Sách và Thông tin độc giả -->
+            <div class="col-6" style="height: 80vh;">
+                <div class="card" style="height: 100%;">
+                    <div class="card-header">
+                        <div class="form-row">
+                            <div class="col-6">
+                                <h3 class="text-center text-blue text-bold"> Đăng Ký Thẻ </h3>
+                            </div>
+                            <div class="pl-5">
+                                <button type="submit" class="btn btn-primary dangKyThe" id="dangKyThe" onclick="DangKyThe()">Đăng ký</button>
+                            </div>
+                            <div class="pl-3">
+                                <button type="button" class="btn btn-warning lamMoiSach" id="lamMoiButton" onclick="lamMoi()">Làm mới</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body" style="overflow-y: auto;">
+                        <form>
+                            <div class="form-row">
+                                <!--Mã nhân viên-->
+                                <div class="form-group col">
+                                    <label for="MaNhanVien">Mã nhân viên:</label>
+                                    <input type="text" class="form-control" id="MaNhanVien" name="MaNhanVien" readonly>
+                                </div>
+
+                                <!--Ngày đăng ký-->
+                                <div class="form-group col">
+                                    <label for="ngayDangKy">Ngày đăng ký:</label>
+                                    <input type="date" class="form-control" id="ngayDangKy" name="ngayDangKy" readonly>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Tên độc giả -->
+                                <div class="form-group col">
+                                    <label for="tenDocGia">Tên độc giả:</label>
+                                    <input type="text" class="form-control" id="tenDocGia" name="tenDocGia">
+                                </div>
+
+                                <!-- Số điện thoại-->
+                                <div class="form-group col">
+                                    <label for="soDienThoai">Số điện thoại:</label>
+                                    <input type="text" class="form-control" id="soDienThoai" name="soDienThoai">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Giới tính -->
+                                <div class="form-group col">
+                                    <label for="gioiTinh">Giới tính:</label>
+                                    <select class="form-control" id="gioiTinh" name="gioiTinh">
+                                        <option>Chọn giới tính</option>
+                                        <option value="Nam"> Nam </option>
+                                        <option value="Nữ"> Nữ </option>
+                                    </select>
+                                </div>
+
+                                <!-- Ngày sinh -->
+                                <div class="form-group col">
+                                    <label for="ngaySinh">Ngày sinh:</label>
+                                    <input type="date" class="form-control" id="ngaySinh" name="ngaySinh">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Địa chỉ -->
+                                <div class="form-group col">
+                                    <label for="diaChi">Địa chỉ:</label>
+                                    <input type="text" class="form-control" id="diaChi" name="diaChi">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!--Hạn thẻ-->
+                                <div class="form-group col">
+                                    <label for="hanThe">Hạn thẻ:</label>
+                                    <select class="form-control" id="hanThe" name="hanThe" onchange="updateTienDangKy()">
+                                        <option>Chọn hạn thẻ</option>
+                                        <option value="1">1 tháng</option>
+                                        <option value="2">2 tháng</option>
+                                        <option value="3">3 tháng</option>
+                                        <option value="4">4 tháng</option>
+                                        <option value="5">5 tháng</option>
+                                        <option value="6">6 tháng</option>
+                                        <option value="7">7 tháng</option>
+                                        <option value="8">8 tháng</option>
+                                        <option value="9">9 tháng</option>
+                                        <option value="10">10 tháng</option>
+                                        <option value="11">11 tháng</option>
+                                        <option value="12">12 tháng</option>
+                                    </select>
+                                </div>
+
+                                <!--Tiền đăng ký-->
+                                <div class="form-group col">
+                                    <label for="tienDangKyThe">Tiền đăng ký thẻ:</label>
+                                    <input type="text" class="form-control" id="tienDangKyThe" name="tienDangKyThe" readonly>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thông tin độc giả -->
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <button id="thongTinDocGiaButton" class="btn btn-primary">
+                            Thông tin thẻ độc giả có sẵn
+                        </button>
+                        <div class="card-tools">
+                            <div class="input-group input-group-sm pt-2"
+                                 style="width: 100%">
+                                <input type="text"
+                                       name="table_search"
+                                       class="form-control float-right"
+                                       placeholder="Search" id="inputSearch" onkeypress="handleKeyPress(event)" />
+
+                                <div class="input-group-append">
+                                    <button type="submit" onclick="search()" class="btn btn-default">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Body table độc giả-->
+                    <div class="card-body table-responsive p-0"
+                         style="height: 71.2vh" id="thongTinDocGiaTable">
+                        <table class="table table-head-fixed table-hover table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th>Mã</th>
+                                    <th>Họ tên</th>
+                                    <th>SDT</th>
+                                    <th>Ngày h/hạn</th>
+                                    <th>Xử lý</th>
+                                </tr>
+                            </thead>
+                            <tbody id="DanhSachTheDocGia">
+                                @*@foreach (var item in ViewData["theDocGia"] as List<WebQuanLyThuVien.Areas.Admin.Data.DTO_DocGia_TheDocGia>)
+                                {
+                                    <tr class="thedocgia-row" aria-expanded="false" data-widget="expandable-table" data-ma-thedg="@item.MaThe">
+                                        <td>@item.MaThe</td>
+                                        <td>@item.HoTenDG</td>
+                                        <td>@item.SDT</td>
+                                        <td>@string.Format("{0:MM-dd-yyyy}", item.NgayHetHan)</td>
+                                        <td>
+                                            @if (item.NgayHetHan < DateTime.Now)
+                                            {
+                                                <button type="button" class="btn btn-danger giaHanThe text-center" id="giaHanThe" onclick="ShowGiaHan(@item.MaThe)">
+                                                    Gia Hạn
+                                                </button>
+                                            }
+                                            else
+                                            {
+                                                <button type="button" class="btn btn-primary giaHanThe text-center" id="giaHanThe" onclick="ShowGiaHan(@item.MaThe)">
+                                                    Gia Hạn
+                                                </button>
+                                            }
+
+                                        </td>
+                                    </tr>
+                                }*@
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal hiển thị tất cả thông tin thẻ độc giả để gia hạn thẻ-->
+<div class="modal fade bd-example-modal-lg" id="showChiTietTheDocGiaModal" tabindex="-1" role="dialog" aria-labelledby="showChiTietTheDocGiaModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+            <!-- Header -->
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 text-blue" style="font-weight: bold;" id="">Gia Hạn Thẻ Độc Giả</h4>
+            </div>
+
+            <!-- Body -->
+            <form class="modal-body p-4">
+                <div class="form-row">
+                    <!--Mã thẻ-->
+                    <div class="form-group col">
+                        <label>Mã thẻ:</label>
+                        <input class="form-control" id="maTheModal" readonly>
+                    </div>
+
+                    <!--Họ tên-->
+                    <div class="form-group col">
+                        <label>Họ tên:</label>
+                        <input class="form-control" id="hoTenModal" readonly>
+                    </div>
+
+                    <!--Tiền thẻ-->
+                    <div class="form-group col">
+                        <label>Tiền thẻ:</label>
+                        <input class="form-control" id="tienTheModal" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--Ngày sinh-->
+                    <div class="form-group col">
+                        <label>Ngày sinh:</label>
+                        <input class="form-control" id="ngaySinhModal" readonly>
+                    </div>
+
+                    <!--Giới tính-->
+                    <div class="form-group col">
+                        <label>Giới tính:</label>
+                        <input class="form-control" id="gioiTinhModal" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--Địa chỉ-->
+                    <div class="form-group col">
+                        <label>Địa chỉ:</label>
+                        <input class="form-control" id="diaChiModal" readonly>
+                    </div>
+
+                    <!--Số điện thoại-->
+                    <div class="form-group col">
+                        <label>Số điện thoại:</label>
+                        <input class="form-control" id="soDienThoaiModal" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--Ngày hết hạn-->
+                    <div class="form-group col">
+                        <label>Ngày hết hạn:</label>
+                        <input class="form-control" id="ngayHetHanModal" readonly>
+                    </div>
+
+                    <!--Thời gian gia hạn-->
+                    <div class="form-group col">
+                        <label>Thời gian Gia Hạn:</label>
+                        <select class="form-control" id="thoiGianGiaHanModal" name="thoiGianGiaHanModal" onchange="updateTienGiaHan()">
+                            <option> Chọn thời gian gia hạn </option>
+                            <option value="1">1 tháng</option>
+                            <option value="2">2 tháng</option>
+                            <option value="3">3 tháng</option>
+                            <option value="4">4 tháng</option>
+                            <option value="5">5 tháng</option>
+                            <option value="6">6 tháng</option>
+                            <option value="7">7 tháng</option>
+                            <option value="8">8 tháng</option>
+                            <option value="9">9 tháng</option>
+                            <option value="10">10 tháng</option>
+                            <option value="11">11 tháng</option>
+                            <option value="12">12 tháng</option>
+                        </select>
+                    </div>
+
+                    <!--Tiền gia hạn-->
+                    <div class="form-group col">
+                        <label>Tiền gia hạn:</label>
+                        <input class="form-control" id="tienGiaHanModal" readonly>
+                    </div>
+                </div>
+
+            </form>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Đóng </button>
+                <button type="button" class="btn btn-primary" onclick="GiaHanTheDocGia()"> Gia hạn </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal error-->
+<div class="modal fade" id="ModalError" tabindex="-1" role="dialog" aria-labelledby="ModalError" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center bg-danger">
+                <span class="" id="contentModalError"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal success-->
+<div class="modal fade" id="ModalSuccess" tabindex="-1" role="dialog" aria-labelledby="ModalSuccess" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center bg-green">
+                <span class="" id="contentModalSuccess"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        function search() {
+            // Get the search keyword from the input field
+
+            var keyword = document.getElementById("inputSearch").value.toLowerCase();
+            // Get the rows of the table thongTinDocGiaTable
+            var docGiaRows = document.querySelectorAll("#thongTinDocGiaTable tbody tr.thedocgia-row");
+
+            // Iterate through each row to check for the keyword
+            docGiaRows.forEach(function (row) {
+                // Get the content of each cell in the row
+
+                var hoTen = row.querySelector("td:nth-child(2)").innerText.toLowerCase();
+                var soDienThoai = row.querySelector("td:nth-child(3)").innerText.toLowerCase();
+
+
+                // Check if the keyword appears in any of the cells
+                if (hoTen.includes(keyword) || soDienThoai.includes(keyword)) {
+                    // Display the row if the keyword is found
+                    row.style.display = "table-row";
+                } else {
+                    // Hide the row if the keyword is not found
+                    row.style.display = "none";
+                }
+            });
+        }
+
+        function handleKeyPress(event) {
+            if (event.keyCode === 13) {
+                // Ngăn chặn hành động mặc định của phím "Enter" trên form
+                event.preventDefault();
+            }
+            search();
+        }
+
+        //=====================  Set dữ liệu mặc định  =====================
+
+        // Lấy ngày hiện tại
+        var currentDate = new Date();
+
+        // Định dạng ngày hiện tại thành chuỗi YYYY-MM-DD
+        var formatCurrentDate = currentDate.toISOString().slice(0, 10);
+
+        // Hàm format tiền
+        function formatMoney(number) {
+            return number.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+        }
+
+        function parseMoneyString(moneyString) {
+            // Loại bỏ các ký tự không cần thiết từ chuỗi tiền tệ
+            var cleanedString = moneyString.replace(/[^\d]/g, '');
+
+            // Chuyển đổi chuỗi đã làm sạch sang số nguyên
+            var integerValue = parseInt(cleanedString);
+            return integerValue;
+        }
+
+        document.getElementById("tienDangKyThe").value = formatMoney(0);
+        document.getElementById("tienGiaHanModal").value = formatMoney(0);
+
+        // Set ngày mượn là ngày hiện tại
+        document.getElementById("ngayDangKy").value = formatCurrentDate;
+
+        // Set mã nhân viên
+        var manv = @HttpContext.Current.Session["manv"]
+            document.getElementById("MaNhanVien").value = manv;
+
+        // Format date
+        function formatDate(dateString) {
+            // Kiểm tra xem chuỗi ngày có trống không hoặc là null không
+            if (!dateString) {
+                return ''; // Trả về chuỗi trống nếu ngày không được cung cấp
+            }
+
+            try {
+                // Trích xuất giá trị ticks từ chuỗi ngày
+                var ticks = parseInt(dateString.match(/\d+/)[0]);
+
+                // Chuyển đổi ticks thành đối tượng Date của JavaScript
+                var date = new Date(ticks);
+
+                // Định dạng ngày thành MM/dd/YYYY
+                var formattedDate = (date.getMonth() + 1).toString().padStart(2, '0') + '/' +
+                    date.getDate().toString().padStart(2, '0') + '/' +
+                    date.getFullYear();
+
+                return formattedDate;
+            } catch (error) {
+                // Xử lý lỗi chuyển đổi ngày
+                console.error('Lỗi chuyển đổi ngày:', error.message);
+                return 'Ngày không hợp lệ';
+            }
+        }
+
+        // Hàm check số điện thoại
+        function isValidPhoneNumber(phone) {
+            var phoneRegex = /^\d{10,11}$/;
+            return phoneRegex.test(phone);
+        }
+
+        // Hàm check ngày sinh
+        function isValidDateOfBirth(dateOfBirth) {
+            var today = new Date();
+            var selectedDate = new Date(dateOfBirth);
+
+            // Chỉ cho phép ngày sinh không lớn hơn hiện tại
+            return selectedDate <= today;
+        }
+
+
+        //=====================  Xử lý sự kiện khi chọn tháng thì update tiền  =====================
+
+        function updateTienGiaHan() {
+            var thoiGianGiaHan = document.getElementById('thoiGianGiaHanModal');
+            var tienGiaHan = document.getElementById('tienGiaHanModal');
+
+            var selectedOption = thoiGianGiaHan.options[thoiGianGiaHan.selectedIndex];
+            var selectedValue = parseInt(selectedOption.value, 10);
+
+            if (!isNaN(selectedValue)) {
+                // Cập nhật giá trị tiền gia hạn
+                tienGiaHan.value = formatMoney(selectedValue * 50000);
+            } else {
+                // Nếu không chọn thời gian gia hạn, đặt giá trị về trống
+                document.getElementById("tienGiaHanModal").value = formatMoney(0);
+            }
+        }
+
+        function updateTienDangKy() {
+            var hanThe = document.getElementById('hanThe').value;
+
+            if (!isNaN(hanThe)) {
+                // Cập nhật giá trị tiền gia hạn
+                document.getElementById('tienDangKyThe').value = formatMoney(hanThe * 50000);
+            } else {
+                document.getElementById("tienDangKyThe").value = formatMoney(0);
+            }
+        }
+
+        //===================== Hàm Làm mới danh sách sách nhập =====================
+
+        function lamMoi() {
+            // Làm mới trang
+            location.reload();
+        }
+
+        //=====================  Gia hạn thẻ  =====================
+
+        // Lấy danh sách các hàng của table
+        function ShowGiaHan(maThe){
+
+            // Điền modal với dữ liệu
+            document.getElementById("maTheModal").value = maThe;
+
+            $.ajax({
+                url: '@Url.Action("ThongTinTheDocGia", "TheDocGia")',
+                type: 'POST',
+                data: {
+                    id: maThe,
+                },
+                success: function (data) {
+                    if (data.success) {
+
+                        var tdg = data.data;
+
+                        console.log("Thông tin TheDocGia: ", tdg);
+
+                        document.getElementById("hoTenModal").value = tdg.HoTenDG;
+                        document.getElementById("tienTheModal").value = formatMoney(tdg.TienThe);
+                        document.getElementById("ngaySinhModal").value = formatDate(tdg.NgaySinh);
+                        document.getElementById("gioiTinhModal").value = tdg.GioiTinh;
+                        document.getElementById("diaChiModal").value = tdg.DiaChi;
+                        document.getElementById("soDienThoaiModal").value = tdg.SDT;
+                        document.getElementById("ngayHetHanModal").value = formatDate(tdg.NgayHetHan);
+
+                        document.getElementById('thoiGianGiaHanModal').value = "Chọn thời gian gia hạn";
+                        document.getElementById("tienGiaHanModal").value = formatMoney(0);
+
+                        // Mở modal
+                        $("#showChiTietTheDocGiaModal").modal("show");
+                    } else {
+                        console.error("Không thành công trong việc nhận dữ liệu từ server.");
+                    }
+                },
+                error: function (error) {
+                    console.error("Error:", error);
+                }
+            });
+        }
+
+
+        // Hàm Gia hạn
+        function GiaHanTheDocGia()
+        {
+            var maThe = document.getElementById("maTheModal").value;
+
+            var tienThe = document.getElementById("tienTheModal").value;
+            var tienGh = document.getElementById("tienGiaHanModal").value;
+            var tienGiaHan = parseMoneyString(tienGh) + parseMoneyString(tienThe);
+
+            var thoiGianGh = document.getElementById("thoiGianGiaHanModal").value;
+
+            if (isNaN(thoiGianGh) || thoiGianGh <= 0) {
+                document.getElementById("contentModalError").innerHTML = "Hãy chọn thời gian gia hạn thẻ hợp lệ!";
+                $("#ModalError").modal("show");
+            } else {
+                // Lấy giá trị ngày từ phần tử HTML
+                var ngayHHString = document.getElementById("ngayHetHanModal").value;
+
+                // Kiểm tra xem ngayHHString là một ngày hợp lệ không
+                var ngayHH = new Date(ngayHHString);
+                if (isNaN(ngayHH.getTime())) {
+                    document.getElementById("contentModalError").innerHTML = "Ngày hết hạn không hợp lệ!";
+                    $("#ModalError").modal("show");
+                } else {
+
+                    if (ngayHH.getTime() < currentDate) {
+                        console.log("ngayHH", ngayHH)
+                        console.log("currentDate", currentDate)
+                        ngayHH.setTime(currentDate.getTime() + (parseInt(thoiGianGh) * 30 * 24 * 60 * 60 * 1000));
+                    } else {
+                        // Thêm thời gian vào ngày
+                        ngayHH.setMonth(ngayHH.getMonth() + parseInt(thoiGianGh));
+                    }
+
+
+                    // Chuyển đổi ngày thành chuỗi để truyền qua AJAX
+                    var thoiGianGiaHan = ngayHH.toISOString();
+
+                    console.log("thoiGianGiaHan: ", thoiGianGiaHan)
+
+                    var confirmed = confirm("Bạn có chắc muốn gia hạn không?");
+                    if (confirmed) {
+
+                        $.ajax({
+                            url: '@Url.Action("GiaHanTheDocGia", "TheDocGia")',
+                            type: 'POST',
+                            data: {
+                                maThe: maThe,
+                                thoiGianGiaHan: thoiGianGiaHan,
+                                tienGiaHan: tienGiaHan,
+                            },
+                            success: function (data) {
+                                if (data) {
+                                    document.getElementById("contentModalSuccess").innerHTML = "Gia hạn thẻ thành công!";
+                                    $("#ModalSuccess").modal("show");
+                                    // Reload the table
+                                    GetAllTheDocGia();
+
+                                    console.log("data", data)
+                                    $("#showChiTietTheDocGiaModal").modal("hide");
+                                }
+                            }
+                        });
+                    }
+                }
+            }
+        }
+
+
+        //=====================  Đăng ký thẻ  =====================
+        function DangKyThe() {
+            var maNV = document.getElementById('MaNhanVien').value;
+            var ngayDK = document.getElementById('ngayDangKy').value;
+            var tenDocGia = document.getElementById('tenDocGia').value;
+            var soDienThoai = document.getElementById('soDienThoai').value;
+            var gioiTinh = document.getElementById('gioiTinh').value;
+            var ngaySinh = document.getElementById('ngaySinh').value;
+            var diaChi = document.getElementById('diaChi').value;
+            var hanThe = document.getElementById('hanThe').value;
+            var tienDK = document.getElementById('tienDangKyThe').value;
+
+            // Hàm kiểm tra và hiển thị lỗi
+            function showError(message) {
+                document.getElementById("contentModalError").innerHTML = message;
+                $("#ModalError").modal("show");
+            }
+
+            if (!tenDocGia || !soDienThoai || !diaChi || !ngaySinh || gioiTinh === "Chọn giới tính" || isNaN(hanThe)) {
+                showError("Hãy điền đầy đủ thông tin!");
+                return;
+            }
+
+            if (!isValidPhoneNumber(soDienThoai)) {
+                showError("Hãy nhập đúng định dạng số điện thoại!");
+                return;
+            }
+
+            if (!isValidDateOfBirth(ngaySinh)) {
+                showError("Ngày sinh không đúng!");
+                return;
+            }
+
+            var confirmed = confirm("Bạn có chắc muốn đăng ký thẻ không?");
+            if (confirmed) {
+                $.ajax({
+                    url: '@Url.Action("DangKyTheDocGia", "TheDocGia")',
+                    type: 'POST',
+                    data: {
+                        maNV: maNV,
+                        ngayDK: ngayDK,
+                        tenDocGia: tenDocGia,
+                        soDienThoai: soDienThoai,
+                        gioiTinh: gioiTinh,
+                        ngaySinh: ngaySinh,
+                        diaChi: diaChi,
+                        hanThe: hanThe,
+                        tienDK: parseMoneyString(tienDK),
+                    },
+                    success: function (data) {
+                        if (data.success) {
+                            console.log("data: ", data)
+
+                            document.getElementById("contentModalSuccess").innerHTML = "Đăng ký thẻ độc giả thành công";
+                            $("#ModalSuccess").modal("show");
+
+                            document.getElementById('tenDocGia').value  = "";
+                            document.getElementById('soDienThoai').value = "";
+                            document.getElementById('gioiTinh').value  = "Chọn giới tính";
+                            document.getElementById('ngaySinh').value = "yyyy-MM-dd";
+                            document.getElementById('diaChi').value = "";
+                            document.getElementById('hanThe').value = "Chọn hạn thẻ";
+                            document.getElementById('tienDangKyThe').value = formatMoney(0);
+
+                            // Reload the table
+                            GetAllTheDocGia();
+
+                        } else {
+                            console.log("data: ", data)
+
+                            document.getElementById("contentModalError").innerHTML = data.message;
+                            $("#ModalError").modal("show");
+                        }
+                    }
+                });
+            }
+        }
+
+
+        function GetAllTheDocGia() {
+            $.ajax({
+                type: "GET",
+                url: '@Url.Action("GetAllTheDocGia", "TheDocGia")',
+                dataType: 'json', // Đảm bảo dữ liệu trả về là JSON
+                success: function (res) {
+                    var render = "";
+
+                    $.each(res.Result, function (i, item) {
+                        var ngayHetHan = moment(item.NgayHetHan);
+                        var ngayHetHanFormatted = ngayHetHan.format('MM/DD/YYYY');
+
+                        // Check if the expiration date is earlier than the current date
+                        var isExpired = ngayHetHan.isBefore(moment());
+
+                        // Add a class for styling based on the expiration status
+                        var buttonClass = isExpired ? 'btn btn-danger giaHanThe text-center' : 'btn btn-primary giaHanThe text-center';
+
+                        render += '<tr class="thedocgia-row" aria-expanded="false" data-widget="expandable-table" data-ma-thedg="' + item.MaThe + '">';
+                        render += '<td>' + item.MaThe + '</td>';
+                        render += '<td>' + item.HoTenDG + '</td>';
+                        render += '<td>' + item.SDT + '</td>';
+                        render += '<td>' + ngayHetHanFormatted + '</td>';
+
+                        render += '<td> <button type="button" class="' + buttonClass + '" onclick="ShowGiaHan(' + item.MaThe + ')">Gia Hạn</button> </td>';
+
+                        render += '</tr>';
+                    });
+
+
+                    let danhSachTheDocGia = document.getElementById("DanhSachTheDocGia");
+                    danhSachTheDocGia.innerHTML = render;
+                },
+                error: function (status) {
+                    // Hiển thị cảnh báo nếu có lỗi
+                    alert("Không tìm thấy dữ liệu");
+                }
+            });
+        }
+
+
+        $(document).ready(function () {
+            GetAllTheDocGia(); // Gọi hàm khi trang đã sẵn sàng
+        });
+
+    </script>
+}
+

@@ -17,9 +17,11 @@ namespace WebQuanLyThuVien.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Sach()
         {
+            this.ChiTietDks = new HashSet<ChiTietDk>();
             this.ChiTietPMs = new HashSet<ChiTietPM>();
             this.CHITIETPNs = new HashSet<CHITIETPN>();
             this.ChiTietPTs = new HashSet<ChiTietPT>();
+            this.TT_SACH = new HashSet<TT_SACH>();
         }
     
         public int MaSach { get; set; }
@@ -29,15 +31,17 @@ namespace WebQuanLyThuVien.Models
         public string NgonNgu { get; set; }
         public string NXB { get; set; }
         public Nullable<int> NamXB { get; set; }
-        public Nullable<int> GiaSach { get; set; }
         public Nullable<int> SoLuongHIENTAI { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ChiTietDk> ChiTietDks { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietPM> ChiTietPMs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHITIETPN> CHITIETPNs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietPT> ChiTietPTs { get; set; }
-        public virtual KhoSachThanhLy KhoSachThanhLy { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TT_SACH> TT_SACH { get; set; }
     }
 }

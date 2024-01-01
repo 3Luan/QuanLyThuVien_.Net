@@ -1,0 +1,441 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Hiển thị danh sách NhanViens -->
+<section class="content">
+    <div class="container-fluid pt-4">
+        <div class="row">
+            <!-- Sách và Thông tin độc giả -->
+            <div class="col-12" style="height: 80vh;">
+                <div class="card" style="height: 100%;">
+                    <div class="card-header">
+                        <div class="form-row">
+
+                            <div class="col-6">
+                                <h3 class="text-center text-blue text-bold"> Thông Tin Độc Giả </h3>
+                            </div>
+
+                            <div class="card-tools col-3">
+                                <div class="input-group input-group-sm pt-1">
+                                    <input type="text"
+                                           name="table_search"
+                                           class="form-control float-right"
+                                           placeholder="Search" id="inputSearch" onkeypress="handleKeyPress(event)" />
+
+                                    <div class="input-group-append">
+                                        <button type="submit" onclick="search()" class="btn btn-default">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3">
+                                <button type="button" class="btn btn-warning lamMoiSach" id="lamMoiButton" onclick="lamMoi()">Làm mới</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-body table-responsive p-0">
+                        <form>
+                            <!--Danh sách sách mượn-->
+                            <div class="text-center" id="tableThongTinDocGia">
+                                <table class="table table-hover table-head-fixed table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã Thẻ</th>
+                                            <th>Họ tên</th>
+                                            <th>Giới tính</th>
+                                            <th>Ngày sinh</th>
+                                            <th>SDT</th>
+                                            <th>Địa chỉ</th>
+                                            <th>Ngày Đ/Ký</th>
+                                            <th>Ngày H/Hạn</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="danhSachThongTinĐocGia">
+                                        @*@foreach (var item in ViewData["ThongTinDocGia"] as List<WebQuanLyThuVien.Areas.Admin.Data.DTO_DocGia_TheDocGia>)
+                                        {
+                                            <tr class="thongtindocgia-row" data-ma-the="@item.MaThe">
+                                                <td>@item.MaThe</td>
+                                                <td>@item.HoTenDG</td>
+                                                <td>@item.GioiTinh</td>
+                                                <td>@string.Format("{0:MM-dd-yyyy}", item.NgaySinh)</td>
+                                                <td>@item.SDT</td>
+                                                <td>@item.DiaChi</td>
+
+                                                <td>@string.Format("{0:MM-dd-yyyy}", item.NgayDangKy)</td>
+                                                <td>@string.Format("{0:MM-dd-yyyy}", item.NgayHetHan)</td>
+                                            </tr>
+                                        }*@
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="chinhSuaThongTinModal" tabindex="-1" role="dialog" aria-labelledby="chinhSuaThongTinModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+            <!-- Header -->
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 text-blue" style="font-weight: bold;" id="">Chỉnh Sửa Thông Tin Độc Giả</h4>
+            </div>
+
+            <!-- Body -->
+            <form class="modal-body p-4">
+                <div class="form-row">
+                    <!--Mã thẻ-->
+                    <div class="form-group col-2">
+                        <label>Mã thẻ:</label>
+                        <input class="form-control" id="maTheModal" readonly>
+                    </div>
+
+                    <!--Mã độc giả-->
+                    <div class="form-group col-2">
+                        <label>Mã Độc giả:</label>
+                        <input class="form-control" id="maDocGiaModal" readonly>
+                    </div>
+
+                    <!-- Giới tính -->
+                    <div class="form-group col">
+                        <label for="gioiTinh">Giới tính:</label>
+                        <select class="form-control" id="gioiTinhModal" name="gioiTinhModal">
+                            <option>Chọn giới tính</option>
+                            <option value="Nam"> Nam </option>
+                            <option value="Nữ"> Nữ </option>
+                        </select>
+                    </div>
+
+                    <!-- Ngày sinh -->
+                    <div class="form-group col">
+                        <label for="ngaySinh">Ngày sinh:</label>
+                        <input type="date" class="form-control" id="ngaySinhModal" name="ngaySinhModal">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!-- Tên độc giả -->
+                    <div class="form-group col">
+                        <label for="tenDocGia">Tên độc giả:</label>
+                        <input type="text" class="form-control" id="tenDocGiaModal" name="tenDocGiaModal">
+                    </div>
+
+                    <!-- Số điện thoại-->
+                    <div class="form-group col">
+                        <label for="soDienThoai">Số điện thoại:</label>
+                        <input type="text" class="form-control" id="soDienThoaiModal" name="soDienThoaiModal">
+                    </div>
+
+                    <!-- Địa chỉ -->
+                    <div class="form-group col">
+                        <label for="diaChi">Địa chỉ:</label>
+                        <input type="text" class="form-control" id="diaChiModal" name="diaChiModal">
+                    </div>
+                </div>
+            </form>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Đóng </button>
+                <button type="button" class="btn btn-primary" onclick="CapNhatThongTin()"> Cập nhật </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal error-->
+<div class="modal fade" id="ModalError" tabindex="-1" role="dialog" aria-labelledby="ModalError" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center bg-danger">
+                <span class="" id="contentModalError"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal success-->
+<div class="modal fade" id="ModalSuccess" tabindex="-1" role="dialog" aria-labelledby="ModalSuccess" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center bg-green">
+                <span class="" id="contentModalSuccess"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        function search() {
+            // Get the search keyword from the input field
+            var keyword = document.getElementById("inputSearch").value.toLowerCase();
+            // Get the rows of the table thongTinDocGiaTable
+            var docGiaRows = document.querySelectorAll("#danhSachThongTinĐocGia tr.thongtindocgia-row");
+
+            // Iterate through each row to check for the keyword
+            docGiaRows.forEach(function (row) {
+                // Get the content of each cell in the row
+                var hoTen = row.querySelector("td:nth-child(2)").innerText.toLowerCase();
+                var soDienThoai = row.querySelector("td:nth-child(5)").innerText.toLowerCase(); // Assuming the phone number is in the 5th column
+
+                // Check if the keyword appears in any of the cells
+                if (hoTen.includes(keyword) || soDienThoai.includes(keyword)) {
+                    // Display the row if the keyword is found
+                    row.style.display = "";
+                } else {
+                    // Hide the row if the keyword is not found
+                    row.style.display = "none";
+                }
+            });
+        }
+
+        function handleKeyPress(event) {
+            if (event.keyCode === 13) {
+                // Ngăn chặn hành động mặc định của phím "Enter" trên form
+                event.preventDefault();
+            }
+            search();
+        }
+        function formatDate(dateString) {
+            // Kiểm tra xem chuỗi ngày có trống không hoặc là null không
+            if (!dateString) {
+                return ''; // Trả về chuỗi trống nếu ngày không được cung cấp
+            }
+
+            try {
+                // Trích xuất giá trị ticks từ chuỗi ngày
+                var ticks = parseInt(dateString.match(/\d+/)[0]);
+
+                // Chuyển đổi ticks thành đối tượng Date của JavaScript
+                var date = new Date(ticks);
+
+                // Định dạng ngày thành MM/dd/YYYY
+                var formattedDate = (date.getMonth() + 1).toString().padStart(2, '0') + '/' +
+                    date.getDate().toString().padStart(2, '0') + '/' +
+                    date.getFullYear();
+
+                return formattedDate;
+            } catch (error) {
+                // Xử lý lỗi chuyển đổi ngày
+                console.error('Lỗi chuyển đổi ngày:', error.message);
+                return 'Ngày không hợp lệ';
+            }
+        }
+
+        // Hàm check số điện thoại
+        function isValidPhoneNumber(phone) {
+            var phoneRegex = /^\d{10,11}$/;
+            return phoneRegex.test(phone);
+        }
+
+        // Hàm check ngày sinh
+        function isValidDateOfBirth(dateOfBirth) {
+            var today = new Date();
+            var selectedDate = new Date(dateOfBirth);
+
+            // Chỉ cho phép ngày sinh không lớn hơn hiện tại
+            return selectedDate <= today;
+        }
+
+        //===================== Hàm Làm mới danh sách sách nhập =====================
+
+        function lamMoi() {
+            // Làm mới trang
+            location.reload();
+        }
+
+
+
+        //=====================  Cập nhật thông tin  =====================
+        function CapNhatThongTin() {
+            var tenDocGia = document.getElementById('tenDocGiaModal').value;
+            var soDienThoai = document.getElementById('soDienThoaiModal').value;
+            var gioiTinh = document.getElementById('gioiTinhModal').value;
+            var ngaySinh = document.getElementById('ngaySinhModal').value;
+            var diaChi = document.getElementById('diaChiModal').value;
+            var maThe = document.getElementById('maTheModal').value;
+            var maDocGia = document.getElementById("maDocGiaModal").value;
+
+
+            console.log("tenDocGia", tenDocGia)
+            console.log("soDienThoai", soDienThoai)
+            console.log("gioiTinh", gioiTinh)
+            console.log("ngaySinh", ngaySinh)
+            console.log("diaChi", diaChi)
+            console.log("maThe", maThe)
+
+            // Hàm kiểm tra và hiển thị lỗi
+            function showError(message) {
+                document.getElementById("contentModalError").innerHTML = message;
+                $("#ModalError").modal("show");
+            }
+
+            if (!tenDocGia || !soDienThoai || !diaChi || !ngaySinh || gioiTinh === "Chọn giới tính") {
+                showError("Hãy điền đầy đủ thông tin!");
+                return;
+            }
+
+            if (!isValidPhoneNumber(soDienThoai)) {
+                showError("Hãy nhập đúng định dạng số điện thoại!");
+                return;
+            }
+
+            if (!isValidDateOfBirth(ngaySinh)) {
+                showError("Ngày sinh không đúng!");
+                return;
+            }
+
+            var confirmed = confirm("Bạn có chắc muốn cập nhật thông tin không?");
+            if (confirmed) {
+                $.ajax({
+                    url: '@Url.Action("CapNhatThongTin", "ThongTinDocGia")',
+                    type: 'POST',
+                    data: {
+                        maDocGia: maDocGia,
+                        tenDocGia: tenDocGia,
+                        soDienThoai: soDienThoai,
+                        gioiTinh: gioiTinh,
+                        ngaySinh: ngaySinh,
+                        diaChi: diaChi,
+                    },
+                    success: function (data) {
+                        if (data.success) {
+                            console.log("data: ", data)
+
+                            GetAllThongTinDocGia()
+
+                            document.getElementById("contentModalSuccess").innerHTML = "Cập nhật thông tin độc giả thành công!";
+                            $("#ModalSuccess").modal("show");
+
+                            $("#chinhSuaThongTinModal").modal("hide");
+                        } else {
+                            console.log("data: ", data)
+
+                            document.getElementById("contentModalError").innerHTML = data.message;
+                            $("#ModalError").modal("show");
+                        }
+                    }
+                });
+            }
+        }
+
+
+
+        function GetAllThongTinDocGia() {
+            $.ajax({
+                type: "GET",
+                url: '@Url.Action("GetAllThongTinDocGia", "ThongTinDocGia")',
+                dataType: 'json', // Đảm bảo dữ liệu trả về là JSON
+                success: function (res) {
+                    var render = "";
+
+                    $.each(res.Result, function (i, item) {
+
+                        var ngaySinh = moment(item.NgaySinh).format('MM/DD/YYYY');
+                        var ngayDangKy = moment(item.NgayDangKy).format('MM/DD/YYYY');
+                        var ngayHetHan = moment(item.NgayHetHan).format('MM/DD/YYYY');
+
+                        render += '<tr class="thongtindocgia-row" data-ma-the=' + item.MaThe +'>';
+                        render += '<td>' + item.MaThe + '</td>';
+                        render += '<td>' + item.HoTenDG + '</td>';
+                        render += '<td>' + item.GioiTinh + '</td>';
+                        render += '<td>' + ngaySinh + '</td>';
+                        render += '<td>' + item.SDT + '</td>';
+                        render += '<td>' + item.DiaChi + '</td>';
+                        render += '<td>' + ngayDangKy + '</td>';
+                        render += '<td>' + ngayHetHan + '</td>';
+
+                        render += '</tr>';
+                    });
+
+                    let danhSachThongTinDocGia = document.getElementById("danhSachThongTinĐocGia");
+                    danhSachThongTinDocGia.innerHTML = render;
+                },
+                error: function (status) {
+                    alert("Không tìm thấy dữ liệu");
+                }
+            });
+        }
+
+
+        $(document).ready(function () {
+            GetAllThongTinDocGia(); // Gọi hàm khi trang đã sẵn sàng
+        });
+
+
+        ////=====================  Xử lý sự kiện khi click vào 1 hàng  trong table  =====================
+        var tableContainer = document.getElementById("tableThongTinDocGia");
+        tableContainer.addEventListener("click", function (event) {
+            var targetRow = event.target.closest(".thongtindocgia-row");
+
+            if (targetRow) {
+                    // Lấy thông tin
+                var maThe = targetRow.querySelector("td:nth-child(1)").textContent;
+
+                $.ajax({
+                url: '@Url.Action("ThongTinTheDocGia", "ThongTinDocGia")',
+                type: 'POST',
+                data: {
+                    id: maThe,
+                },
+                success: function (data) {
+                    if (data.success) {
+
+                        var tdg = data.data;
+
+                        console.log("Thông tin TheDocGia: ", tdg);
+                        document.getElementById("maTheModal").value = tdg.MaThe;
+                        document.getElementById("maDocGiaModal").value = tdg.MaDocGia;
+                        document.getElementById("tenDocGiaModal").value = tdg.HoTenDG;
+                        document.getElementById("gioiTinhModal").value = tdg.GioiTinh;
+                        document.getElementById("diaChiModal").value = tdg.DiaChi;
+                        document.getElementById("soDienThoaiModal").value = tdg.SDT;
+
+                        // Lấy ngày sinh từ đối tượng tdg.NgaySinh
+                        var ngaySinhTicks = parseInt(tdg.NgaySinh.replace("/Date(", "").replace(")/", ""));
+                        var ngaySinhDate = new Date(ngaySinhTicks);
+
+                        // Chuyển đổi ngày thành định dạng "yyyy-mm-dd" để đặt giá trị cho input type="date"
+                        var formattedNgaySinh = ngaySinhDate.toLocaleDateString('en-CA');
+
+                        document.getElementById("ngaySinhModal").value = formattedNgaySinh;
+
+
+
+                        // Mở modal
+                        $("#chinhSuaThongTinModal").modal("show");
+                    } else {
+                        console.error("Không thành công trong việc nhận dữ liệu từ server.");
+                    }
+                },
+                error: function (error) {
+                    console.error("Error:", error);
+                }
+            });
+            }
+        });
+
+
+
+
+    </script>
+}
+
+
+
+
