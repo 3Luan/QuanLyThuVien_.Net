@@ -754,7 +754,7 @@
                                     document.getElementById("DiaChiDVModal").value = "";
 
                                     document.getElementById("contentModalSuccess").innerHTML = "Thêm đơn vị thành công";
-
+                                    $("#ModalSuccess").modal("show");
                                     $("#ThemDVModal").modal("hide");
                                     loadDVTLs("");
                                     console.log("dv: ", data)
@@ -802,6 +802,7 @@
                         document.getElementById("SoluongModal").value = "";
 
                         document.getElementById("contentModalSuccess").innerHTML = "Thêm vào kho sách thành công";
+                        $("#ModalSuccess").modal("show");
                         $("#ThemKhoTLModal").modal("hide");
                         loadsachTLs("");
                         loadDanhSachNhapKho("");

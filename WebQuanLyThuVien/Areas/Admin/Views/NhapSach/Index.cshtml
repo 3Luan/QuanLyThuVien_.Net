@@ -128,7 +128,10 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-header">
-
+                        <!--btn thông tin sách-->
+                        <button id="thongTinSachButton" class="btn btn-primary" onclick="changeTableShow(thongTinSachTable, thongTinNCCTable)">
+                            Sách có sẵn
+                        </button>
                         <!--btn thông tin nhà cung cấp-->
                         <button id="thongTinNCCButton" class="btn btn-primary" onclick="changeTableShow(thongTinNCCTable, thongTinSachTable)">
                             Thông Tin NCC
@@ -140,9 +143,9 @@
                         </button>
 
                         <!--btn thông tin sách-->
-                        <button id="thongTinSachButton" class="btn btn-primary" onclick="changeTableShow(thongTinSachTable, thongTinNCCTable)">
-                            Sách có sẵn
-                        </button>
+                        @*<button id="thongTinSachButton" class="btn btn-primary" onclick="changeTableShow(thongTinSachTable, thongTinNCCTable)">
+            Sách có sẵn
+        </button>*@
                     </div>
 
                     <!--Form search-->
@@ -159,7 +162,27 @@
                                 </button>
                             </div>
                         </div>
-
+                        <!--<!--Body table sách-->
+                        <div class="card-body table-responsive p-0"
+                             style="height: 66vh" id="thongTinSachTable">
+                            <table class="table table-head-fixed table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Mã</th>
+                                        <th>Tên sách</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="danhSachSach">
+                                    @foreach (var item in ViewData["Sach"] as List<WebQuanLyThuVien.Models.Sach>)
+                                    {
+                                        <tr class="sach-row" aria-expanded="false" data-widget="expandable-table">
+                                            <td>@item.MaSach</td>
+                                            <td>@item.TenSach</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
                         <!--Body table ncc-->
                         <div class="card-body table-responsive p-0"
                              style="height: 66vh" id="thongTinNCCTable">
@@ -174,39 +197,40 @@
                                 </thead>
                                 <tbody id="danhSachNCC">
                                     @*@foreach (var item in ViewData["Ncc"] as List<WebQuanLyThuVien.Models.NhaCungCap>)
-                                        {
-                                            <tr class="ncc-row" aria-expanded="false" data-widget="expandable-table" data-ma-sach="@item.MaNCC">
-                                                <td>@item.MaNCC</td>
-                                                <td>@item.TenNCC</td>
-                                                <td>@item.sdtNCC</td>
-                                                <td>@item.DiaChiNCC</td>
-                                            </tr>
-                                        }*@
+                    {
+                        <tr class="ncc-row" aria-expanded="false" data-widget="expandable-table" data-ma-sach="@item.MaNCC">
+                            <td>@item.MaNCC</td>
+                            <td>@item.TenNCC</td>
+                            <td>@item.sdtNCC</td>
+                            <td>@item.DiaChiNCC</td>
+                        </tr>
+                    }*@
                                 </tbody>
                             </table>
                         </div>
 
-                        <!--Body table sách-->
-                        <div class="card-body table-responsive p-0"
-                             style="height: 66vh" id="thongTinSachTable">
-                            <table class="table table-head-fixed table-hover table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Mã</th>
-                                        <th>Tên sách</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="danhSachSach">
-                                    @*@foreach (var item in ViewData["Sach"] as List<WebQuanLyThuVien.Models.Sach>)
-                                        {
-                                            <tr class="sach-row" aria-expanded="false" data-widget="expandable-table">
-                                                <td>@item.MaSach</td>
-                                                <td>@item.TenSach</td>
-                                            </tr>
-                                        }*@
-                                </tbody>
-                            </table>
-                        </div>
+                        <!--<!--Body table sách-->
+                        <!--<div class="card-body table-responsive p-0"
+         style="height: 66vh" id="thongTinSachTable">
+        <table class="table table-head-fixed table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Mã</th>
+                    <th>Tên sách</th>
+                </tr>
+            </thead>
+            <tbody id="danhSachSach">
+                @*@foreach (var item in ViewData["Sach"] as List<WebQuanLyThuVien.Models.Sach>)
+                    {
+                        <tr class="sach-row" aria-expanded="false" data-widget="expandable-table">
+                            <td>@item.MaSach</td>
+                            <td>@item.TenSach</td>
+                        </tr>
+                    }*@
+            </tbody>
+        </table>
+    </div> -->
+
                     </div>
                 </div>
             </div>
@@ -617,8 +641,9 @@
         var thongTinSachTable = document.getElementById("thongTinSachTable");
 
         // Mặc định chọn nút "Thông tin độc giả"
-        changeTableShow(thongTinNCCTable, thongTinSachTable);
-
+       // changeTableShow(thongTinNCCTable, thongTinSachTable);
+        // Mặc định chọn nút "Thông tin độc giả"
+        changeTableShow(thongTinSachTable, thongTinNCCTable);
 
         //=====================  Lấy dữ liệu khi click vào hàng trong table tt nhà cung cấp  =====================
         var tableContainer = document.getElementById("thongTinNCCTable");

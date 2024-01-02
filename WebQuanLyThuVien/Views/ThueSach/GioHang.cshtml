@@ -63,7 +63,7 @@ else
                             <input id="soLuongHienTai_@Sach.MaSach" value="@Sach.SoLuongHIENTAI" hidden>
                         </div>
                         <div class="col-2 text-center" style="margin-bottom: 80px">
-                            <input id="soLuongSachMuon_@Sach.MaSach" type="number" value="@item.Value" class="form-control sach-input">
+                            <input id="soLuongSachMuon_@Sach.MaSach" type="number" value="@item.Value" class="form-control sach-input" min="1" >
                         </div>
                         <div class="col-1" style="margin-bottom: 80px">
                             <button class="btn btn-danger" onclick="XoaSach(@Sach.MaSach)">Xóa</button>

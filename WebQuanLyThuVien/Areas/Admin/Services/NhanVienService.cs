@@ -98,55 +98,55 @@ namespace WebQuanLyThuVien.Services
 
         public DTO_NhanVien_LoginNV Login(string username, string password)
         {
-            // Chưa mã hóa password
-            var nhanVien =
-                 (from nv in unitOfWork.Context.NhanViens
-                  join lg in unitOfWork.Context.LOGIN_NV
-                     on nv.MaNV equals lg.MANV
-                  where lg.USERNAME_NV == username && password == lg.PASSWORD_NV
-                  select new DTO_NhanVien_LoginNV
-                  {
-                      MaNV = nv.MaNV,
-                      HoTenNV = nv.HoTenNV,
-                      SDT = nv.SDT,
-                      ChucVu = nv.ChucVu,
-                      DiaChi = nv.DiaChi
-                  }).FirstOrDefault();
-            return nhanVien;
+            //Chưa mã hóa password
+            //var nhanVien =
+            //     (from nv in unitOfWork.Context.NhanViens
+            //      join lg in unitOfWork.Context.LOGIN_NV
+            //         on nv.MaNV equals lg.MANV
+            //      where lg.USERNAME_NV == username && password == lg.PASSWORD_NV
+            //      select new DTO_NhanVien_LoginNV
+            //      {
+            //          MaNV = nv.MaNV,
+            //          HoTenNV = nv.HoTenNV,
+            //          SDT = nv.SDT,
+            //          ChucVu = nv.ChucVu,
+            //          DiaChi = nv.DiaChi
+            //      }).FirstOrDefault();
+            //return nhanVien;
 
             // Đã mã hóa password
-            //var login = (
-            //    from nv in unitOfWork.Context.NhanViens
-            //    join lg in unitOfWork.Context.LOGIN_NV on nv.MaNV equals lg.MANV
-            //    where lg.USERNAME_NV.Equals(username)
-            //    select new
-            //    {
-            //        passwordHash = lg.PASSWORD_NV,
-            //        NhanVien = nv
-            //    }
-            //).FirstOrDefault();
+            var login = (
+                from nv in unitOfWork.Context.NhanViens
+                join lg in unitOfWork.Context.LOGIN_NV on nv.MaNV equals lg.MANV
+                where lg.USERNAME_NV.Equals(username)
+                select new
+                {
+                    passwordHash = lg.PASSWORD_NV,
+                    NhanVien = nv
+                }
+            ).FirstOrDefault();
 
-            //if (login != null)
-            //{
-            //    var verify = BCrypt.Net.BCrypt.Verify(password, login.passwordHash);
-            //    if (verify)
-            //    {
-            //        var nhanVien = new DTO_NhanVien_LoginNV
-            //        {
-            //            MaNV = login.NhanVien.MaNV,
-            //            HoTenNV = login.NhanVien.HoTenNV,
-            //            SDT = login.NhanVien.SDT,
-            //            ChucVu = login.NhanVien.ChucVu,
-            //            DiaChi = login.NhanVien.DiaChi
-            //        };
+            if (login != null)
+            {
+                var verify = BCrypt.Net.BCrypt.Verify(password, login.passwordHash);
+                if (verify)
+                {
+                    var nhanVien = new DTO_NhanVien_LoginNV
+                    {
+                        MaNV = login.NhanVien.MaNV,
+                        HoTenNV = login.NhanVien.HoTenNV,
+                        SDT = login.NhanVien.SDT,
+                        ChucVu = login.NhanVien.ChucVu,
+                        DiaChi = login.NhanVien.DiaChi
+                    };
 
-            //        return nhanVien;
-            //    }
-            //    else
-            //        return null;
-            //}
-            //else
-            //    return null;
+                    return nhanVien;
+                }
+                else
+                    return null;
+            }
+            else
+                return null;
         }
 
 
